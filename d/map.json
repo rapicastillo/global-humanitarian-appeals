@@ -1,0 +1,179 @@
+{
+  "countries":
+  [
+    {
+     "name": "Central African Republic",
+     "type": "L3",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/CentralAfricanRepublic/CAR-Living-in-and-around/i-c798zxC/0/L/IMG_5782-L.jpg",
+     "in_need": 500405122,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 122333,
+           "label": "Internally displaced"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 520400,
+           "label": "Fled from war"
+          }
+        ]
+      },
+    {
+     "name": "Somalia",
+     "type": "L1",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/Somalia/IDPs-in-Baidoa/i-j2SNMmV/0/L/An%20IDP%20at%20Baidoa%20site.%20140227.%20%C2%A9OCHA%20Cecilia%20Attefors-L.jpg",
+     "in_need": 750230,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 410233,
+           "label": "children suffering from malnutrition"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 12444,
+           "label": "without homes"
+          }
+        ]
+      },
+    {
+     "name": "Iraq",
+     "type": "L3",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/IRQ/Middle-East-Association/i-B7jtxf3/0/L/MYA_1508-L.jpg",
+     "in_need": 1235555,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 103216,
+           "label": "deaths"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 12255,
+           "label": "people at risk of famine"
+          }
+        ]
+    },
+    {
+     "name": "Central African Republic",
+     "type": "L3",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/CentralAfricanRepublic/CAR-Living-in-and-around/i-c798zxC/0/L/IMG_5782-L.jpg",
+     "in_need": 500405122,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 122333,
+           "label": "Internally displaced"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 520400,
+           "label": "Fled from war"
+          }
+        ]
+      },
+    {
+     "name": "Somalia",
+     "type": "L1",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/Somalia/IDPs-in-Baidoa/i-j2SNMmV/0/L/An%20IDP%20at%20Baidoa%20site.%20140227.%20%C2%A9OCHA%20Cecilia%20Attefors-L.jpg",
+     "in_need": 750230,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 410233,
+           "label": "children suffering from malnutrition"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 12444,
+           "label": "without homes"
+          }
+        ]
+      },
+    {
+     "name": "Iraq",
+     "type": "L3",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/IRQ/Middle-East-Association/i-B7jtxf3/0/L/MYA_1508-L.jpg",
+     "in_need": 1235555,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 103216,
+           "label": "deaths"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 12255,
+           "label": "people at risk of famine"
+          }
+        ]
+    },
+    {
+     "name": "Central African Republic",
+     "type": "L3",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/CentralAfricanRepublic/CAR-Living-in-and-around/i-c798zxC/0/L/IMG_5782-L.jpg",
+     "in_need": 500405122,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 122333,
+           "label": "Internally displaced"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 520400,
+           "label": "Fled from war"
+          }
+        ]
+      },
+    {
+     "name": "Somalia",
+     "type": "L1",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/Somalia/IDPs-in-Baidoa/i-j2SNMmV/0/L/An%20IDP%20at%20Baidoa%20site.%20140227.%20%C2%A9OCHA%20Cecilia%20Attefors-L.jpg",
+     "in_need": 750230,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 410233,
+           "label": "children suffering from malnutrition"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 12444,
+           "label": "without homes"
+          }
+        ]
+      },
+    {
+     "name": "Iraq",
+     "type": "L3",
+     "map": "http://placehold.it/350x150",
+     "image": "http://ocha.smugmug.com/Countries/IRQ/Middle-East-Association/i-B7jtxf3/0/L/MYA_1508-L.jpg",
+     "in_need": 1235555,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 103216,
+           "label": "deaths"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 12255,
+           "label": "people at risk of famine"
+          }
+        ]
+    }
+  ]
+}
