@@ -73,16 +73,16 @@
 
               switch (c.type) {
                 case "big" :
-                  goForward = 3000 + (Math.random() * 10000);
-                  goBack = 3000 + (Math.random() * 10000);
+                  goForward = 5000 + (Math.random() * 10000);
+                  goBack = 5000 + (Math.random() * 10000);
                   break;
                 case "medium" :
-                  goForward = 6000 + (Math.random() * 20000);
-                  goBack = 6000 + (Math.random() * 20000);
+                  goForward = 20000 + (Math.random() * 10000);
+                  goBack = 20000 + (Math.random() * 10000);
                   break;
                 case "small" :
-                  goForward = 12000 + (Math.random() * 30000);
-                  goBack = 12000 + (Math.random() * 30000);
+                  goForward = 50000 + (Math.random() * 10000);
+                  goBack = 50000 + (Math.random() * 10000);
                   break;
               }
               var targetItem= $(this);
