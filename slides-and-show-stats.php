@@ -12,11 +12,12 @@
     .image-slideshow .third-slide
     {
       position: absolute;
+      background-size: cover;
     }
 
-    .image-slideshow .first-slide { background-color: #EEE9E9; }
-    .image-slideshow .second-slide { background-color: brown; }
-    .image-slideshow .third-slide { background-color: #C5E3BF; }
+    .image-slideshow .first-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-GPfJ3z3/0/X3/December%2011%2C%202013%20A%20child%20affected%20by%20Typhoon%20Yolanda%20walk%20amid%20the%20debris%20around%20%20two%20ships%20that%20were%20carried%20inland%20by%20the%20storm%20surge.%20%20Source%20OCHA%20Gemma%20Cortes-X3.jpg) }
+    .image-slideshow .second-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-T4RszF2/0/X3/IMG_2351-X3.jpg); }
+    .image-slideshow .third-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-jPt5THK/1/X3/IMG_2408-X3.jpg); }
 
     .image-slideshow .fact-item {
       position: absolute;
@@ -30,7 +31,7 @@
   <div style="height: 1400px; width: 100%"></div>
   <div style="position: relative">
     <div id="slide-1-image-item" class="image-slideshow" data-played-out="false"
-        data-bottom-center="opacity: 0.9"  data-top-bottom="opacity: 0" data-emit-events>
+        data-bottom-center="opacity: 1"  data-top-bottom="opacity: 0" data-emit-events>
 
       <div class="first-slide"></div>
       <div class="second-slide"></div>
@@ -51,7 +52,7 @@
     </div>
 
     <div id="slide-2-image-item" class="image-slideshow" data-played-out="false"
-        data-bottom-center="opacity: 0.8" data-top-bottom="opacity: 0" data-emit-events
+        data-bottom-center="opacity: 1" data-top-bottom="opacity: 0" data-emit-events
     >
       <div class="first-slide"></div>
       <div class="second-slide"></div>
