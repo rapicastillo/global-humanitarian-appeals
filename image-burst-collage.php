@@ -10,7 +10,6 @@
     .image-medium { z-index: 300; opacity: 0.8;}
     .image-small { z-index: 50; opacity: 0.5;}
     .burst-message { z-index: 500; height: 200px; position: absolute;}
-
   </style>
 </head>
 <body>

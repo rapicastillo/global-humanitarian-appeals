@@ -42,7 +42,33 @@
       </div>
     </div>
   </div>
-  <div id="post"></div>
+  <div id="title-slides-area" class="fluid-container">
+    <div class="row" style=" width: 100% ">
+      <div class="col-md-7" id="first-with-people-fades">
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <h1>Staggering</h1>
+            <h1>Demands</h1>
+            <h3>Humanitarian Global Appeals lorem ipsum dolor sikmet</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1" >
+        <div id="first-needs-graph" style="height: 0%; background-color: brown; position: absolute; bottom: 0; width: 80%;">
+          <h4>$<span  data-final-count="7.1" data-type="float">7.1</span>B</h4>
+          <h5>required</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="stats-area" style="position: absolute; bottom: 0;">
+          <h2><img src="http://placehold.it/60x60" /><span data-final-count="2.4" data-type="float" >0</span><span>M People in need</span></h2>
+
+          <h2><img src="http://placehold.it/60x60" /><span data-final-count="1.2" data-type="float">0</span><span>M People to receive aid</span></h2>
+          <h2><img src="http://placehold.it/60x60" /><span data-final-count="77" data-type="int">0</span><span>aid organizations appealing this year</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>

@@ -1,138 +1,166 @@
 {
   "faces" : [
-    { "src": "http://placehold.it/130x130",
+	  { "src": "images/faces/1_250x250_LARGE-People-FloatingPage.jpg",
       "type": "big",
       "id": "big image sample 1"
       },
-      {
-          "src": "http://placehold.it/130x130",
-        "type": "big",
-        "id": "big image sample 2"
-      },
-      { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "big image sample 3"
-      },
-      { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 4"
-      },
-            { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      }
-,      { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      }
-,      {
-      "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 1"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 2"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 3"
-      },
-      { "src": "http://placehold.it/130x130",
+	  { "src": "images/faces/2_250x250_LARGE-People-FloatingPage.jpg",
       "type": "big",
       "id": "big image sample 1"
       },
-      {
-          "src": "http://placehold.it/130x130",
-        "type": "big",
-        "id": "big image sample 2"
-      },
-      { "src": "http://placehold.it/70x70",
-      "type": "big",
-      "id": "big image sample 3"
-      },
-      { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "big image sample 4"
-      },
-            { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      }
-,      { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      }
-,      {
-      "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 1"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 2"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 3"
-      },{ "src": "http://placehold.it/130x130",
+	  { "src": "images/faces/3_250x250_LARGE-People-FloatingPage.jpg",
       "type": "big",
       "id": "big image sample 1"
       },
-      {
-          "src": "http://placehold.it/130x130",
-        "type": "big",
-        "id": "big image sample 2"
-      },
-      { "src": "http://placehold.it/130x130",
+	  { "src": "images/faces/4_250x250_LARGE-People-FloatingPage.jpg",
       "type": "big",
-      "id": "big image sample 3"
+      "id": "big image sample 1"
       },
-      { "src": "http://placehold.it/130x130",
-      "type": "medium",
-      "id": "big image sample 4"
+	  { "src": "images/faces/5_250x250_LARGE-People-FloatingPage.jpg",
+      "type": "big",
+      "id": "big image sample 1"
       },
-            { "src": "http://placehold.it/70x70",
+	  { "src": "images/faces/1_250x250_People-FloatingPage.jpg",
       "type": "medium",
-      "id": "medium image sample 1"
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/2_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/3_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/4_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/5_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/6_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/7_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/8_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/9_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/10_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/11_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/12_250x250_People-FloatingPage.jpg",
+      "type": "medium",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/13_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/14_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/15_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/16_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/17_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/18_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/19_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/20_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/21_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/22_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/23_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/24_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/25_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/26_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/27_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/28_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/29_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/30_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/31_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/32_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/33_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/34_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
+      },
+	  { "src": "images/faces/35_250x250_People-FloatingPage.jpg",
+      "type": "small",
+      "id": "big image sample 1"
       }
-,      { "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      }
-,      {
-      "src": "http://placehold.it/70x70",
-      "type": "medium",
-      "id": "medium image sample 1"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 1"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 2"
-      },
-      {
-        "src": "http://placehold.it/30x30",
-        "type": "small",
-        "id": "small image sample 3"
-      }
+
+	  
     ]
 }

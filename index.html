@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <style>
+    body { background-color: black; }
+    #title-slides-area { position: relative; background-color: whitesmoke; background: url(images/title-000.png); }
+    #title-slides-area > .row { position: absolute; bottom: 0; }
+    #title-slides-area > .row > div { height: 100%; position: relative; }
+    #title-slides-area #stats-area { opacity: 0; }
+    .people-fade { background-image: url(images/s1/people-row.png); background-size: cover; background-repeat: no-repeat; position: absolute; bottom: 0; width: 100%;}
+  </style>
+  <!-- SLIDE 2 STYLE -->
+  <style>
+	#slide-1-faced-with-unprecendented-severity { background-image: url(images/floating-01.jpg); background-size: cover; background-repeat: no-repeat; position: relative;}
+    #slide-1-faced-with-unprecendented-severity .slide-element { position: relative; }
+    #slide-1-faced-with-unprecendented-severity .image_container { position: absolute; }
+    #slide-1-faced-with-unprecendented-severity .window-size { overflow-y: hidden; }
+
+    #slide-1-faced-with-unprecendented-severity .image-big { z-index: 1000; }
+    #slide-1-faced-with-unprecendented-severity .image-medium { z-index: 300; opacity: 0.8;}
+    #slide-1-faced-with-unprecendented-severity .image-small { z-index: 50; opacity: 0.5;}
+    #slide-1-faced-with-unprecendented-severity .burst-message { z-index: 500; height: 200px; position: absolute;}
+  </style>
+</head>
+<body>
+  <div id="title-slides-area" class="fluid-container">
+    <div class="row" style=" width: 100% ">
+      <div class="col-md-7" id="first-with-people-fades">
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <h1>Staggering</h1>
+            <h1>Demands</h1>
+            <h3>Humanitarian Global Appeals lorem ipsum dolor sikmet</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1" >
+        <div id="first-needs-graph" style="height: 0%; background-color: brown; position: absolute; bottom: 0; width: 80%;">
+          <h4>$<span  data-final-count="7.1" data-type="float">7.1</span>B</h4>
+          <h5>required</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="stats-area" style="position: absolute; bottom: 0;">
+          <h2><img src="http://placehold.it/60x60" /><span data-final-count="2.4" data-type="float" >0</span><span>M People in need</span></h2>
+
+          <h2><img src="http://placehold.it/60x60" /><span data-final-count="1.2" data-type="float">0</span><span>M People to receive aid</span></h2>
+          <h2><img src="http://placehold.it/60x60" /><span data-final-count="77" data-type="int">0</span><span>aid organizations appealing this year</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SECOND SLIDE:: FLOATING IMAGES -->
+  <div id="slide-1-faced-with-unprecendented-severity" class="window-size slide-element" style="text-align: center">
+    <h1 class="burst-message">In 2014, we have faced emergencies with unprecendented severity.</h1>
+  </div>
+  
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<script src="js/skrollr.min.js"></script>
+  <script type="text/javascript">
+
+    $(function() {
+      /* Styling ..*/
+      $("#title-slides-area, #title-slides-area > .row").height($(window).height() * .95);
+
+      /* Animation ..  */
+      setTimeout ( function () {
+
+        var parent = $("#first-with-people-fades");
+        var bar_graph = $("#first-needs-graph");
+        var people_layers = 12;
+        for (var i = 0; i < people_layers; i ++) {
+
+          var new_div = $("<div />").height(parent.height() * 0.05).addClass("people-fade").css({bottom: (parent.height() * 0.05 * i) + "px" });
+          var opacity_new = ((people_layers - i) * (100/people_layers) / 100);
+          parent.append( new_div );
+
+          new_div.css("opacity", 0);
+          new_div.delay((i+1) * 150).animate({ opacity: opacity_new }, 800);
+
+        }
+
+        bar_graph.css("height", "0%");
+        bar_graph.animate({ height: "98%" }, 2000);
+
+        $("#title-slides-area").find("[data-final-count]").each(function () {
+            var $this = $(this);
+            console.log($this);
+            jQuery({ Counter: 0 }).animate({
+                      Counter: parseFloat($this.attr("data-final-count")) }, {
+                      duration: 2000,
+                      easing: 'swing',
+                      step: function () {
+                        console.log(this.Counter);
+                        if ($this.attr("data-type") == "int")
+                        { $this.text( Math.ceil(this.Counter) ); }
+                        else if ($this.attr("data-type") == "float")
+                        { $this.text( Math.ceil(this.Counter * 10) / 10 ); }
+                      }
+              });
+
+          });
+
+        $("#title-slides-area #stats-area").css("opacity", 0).animate({ "opacity" : 1, bottom : "+=30px" }, 2000);
+
+      },
+      500);
+    });
+
+  </script>
+  
+  <!-- SCRIPTS FOR SECOND SLIDE -->
+  
+  <script type="text/javascript">
+
+    $(function() {
+      var burstMessage = $(".burst-message");
+      burstMessage.css({
+        top: "50%", left: "50%"
+        , marginTop:  (burstMessage.height()/2 * -1) + "px"
+        , marginLeft: (burstMessage.width()/2 * -1)  + "px"
+      });
+      $("#pre, #post, .window-size").width($(window).width()).height($(window).height());
+      function faces_get_images(d) {
+        return "<img src='" + d.src + "'/>";
+      }
+
+      function slideExplodeItem( targetItem, forwardSpeed, backwardSpeed)
+      {
+        var midPoint = $(window).height() / 2;
+        targetItem.animate(
+                            { marginTop: targetItem.position().top > midPoint
+                                  ? (midPoint - targetItem.position().top)-midPoint-targetItem.height()-10 + "px"
+                                  : targetItem.position().top +  ((midPoint + targetItem.height() - targetItem.position().top ) + midPoint) + "px"}
+                                , forwardSpeed,
+
+                                function() { targetItem.animate({marginTop: "0px"}, backwardSpeed, function (){ slideExplodeItem(targetItem, forwardSpeed, backwardSpeed); }) } );
+      }
+        d3.json("d/faces.json",
+          function(error, json) {
+            console.log(json);
+            var d = d3.select("body #slide-1-faced-with-unprecendented-severity");
+            var dm =  d.selectAll("div.image_container")
+                .data(json.faces).enter().append("div")
+                .html(faces_get_images).classed("image_container", true);
+
+
+//.style("top", $(window).height() * Math.random() + "px")
+//.style("left", $(window).width() * Math.random() + "px")
+
+            dm.each(function(c) {
+              $(this).addClass("image-" + c.type);
+
+
+              $(this).css({ "top" :  $(window).height() * Math.random() + "px", "left": ($(window).width() - $(this).width()) * Math.random() + "px"});
+
+              var midPoint = $(window).height() / 2;
+              // console.log($(this).position().top, midPoint, ($(this).position().top - midPoint) - ($(this).position().top - midPoint) - $(this).height());
+              // if ($(this).position().top > midPoint) {
+              var goForward = 0;
+              var goBack = 0;
+
+              switch (c.type) {
+                case "big" :
+                  goForward = 5000 + (Math.random() * 10000);
+                  goBack = 5000 + (Math.random() * 10000);
+                  break;
+                case "medium" :
+                  goForward = 20000 + (Math.random() * 10000);
+                  goBack = 20000 + (Math.random() * 10000);
+                  break;
+                case "small" :
+                  goForward = 50000 + (Math.random() * 10000);
+                  goBack = 50000 + (Math.random() * 10000);
+                  break;
+              }
+              var targetItem= $(this);
+              // setInterval( function() {
+                slideExplodeItem(targetItem, goForward, goBack);
+
+              // }, 3000);
+            // }
+            });
+
+
+          }
+        );
+    });
+	
+    var s = skrollr.init({
+        edgeStrategy: 'set',
+          easing: {
+            WTF: Math.random
+          }
+        });
+  </script>
+  
+  
+</body>
+</html>
