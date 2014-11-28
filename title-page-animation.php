@@ -69,7 +69,7 @@
           parent.append( new_div );
 
           new_div.css("opacity", 0);
-          new_div.animate({ opacity: opacity_new }, (i + 1) * 1000);
+          new_div.delay((i+1) * 150).animate({ opacity: opacity_new }, 800);
 
         }
 
