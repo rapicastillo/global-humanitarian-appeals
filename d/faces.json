@@ -1,42 +1,22 @@
 {
   "faces" : [
 	  { "src": "images/faces/1_250x250_LARGE-People-FloatingPage.jpg",
-      "type": "big",
+      "type": "small",
       "id": "big image sample 1"
       },
 	  { "src": "images/faces/2_250x250_LARGE-People-FloatingPage.jpg",
-      "type": "big",
+      "type": "small",
       "id": "big image sample 1"
       },
 	  { "src": "images/faces/3_250x250_LARGE-People-FloatingPage.jpg",
-      "type": "big",
+      "type": "medium",
       "id": "big image sample 1"
       },
 	  { "src": "images/faces/4_250x250_LARGE-People-FloatingPage.jpg",
-      "type": "big",
+      "type": "small",
       "id": "big image sample 1"
       },
 	  { "src": "images/faces/5_250x250_LARGE-People-FloatingPage.jpg",
-      "type": "big",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/1_250x250_People-FloatingPage.jpg",
-      "type": "medium",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/2_250x250_People-FloatingPage.jpg",
-      "type": "medium",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/3_250x250_People-FloatingPage.jpg",
-      "type": "medium",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/4_250x250_People-FloatingPage.jpg",
-      "type": "medium",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/5_250x250_People-FloatingPage.jpg",
       "type": "medium",
       "id": "big image sample 1"
       },
@@ -84,46 +64,6 @@
       "type": "small",
       "id": "big image sample 1"
       },
-	  { "src": "images/faces/17_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/18_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/19_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/20_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/21_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/22_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/23_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/24_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/25_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
-	  { "src": "images/faces/26_250x250_People-FloatingPage.jpg",
-      "type": "small",
-      "id": "big image sample 1"
-      },
 	  { "src": "images/faces/27_250x250_People-FloatingPage.jpg",
       "type": "small",
       "id": "big image sample 1"
@@ -161,6 +101,6 @@
       "id": "big image sample 1"
       }
 
-	  
+
     ]
 }

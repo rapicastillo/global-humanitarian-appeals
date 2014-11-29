@@ -10,19 +10,67 @@
     #title-slides-area > .row > div { height: 100%; position: relative; }
     #title-slides-area #stats-area { opacity: 0; }
     .people-fade { background-image: url(images/s1/people-row.png); background-size: cover; background-repeat: no-repeat; position: absolute; bottom: 0; width: 100%;}
+
+    #title-slides-area #first-needs-graph {
+      height: 0%; background-image: url(images/s1/arrow-up.png); background-position: center top; position: absolute; bottom: 0; width: 80%;
+
+    }
   </style>
   <!-- SLIDE 2 STYLE -->
   <style>
-	#slide-1-faced-with-unprecendented-severity { background-image: url(images/floating-01.jpg); background-size: cover; background-repeat: no-repeat; position: relative;}
+	#slide-1-faced-with-unprecendented-severity { background-image: url(images/floating-01.jpg); background-size: cover; background-repeat: no-repeat; position: relative; overflow-y: hidden;}
     #slide-1-faced-with-unprecendented-severity .slide-element { position: relative; }
     #slide-1-faced-with-unprecendented-severity .image_container { position: absolute; }
     #slide-1-faced-with-unprecendented-severity .window-size { overflow-y: hidden; }
 
-    #slide-1-faced-with-unprecendented-severity .image-big { z-index: 1000; }
-    #slide-1-faced-with-unprecendented-severity .image-medium { z-index: 300; opacity: 0.8;}
-    #slide-1-faced-with-unprecendented-severity .image-small { z-index: 50; opacity: 0.5;}
+    #slide-1-faced-with-unprecendented-severity .image-big { z-index: 1000; width: 100px; height: 100px; }
+    #slide-1-faced-with-unprecendented-severity .image-big img { width: 100px; height: 100px; }
+    #slide-1-faced-with-unprecendented-severity .image-medium { z-index: 300; opacity: 0.9; width: 200px; height: 200px;}
+    #slide-1-faced-with-unprecendented-severity .image-medium img { width: 200px; height: 200px; }
+    #slide-1-faced-with-unprecendented-severity .image-small { z-index: 50; opacity: 0.5; width: 100px; height: 100px;}
+    #slide-1-faced-with-unprecendented-severity .image-small img { width: 100px; height: 100px; }
     #slide-1-faced-with-unprecendented-severity .burst-message { z-index: 500; height: 200px; position: absolute;}
+
+    .burst-message h1  { font-size: 26px; }
+    .burst-message h2  { font-size: 18px; }
+    .burst-message h1, .burst-message h2 {
+      color: whitesmoke;
+    }
+
+    .burst-message h1 strong { font-size: 32px; }
+    .burst-message h1 strong, .burst-message h2 strong{
+      color: #013856;
+      font-weight: 800;
+    }
   </style>
+
+  <!-- SLIDE 3 STYLE -->
+  <style>
+    #s3-slide-show-stats .image-slideshow { position: relative; }
+    #s3-slide-show-stats .image-slideshow .first-slide { z-index: 1000; }
+    #s3-slide-show-stats .image-slideshow .second-slide { z-index: 900; }
+    #s3-slide-show-stats .image-slideshow .third-slide { z-index: 800; }
+
+    #s3-slide-show-stats .image-slideshow .first-slide,
+    #s3-slide-show-stats .image-slideshow .second-slide,
+    #s3-slide-show-stats .image-slideshow .third-slide
+    {
+      position: absolute;
+      background-size: cover;
+    }
+
+    #s3-slide-show-stats .image-slideshow .first-slide { background-color: blue; }
+    #s3-slide-show-stats .image-slideshow .second-slide { background-color: red; }
+    #s3-slide-show-stats .image-slideshow .third-slide { background-color: yellow; }
+
+    #s3-slide-show-stats .image-slideshow .fact-item {
+      position: absolute;
+      font-size: 48px;
+      z-index: 2000;
+      opacity: 0;
+    }
+  </style>
+
 </head>
 <body>
   <div id="title-slides-area" class="fluid-container">
@@ -37,7 +85,7 @@
         </div>
       </div>
       <div class="col-md-1" >
-        <div id="first-needs-graph" style="height: 0%; background-color: brown; position: absolute; bottom: 0; width: 80%;">
+        <div id="first-needs-graph" style="">
           <h4>$<span  data-final-count="7.1" data-type="float">7.1</span>B</h4>
           <h5>required</h5>
         </div>
@@ -52,12 +100,84 @@
       </div>
     </div>
   </div>
-  
+  <div id="eyes-looking-area">
+  </div>
+
   <!-- SECOND SLIDE:: FLOATING IMAGES -->
   <div id="slide-1-faced-with-unprecendented-severity" class="window-size slide-element" style="text-align: center">
-    <h1 class="burst-message">In 2014, we have faced emergencies with unprecendented severity.</h1>
+    <div  class="burst-message">
+    <h1>In 2014, we were confronted with <br/>
+      <strong>emergencies</strong> of <strong>unprecedented severity</strong>.</h1>
+      <h2>The most severe crisise are classified as <strong>Level 3 emergencies</strong></h2>
+    </div>
   </div>
-  
+
+  <!-- L3 SLIDES -->
+  <div style="position: relative" id="s3-slide-show-stats">
+    <div id="slide-1-image-item" class="image-slideshow" data-played-out="false"
+        data-bottom-center="opacity: 1"  data-top-bottom="opacity: 0" data-emit-events>
+
+      <div class="first-slide"></div>
+      <div class="second-slide"></div>
+      <div class="third-slide"></div>
+
+      <!-- Facts -->
+      <div class="fact-item" style="bottom: 200px; right: 200px;">
+        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
+        <span class="fact-number" data-count="123400">0</span><span>People in need</span>
+      </div>
+      <div class="fact-item" style="bottom: 100px; right: 150px;">
+        <span class="data-icon">
+          <img src="http://placehold.it/50x50" />
+        </span>
+        <span class="fact-number" data-count="1553400">0</span>
+        <span>Stat Number</span>
+      </div>
+    </div>
+
+    <div id="slide-2-image-item" class="image-slideshow" data-played-out="false"
+        data-bottom-center="opacity: 1" data-top-bottom="opacity: 0" data-emit-events
+    >
+      <div class="first-slide"></div>
+      <div class="second-slide"></div>
+      <div class="third-slide"></div>
+
+      <!-- Facts -->
+      <div class="fact-item" style="bottom: 200px; right: 200px;">
+        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
+        <span class="fact-number" data-count="123400">0</span><span>People in need</span>
+      </div>
+      <div class="fact-item" style="bottom: 100px; right: 150px;">
+        <span class="data-icon">
+          <img src="http://placehold.it/50x50" />
+        </span>
+        <span class="fact-number" data-count="1553400">0</span>
+        <span>Stat Number</span>
+      </div>
+    </div>
+
+    <div id="slide-3-image-item" class="image-slideshow" data-played-out="false"
+      data-bottom-center="opacity: 1" data-top-bottom="opacity: 0" data-emit-events
+    >
+      <div class="first-slide"></div>
+      <div class="second-slide"></div>
+      <div class="third-slide"></div>
+
+      <!-- Facts -->
+      <div class="fact-item" style="bottom: 200px; right: 200px;">
+        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
+        <span class="fact-number" data-count="123400">0</span><span>People in need</span>
+      </div>
+      <div class="fact-item" style="bottom: 100px; right: 150px;">
+        <span class="data-icon">
+          <img src="http://placehold.it/50x50" />
+        </span>
+        <span class="fact-number" data-count="1553400">0</span>
+        <span>Stat Number</span>
+      </div>
+    </div>
+  </div>
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -69,7 +189,7 @@
 
     $(function() {
       /* Styling ..*/
-      $("#title-slides-area, #title-slides-area > .row").height($(window).height() * .95);
+      $("#title-slides-area, #title-slides-area > .row").height($(window).height());
 
       /* Animation ..  */
       setTimeout ( function () {
@@ -116,9 +236,9 @@
     });
 
   </script>
-  
+
   <!-- SCRIPTS FOR SECOND SLIDE -->
-  
+
   <script type="text/javascript">
 
     $(function() {
@@ -170,16 +290,16 @@
 
               switch (c.type) {
                 case "big" :
-                  goForward = 5000 + (Math.random() * 10000);
-                  goBack = 5000 + (Math.random() * 10000);
+                  goForward = 10000 + (Math.random() * 10000);
+                  goBack = 10000 + (Math.random() * 10000);
                   break;
                 case "medium" :
-                  goForward = 20000 + (Math.random() * 10000);
-                  goBack = 20000 + (Math.random() * 10000);
+                  goForward = 20000 + (Math.random() * 20000);
+                  goBack = 20000 + (Math.random() * 20000);
                   break;
                 case "small" :
-                  goForward = 50000 + (Math.random() * 10000);
-                  goBack = 50000 + (Math.random() * 10000);
+                  goForward = 40000 + (Math.random() * 40000);
+                  goBack = 40000 + (Math.random() * 40000);
                   break;
               }
               var targetItem= $(this);
@@ -194,7 +314,7 @@
           }
         );
     });
-	
+
     var s = skrollr.init({
         edgeStrategy: 'set',
           easing: {
@@ -202,7 +322,7 @@
           }
         });
   </script>
-  
-  
+
+
 </body>
 </html>

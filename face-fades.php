@@ -6,11 +6,12 @@
     .image_container { position: absolute; }
     .window-size { overflow-y: hidden; }
 
-    .image-big { z-index: 1000; } .image-big img { opacity: 0.8; }
-    .image-medium { z-index: 300; } .image-medium img { opacity: 0.6; }
-    .image-small { z-index: 50; } .image-small img { opacity: 0.3; }
+    .image-big { z-index: 1000; } .image-big img { opacity: 0.8; width: 300px; height: 300px; }
+    .image-medium { z-index: 300; } .image-medium img { opacity: 0.6; width: 200px; height: 200px;  }
+    .image-small { z-index: 50; } .image-small img { opacity: 0.3; width: 80px; height: 80px; }
 
     .burst-message { z-index: 500; height: 200px; position: absolute;}
+
 
   </style>
 </head>

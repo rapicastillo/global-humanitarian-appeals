@@ -48,10 +48,10 @@ $(function() {
       item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
     }, timeout_delay);
   }
-  $.get("d/faces.json", function (data) {
+  $.get("d/image_list.json", function (data) {
 
       //cols
-      var square_size = ( $(window).width() / $(window).height() ) * 24;
+      var square_size = ( $(window).width() / $(window).height() ) * 64;
 
       var square_count_rows = $(window).height() / square_size;
       var square_count_cols = $(window).width() / square_size;
@@ -62,13 +62,13 @@ $(function() {
         var row = $("<div />").addClass("mosaic-row");
 
         for ( var x = 0; x < square_count_cols - 1; x ++ ) {
-          var img_data_1 = data.faces[ Math.floor( Math.random() * data.faces.length ) ];
-          var img_data_2 = data.faces[ Math.floor( Math.random() * data.faces.length ) ];
+          var img_data_1 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
+          var img_data_2 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
 
           var item_1 = $("<div />").addClass("mosaic-image mosaic-initial-image")
-                      .css({ "background-image":  "url(" + img_data_1.src + ")", width : square_size + "px", height : square_size + "px" });
+                      .css({ "background-image":  "url(" + img_data_1 + ")", width : square_size + "px", height : square_size + "px" });
           var item_2 = $("<div />").addClass("mosaic-image mosaic-over-image")
-                      .css({ "background-image": "url(" + img_data_2.src + ")", width : square_size + "px", height : square_size + "px" });
+                      .css({ "background-image": "url(" + img_data_2 + ")", width : square_size + "px", height : square_size + "px" });
 
           // console.log(img_data_1, img_data_2);
 
