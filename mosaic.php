@@ -25,12 +25,12 @@ $(function() {
   function fader(item)
   {
     var timeout_delay = (Math.random() * 5000) + 1000;
-    setTimeout(function() {
+    // setTimeout(function() {
       var delay1 = (Math.random() * 5000) + 3000;
       var delay2 = (Math.random() * 5000) + 3000;
 
       item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
-    }, timeout_delay);
+    // }, timeout_delay);
   }
   $.get("d/image_list.json", function (data) {
 

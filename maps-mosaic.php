@@ -67,6 +67,8 @@
   </svg>
 </div -->
 <div style="height: 900px; display: inline-block;">&nbsp;</div>
+
+<!-- START OF: MAP AREA -->
 <div id="map-area">
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
         data-bottom-top="opacity: 0" data-center-top="opacity: 1"
@@ -75,12 +77,16 @@
   <div id="map-area-countries"></div>
   <div style="clear:both"></div>
 </div>
+<!-- END OF: MAP AREA -->
 
+
+<!-- START OF: MOSAIC MESSAGE AREA -->
 <div id="mosaic-area">
   <div id="mosaic-main-message">
     This is the main image for the mosaic area. This will be revealed once the user goes to this slide mousing over the area.
   </div>
 </div>
+<!-- END OF: MOSAIC MESSAGE AREA -->
 
 
 <div style="height: 1000px"></div>
