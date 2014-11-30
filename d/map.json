@@ -1,179 +1,362 @@
 {
   "countries":
   [
+
+    {
+     "name": "Democratic Republic of the Congo",
+     "type": "L1",
+     "map": "images/maps/DRC.png",
+     "image": "http://placehold.it/100x100",
+     "in_need": 7000000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 5200000 ,
+           "label": "People targeted"
+           },
+           {
+           "image": "http://placehold.it/35x35",
+           "count": 692000 ,
+           "label": "USD Requirements"
+           },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 2700000,
+           "label": "internally displaced people"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "340px",
+          "backgroundPosition" : "0px 0px",
+          "padding" : "20px 0 0 200px"
+        }
+      },
+
+
     {
      "name": "Central African Republic",
      "type": "L3",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/CentralAfricanRepublic/CAR-Living-in-and-around/i-c798zxC/0/L/IMG_5782-L.jpg",
-     "in_need": 500405122,
+     "map": "images/maps/CAR.png",
+     "image": "",
+     "in_need": 2700000,
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
-           "count": 122333,
-           "label": "Internally displaced"},
+           "image": "",
+           "count": 2000000,
+           "label": "people targeted *"
+          },
           {
-           "image": "http://placehold.it/35x35",
-           "count": 520400,
-           "label": "Fled from war"
+           "image": "",
+           "count": 613000000,
+           "label": "USD Requirements"
+          },
+          {
+           "image": "",
+           "count": 430000,
+           "label": "internally displaced people"
           }
-        ]
-      },
+        ],
+      "style" : {
+          "backgroundSize": "271px",
+          "backgroundPosition" : "100% 50%",
+          "padding" : "20px 90px 0 0"
+        }
+    },
+
     {
      "name": "Somalia",
      "type": "L1",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/Somalia/IDPs-in-Baidoa/i-j2SNMmV/0/L/An%20IDP%20at%20Baidoa%20site.%20140227.%20%C2%A9OCHA%20Cecilia%20Attefors-L.jpg",
-     "in_need": 750230,
+     "map": "images/maps/Somalia.png",
+     "image": "",
+     "in_need": 3200000,
       "other_fig":
         [
           {
            "image": "http://placehold.it/35x35",
-           "count": 410233,
-           "label": "children suffering from malnutrition"},
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 12444,
-           "label": "without homes"
-          }
-        ]
-      },
-    {
-     "name": "Iraq",
-     "type": "L3",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/IRQ/Middle-East-Association/i-B7jtxf3/0/L/MYA_1508-L.jpg",
-     "in_need": 1235555,
-      "other_fig":
-        [
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 103216,
-           "label": "deaths"
+           "count": 2760000,
+           "label": "people targeted"
           },
           {
            "image": "http://placehold.it/35x35",
-           "count": 12255,
-           "label": "people at risk of famine"
+           "count": 862600000,
+           "label": "USD Requirement"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 1100000,
+           "label": "Internally displaced people"
           }
-        ]
+        ],
+      "style" : {
+          "backgroundSize": "381px",
+          "backgroundPosition" : "-80px 92px",
+          "padding" : "10px 0px 120px 131px"
+        }
     },
     {
-     "name": "Central African Republic",
+     "name": "South Sudan",
      "type": "L3",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/CentralAfricanRepublic/CAR-Living-in-and-around/i-c798zxC/0/L/IMG_5782-L.jpg",
-     "in_need": 500405122,
+     "map": "images/maps/South_Sudan.png",
+     "image": "",
+     "in_need": 6400000,
       "other_fig":
         [
           {
            "image": "http://placehold.it/35x35",
-           "count": 122333,
-           "label": "Internally displaced"},
+           "count": 4100000,
+           "label": "People Targeted"},
           {
            "image": "http://placehold.it/35x35",
-           "count": 520400,
-           "label": "Fled from war"
-          }
-        ]
-      },
-    {
-     "name": "Somalia",
-     "type": "L1",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/Somalia/IDPs-in-Baidoa/i-j2SNMmV/0/L/An%20IDP%20at%20Baidoa%20site.%20140227.%20%C2%A9OCHA%20Cecilia%20Attefors-L.jpg",
-     "in_need": 750230,
-      "other_fig":
-        [
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 410233,
-           "label": "children suffering from malnutrition"},
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 12444,
-           "label": "without homes"
-          }
-        ]
-      },
-    {
-     "name": "Iraq",
-     "type": "L3",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/IRQ/Middle-East-Association/i-B7jtxf3/0/L/MYA_1508-L.jpg",
-     "in_need": 1235555,
-      "other_fig":
-        [
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 103216,
-           "label": "deaths"
+           "count": 1800000000,
+           "label": "USD Requirements"
           },
           {
            "image": "http://placehold.it/35x35",
-           "count": 12255,
-           "label": "people at risk of famine"
+           "count": 1950000,
+           "label": "People displaced due to conflict & flooding"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "191px",
+          "backgroundPosition" : "92px 60px",
+          "padding" : "0px 0 0 20px"
+        }
+      },
+
+
+    {
+     "name": "Sudan",
+     "type": "L1",
+     "map": "images/maps/Sudan.png",
+     "image": "",
+     "in_need": 6600000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 4400000,
+           "label": "people targeted"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 1000000000,
+           "label": "USD Requirements"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 3100000,
+           "label": "internally displaced people"
           }
-        ]
+        ],
+        "style" : {
+          "backgroundSize": "141px",
+          "backgroundPosition" : "2px 80px",
+          "padding" : "0 0 0 60px"
+        }
+      },
+
+    {
+     "name": "Yemen",
+     "type": "L1",
+     "map": "images/maps/Yemen.png",
+     "image": "",
+     "in_need": 15900000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 8000000,
+           "label": "people targeted"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 615000000,
+           "label": "USD Requirements"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 10600000,
+           "label": "Food insecure people"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "471px",
+          "backgroundPosition" : "0 0",
+          "padding" : "110px 220px 0 0"
+        }
     },
+
     {
-     "name": "Central African Republic",
+     "name": "Syria",
      "type": "L3",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/CentralAfricanRepublic/CAR-Living-in-and-around/i-c798zxC/0/L/IMG_5782-L.jpg",
-     "in_need": 500405122,
+     "map": "images/maps/Syria.png",
+     "image": "",
+     "in_need": 12200000,
       "other_fig":
         [
           {
            "image": "http://placehold.it/35x35",
-           "count": 122333,
-           "label": "Internally displaced"},
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 520400,
-           "label": "Fled from war"
-          }
-        ]
-      },
-    {
-     "name": "Somalia",
-     "type": "L1",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/Somalia/IDPs-in-Baidoa/i-j2SNMmV/0/L/An%20IDP%20at%20Baidoa%20site.%20140227.%20%C2%A9OCHA%20Cecilia%20Attefors-L.jpg",
-     "in_need": 750230,
-      "other_fig":
-        [
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 410233,
-           "label": "children suffering from malnutrition"},
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 12444,
-           "label": "without homes"
-          }
-        ]
-      },
-    {
-     "name": "Iraq",
-     "type": "L3",
-     "map": "http://placehold.it/350x150",
-     "image": "http://ocha.smugmug.com/Countries/IRQ/Middle-East-Association/i-B7jtxf3/0/L/MYA_1508-L.jpg",
-     "in_need": 1235555,
-      "other_fig":
-        [
-          {
-           "image": "http://placehold.it/35x35",
-           "count": 103216,
-           "label": "deaths"
+           "count": 12200000,
+           "label": "people targeted"
           },
           {
            "image": "http://placehold.it/35x35",
-           "count": 12255,
-           "label": "people at risk of famine"
+           "count": 2800000000,
+           "label": "USD Requirements"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 7600000,
+           "label": "Internally displaced people"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "181px",
+          "backgroundPosition" : "0 0",
+          "padding" : "0 0 0 62px"
+        }
+    },
+
+{
+     "name": "Iraq",
+     "type": "L3",
+     "map": "images/maps/Iraq.png",
+     "image": "",
+     "in_need": 5200000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 5000000,
+           "label": "people targeted"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 1200000000,
+           "label": "USD Requirements"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 2100000,
+           "label": "newly displaced people since January 2014"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "171px",
+          "backgroundPosition" : "82px 180px",
+          "padding" : "0 0 22px 0"
+        }
+      },
+
+{
+     "name": "occupied Palestinian territory",
+     "type": "L2",
+     "map": "http://placehold.it/300x100",
+     "image": "",
+     "in_need": 1900000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 1600000,
+           "label": "people targeted"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 770000000,
+           "label": "USD Requirements"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 100000,
+           "label": "Internally displaced people in Gaza"
           }
         ]
+      },
+
+     {
+     "name": "Afghanistan",
+     "type": "L1",
+     "map": "images/maps/Afghanistan.png",
+     "image": "",
+     "in_need": 7400000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 3800000,
+           "label": "People targeted"
+           },
+           {
+           "image": "http://placehold.it/35x35",
+           "count": 405000,
+           "label": "USD Requirements"
+           },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 500000,
+           "label": "children under five suffer from severe malnutrition"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+       {
+     "name": "Myanmar",
+     "type": "L1",
+     "map": "images/maps/Myanmar.png",
+     "image": "",
+     "in_need": 540600,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 421000,
+           "label": "People targeted"},
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 197000000,
+           "label": "USD Requirements"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "281px",
+          "backgroundPosition" : "-90px 50px",
+          "padding" : "0px 0px 102px 60px"
+        }
+      },
+    {
+     "name": "Ukraine",
+     "type": "L1",
+     "map": "images/maps/Ukraine.png",
+     "image": "",
+     "in_need": 1400000,
+      "other_fig":
+        [
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 900000,
+           "label": "people targeted"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 189000000,
+           "label": "USD Requirements"
+          },
+          {
+           "image": "http://placehold.it/35x35",
+           "count": 460000,
+           "label": "Displaced people"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "261px",
+          "backgroundPosition" : "130px 0px",
+          "padding" : "0px 100px 102px 30px"
+        }
     }
+
   ]
 }
