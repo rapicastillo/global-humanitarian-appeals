@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <style>
+    body { margin: 0; padding: 0; }
+    .mosaic-item { display: inline-block;}
+    #mosaic-area { position: relative; }
+    #mosaic-area .mosaic-image {
+      background-size: cover;
+      position: absolute;
+    }
+    #mosaic-area .mosaic-initial-image {
+      z-index: 1200;
+    }
+    #mosaic-area #mosaic-main-message { position: absolute; top: 50%; left: 50%; background-color: rgba(0,0,0,.8); width: 80%; font-size: 32px; z-index: 1300; color: white; padding: 20px;}
+    .mosaic-item { position: relative; }
+    .mosaic-row { text-align: center; }
+  </style>
 </head>
 <body>
 
 <div style="height: 900px; display: inline-block;">&nbsp;</div>
 <div id="mosaic-area">
+
   <div id="mosaic-main-message">
     This is the main image for the mosaic area. This will be revealed once the user goes to this slide mousing over the area.
   </div>
+
 </div>
 <div style="height: 1000px"></div>
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -25,12 +41,12 @@ $(function() {
   function fader(item)
   {
     var timeout_delay = (Math.random() * 5000) + 1000;
-    // setTimeout(function() {
+    setTimeout(function() {
       var delay1 = (Math.random() * 5000) + 3000;
       var delay2 = (Math.random() * 5000) + 3000;
 
       item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
-    // }, timeout_delay);
+    }, timeout_delay);
   }
   $.get("d/image_list.json", function (data) {
 

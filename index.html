@@ -18,30 +18,20 @@
   </style>
   <!-- SLIDE 2 STYLE -->
   <style>
-	#slide-1-faced-with-unprecendented-severity { background-image: url(images/floating-01.jpg); background-size: cover; background-repeat: no-repeat; position: relative; overflow-y: hidden;}
-    #slide-1-faced-with-unprecendented-severity .slide-element { position: relative; }
-    #slide-1-faced-with-unprecendented-severity .image_container { position: absolute; }
-    #slide-1-faced-with-unprecendented-severity .window-size { overflow-y: hidden; }
-
-    #slide-1-faced-with-unprecendented-severity .image-big { z-index: 1000; width: 100px; height: 100px; }
-    #slide-1-faced-with-unprecendented-severity .image-big img { width: 100px; height: 100px; }
-    #slide-1-faced-with-unprecendented-severity .image-medium { z-index: 300; opacity: 0.9; width: 200px; height: 200px;}
-    #slide-1-faced-with-unprecendented-severity .image-medium img { width: 200px; height: 200px; }
-    #slide-1-faced-with-unprecendented-severity .image-small { z-index: 50; opacity: 0.5; width: 100px; height: 100px;}
-    #slide-1-faced-with-unprecendented-severity .image-small img { width: 100px; height: 100px; }
-    #slide-1-faced-with-unprecendented-severity .burst-message { z-index: 500; height: 200px; position: absolute;}
-
-    .burst-message h1  { font-size: 26px; }
-    .burst-message h2  { font-size: 18px; }
-    .burst-message h1, .burst-message h2 {
-      color: whitesmoke;
+    body { margin: 0; padding: 0; }
+    .burst-face-item { display: inline-block;}
+    #burst-face-area { position: relative; overflow: hidden;}
+    #burst-face-area .burst-face-row { opacity: 0.8; }
+    #burst-face-area .burst-face-image {
+      background-size: cover;
+      position: absolute;
     }
-
-    .burst-message h1 strong { font-size: 32px; }
-    .burst-message h1 strong, .burst-message h2 strong{
-      color: #013856;
-      font-weight: 800;
+    #burst-face-area .burst-face-initial-image {
+      z-index: 1200;
     }
+    #burst-face-area #burst-face-main-message { position: absolute; top: 50%; left: 50%; background-color: rgba(0,0,0,.8); width: 80%; font-size: 32px; z-index: 1300; color: white; padding: 20px;}
+    .burst-face-item { position: relative; }
+    .burst-face-row { text-align: center; }
   </style>
 
   <!-- SLIDE 3 STYLE -->
@@ -260,7 +250,7 @@ padding: 10px;
     #mosaic-area .mosaic-initial-image {
       z-index: 1200;
     }
-    #mosaic-area .mosaic-main-message { position: absolute; top: 50%; left: 50%; background-color: rgba(0,0,0,.8); width: 80%; font-size: 32px; z-index: 1300; color: white; padding: 20px;}
+    #mosaic-area .mosaic-main-message { position: absolute; background-color: rgba(0,0,0,.8); width: 80%; font-size: 32px; z-index: 1300; color: white; padding: 20px;}
     .mosaic-item { position: relative; }
     .mosaic-row { text-align: center; }
   </style>
@@ -299,18 +289,16 @@ padding: 10px;
   </div>
 
   <!-- SECOND SLIDE:: FLOATING IMAGES -->
-  <div id="slide-1-faced-with-unprecendented-severity" class="window-size slide-element" style="text-align: center">
-    <div  class="burst-message">
-      <h1>
-          In 2015, the number of <strong>PEOPLE IN NEED</strong>
-        </h1>
+  <div id="burst-face-area">
+    <div id="burst-face-main-message">
+      <h3>
+        In 2015, the number of <strong>PEOPLE IN NEED</strong>
+      </h3>
 
-        <h1>
-          <strong>OF ASSISTANCE</strong> remains alarming
-        </h1>
-      </div>
-
-
+      <h3>
+        <strong>OF ASSISTANCE</strong> remains alarming
+      </h3>
+    </div>
   </div>
 
   <!-- START OF: L3 SLIDES -->
@@ -454,7 +442,7 @@ padding: 10px;
 <!-- START OF: MAP AREA -->
 <div id="map-area">
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
-        data-bottom-top="opacity: 0" data-center-top="opacity: 1"
+        data-100-center-top="opacity: 0" data-center-top="opacity: 1"
         data-bottom-bottom="opacity: 1; font-size: 32px;" data-top-bottom="font-size: 50px"
         ><img src='http://placehold.it/40x40' /> <h1>0</h1> People in need</div>
   <div id="map-area-countries"></div>
@@ -465,13 +453,16 @@ padding: 10px;
 
 <!-- START OF: MOSAIC MESSAGE AREA -->
 <div id="mosaic-area">
-  <div id="mosaic-area-container" data-bottom-top="position: relative" data-top-top="position: fixed; z-index: 1900; top: 0; left: 0">
-    <div class="mosaic-main-message" data--100-center-top="opacity: 0" data-center-top="opacity: 1" data-anchor-target="#thanks-to-our-donors">
+  <div id="mosaic-area-container" data-bottom-top="position: relative" data-top-top="position: fixed; z-index: 1900; top: 0; left: 0; ">
+    <div class="mosaic-main-message" data-200-center-top="opacity: 0;"
+                                     data-center-top="opacity: 1"
+                                     data--200-center-top="opacity: 0;"
+                                     data-anchor-target="#thanks-to-our-donors">
       The relentless cycle of large scale natural disasters and brutal conflicts have strained the ability of the humanitarian system to respond.
       <br/>
     </div>
 
-    <div class="mosaic-main-message" data--100-center-top="opacity: 1" data-center-top="opacity: 0" data-anchor-target="#thanks-to-our-donors">
+    <div class="mosaic-main-message" data--200-center-top="opacity: 1" data--100-center-top="opacity: 0" data-anchor-target="#thanks-to-our-donors">
       Saving lives is priceless: Humanitarian assistance is critical and saving lives imperative.
       We are often asked to do more with less.
        We have rethought the way we work.
@@ -481,7 +472,7 @@ padding: 10px;
   </div>
 </div>
 <div id="thanks-to-our-donors" data-top-top="..." data-emit-events>
-  <h1>In 2014, thanks to the generosity of our donors, we were able to scale-up life-saving operations in some of the most devastating crises.
+  <h1 style="padding: 40px;">In 2014, thanks to the generosity of our donors, we were able to scale-up life-saving operations in some of the most devastating crises.
   </h1>
 </div>
 <!-- END OF: MOSAIC MESSAGE AREA -->
@@ -549,80 +540,110 @@ padding: 10px;
 
   <script type="text/javascript">
 
-    $(function() {
-      var burstMessage = $(".burst-message");
-      burstMessage.css({
-        top: "50%", left: "50%"
-        , marginTop:  (burstMessage.height()/2 * -1) + "px"
-        , marginLeft: (burstMessage.width()/2 * -1)  + "px"
-      });
-      $("#pre, #post, .window-size").width($(window).width()).height($(window).height());
-      function faces_get_images(d) {
-        return "<img src='" + d.src + "'/>";
-      }
+$(function() {
+  /* Styling */
+  $("#burst-face-main-message").css({"marginTop" : "-" +$("#burst-face-main-message").height() /2 + "px", "marginLeft" :
+                  "-" + $("#burst-face-main-message").width()/2 + "px"});
 
-      function slideExplodeItem( targetItem, forwardSpeed, backwardSpeed)
+  function slide_endlessly(row, speed, square_width, direction_)
+  {
+
+      if (direction_ == "right")
       {
-        var midPoint = $(window).height() / 2;
-        targetItem.animate(
-                            { marginTop: targetItem.position().top > midPoint
-                                  ? (midPoint - targetItem.position().top)-midPoint-targetItem.height()-10 + "px"
-                                  : targetItem.position().top +  ((midPoint + targetItem.height() - targetItem.position().top ) + midPoint) + "px"}
-                                , forwardSpeed,
-
-                                function() { targetItem.animate({marginTop: "0px"}, backwardSpeed, function (){ slideExplodeItem(targetItem, forwardSpeed, backwardSpeed); }) } );
-      }
-        d3.json("d/faces.json",
-          function(error, json) {
-            console.log(json);
-            var d = d3.select("body #slide-1-faced-with-unprecendented-severity");
-            var dm =  d.selectAll("div.image_container")
-                .data(json.faces).enter().append("div")
-                .html(faces_get_images).classed("image_container", true);
-
-
-//.style("top", $(window).height() * Math.random() + "px")
-//.style("left", $(window).width() * Math.random() + "px")
-
-            dm.each(function(c) {
-              $(this).addClass("image-" + c.type);
-
-
-              $(this).css({ "top" :  $(window).height() * Math.random() + "px", "left": ($(window).width() - $(this).width()) * Math.random() + "px"});
-
-              var midPoint = $(window).height() / 2;
-              // console.log($(this).position().top, midPoint, ($(this).position().top - midPoint) - ($(this).position().top - midPoint) - $(this).height());
-              // if ($(this).position().top > midPoint) {
-              var goForward = 0;
-              var goBack = 0;
-
-              switch (c.type) {
-                case "big" :
-                  goForward = 10000 + (Math.random() * 10000);
-                  goBack = 10000 + (Math.random() * 10000);
-                  break;
-                case "medium" :
-                  goForward = 20000 + (Math.random() * 20000);
-                  goBack = 20000 + (Math.random() * 20000);
-                  break;
-                case "small" :
-                  goForward = 40000 + (Math.random() * 40000);
-                  goBack = 40000 + (Math.random() * 40000);
-                  break;
-              }
-              var targetItem= $(this);
-              // setInterval( function() {
-                slideExplodeItem(targetItem, goForward, goBack);
-
-              // }, 3000);
-            // }
-            });
-
-
+        row.prepend(row.children(".burst-face-item")[row.children(".burst-face-item").length-1])
+        // row.css("marginLeft", "-=" + square_width +"px");
+        row.animate(
+          { marginLeft: "+=" + square_width + "px" },
+          speed,
+          "linear",
+          function () {
+            row.css("marginLeft", "-=" + square_width +"px");
+            slide_endlessly(row, speed, square_width, direction_);
           }
         );
-    });
-  </script>
+      }
+      else {
+        row.append(row.children(".burst-face-item")[0]);
+        row.animate(
+          { marginLeft: "-=" + square_width + "px" },
+          speed,
+          "linear",
+          function () {
+            row.css("marginLeft", "+=" + square_width +"px");
+            slide_endlessly(row, speed, square_width, direction_); }
+        );
+      }
+
+  }
+
+  function fader(item)
+  {
+    // var timeout_delay = (Math.random() * 5000) + 1000;
+    // setTimeout(function() {
+      var delay1 = (Math.random() * 5000) + 10000;
+      var delay2 = (Math.random() * 10000) + 5000;
+
+      item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
+    // }, timeout_delay);
+  }
+
+  $.get("d/image_list.json", function (data) {
+
+      //cols
+      var square_size = ( $(window).width() / $(window).height() ) * 73;
+
+      var square_count_rows = Math.ceil($(window).height() / square_size);
+      var square_count_cols = Math.ceil($(window).width() / square_size );
+
+      var square_height = $(window).height() / (square_count_rows - 1);
+      var square_width = $(window).width() / (square_count_cols - 1);
+
+      // console.log(square_count_cols, square_count_rows);
+      var direction = ["left", "right"];
+      for ( var y = 0; y < square_count_rows - 1; y ++) {
+
+        var row = $("<div />").addClass("burst-face-row");
+
+        for ( var x = 0; x < square_count_cols - 1  + 2; x ++ ) {
+          var img_data_1 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
+          var img_data_2 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
+
+          var item_1 = $("<div />").addClass("burst-face-image burst-face-initial-image")
+                      .css({ "background-image":  "url(" + img_data_1 + ")", width : square_width + "px", height : square_height + "px" });
+          var item_2 = $("<div />").addClass("burst-face-image burst-face-over-image")
+                      .css({ "background-image": "url(" + img_data_2 + ")", width : square_width + "px", height : square_height + "px" });
+
+          // console.log(img_data_1, img_data_2);
+
+
+          var item = $("<div />").addClass("burst-face-item").width(square_width).height(square_height);
+              item.append(item_1);
+              item.append(item_2);
+
+          fader(item_1);
+          row.append(item);
+
+
+        }
+        row.height(square_height).css({"marginLeft" : "-" + square_width + "px"});
+
+        var speed = 10000 + (Math.random() * 3000);
+
+        console.log(row, speed, square_width);
+
+        slide_endlessly(row, speed, square_width, direction[y % 2]);
+
+        $("#burst-face-area").append(row);
+      }
+
+      $("#burst-face-area").width($(window).width());
+      $(".burst-face-row").width($(window).width() + (square_width * 2));
+
+  });
+});
+
+
+</script>
 
 
 <script type="text/javascript">
@@ -878,7 +899,7 @@ $(function() {
     console.log("Thanks to our donors", e, direction);
     if (direction == "down")
     {
-      $("#mosaic-area-container, #map-data-score").fadeOut("slow");
+      $("#mosaic-area-container, #map-data-score").fadeOut("fast");
     }
     else // direction == "down"
     {
@@ -889,7 +910,9 @@ $(function() {
   $(".mosaic-main-message").each(function() {
       $(this).css({
           "marginTop" : "-" + $(this).height() /2 + "px",
-          "marginLeft" : "-" + $(this).width()/2 + "px"
+          "marginLeft" : "-" + $(this).width()/2 + "px",
+          "left" : $(window).width()/2 + "px",
+          "top" : $(window).height()/2 + "px",
       });
     });
 
@@ -915,7 +938,7 @@ $(function() {
       var square_width = $(window).width() / (square_count_cols - 1);
 
       // console.log(square_count_cols, square_count_rows);
-      for ( var y = 0; y < square_count_rows - 1; y ++) {
+      for ( var y = 0; y < square_count_rows - 1 + 3; y ++) {
 
         var row = $("<div />").addClass("mosaic-row");
 
@@ -942,9 +965,11 @@ $(function() {
         row.height(square_height);
 
         $("#mosaic-area-container").append(row);
+
       }
 
-      $("#mosaic-area").width($("#mosaic-area-container").width()).height($("#mosaic-area-container").height());
+      $("#mosaic-area").width($(window).width()).height($(window).height());
+
 
       var s = skrollr.init({
       keyframe: function(element,name, direction) {

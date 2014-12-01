@@ -16,6 +16,7 @@
   <div id="pre"></div>
   <div id="slide-1-faced-with-unprecendented-severity" class="window-size slide-element" style="text-align: center">
     <h1 class="burst-message">In 2014, we have faced emergencies with unprecendented severity.</h1>
+    <div id="bursty-area" ></div>
   </div>
   <div id="post"></div>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -54,9 +55,6 @@
                 .data(json.faces).enter().append("div")
                 .html(faces_get_images).classed("image_container", true);
 
-
-//.style("top", $(window).height() * Math.random() + "px")
-//.style("left", $(window).width() * Math.random() + "px")
 
             dm.each(function(c) {
               $(this).addClass("image-" + c.type);

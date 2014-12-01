@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    body { margin: 0; padding: 0; }
+    .burst-face-item { display: inline-block;}
+    #burst-face-area { position: relative; overflow: hidden;}
+    #burst-face-area .burst-face-row { opacity: 0.8; }
+    #burst-face-area .burst-face-image {
+      background-size: cover;
+      position: absolute;
+    }
+    #burst-face-area .burst-face-initial-image {
+      z-index: 1200;
+    }
+    #burst-face-area #burst-face-main-message { position: absolute; top: 50%; left: 50%; background-color: rgba(0,0,0,.8); width: 80%; font-size: 32px; z-index: 1300; color: white; padding: 20px;}
+    .burst-face-item { position: relative; }
+    .burst-face-row { text-align: center; }
+  </style>
+</head>
+<body>
+
+<div style="height: 900px; display: inline-block;">&nbsp;</div>
+<div id="burst-face-area">
+  <div id="burst-face-main-message">
+    <h1>
+      In 2015, the number of <strong>PEOPLE IN NEED</strong>
+    </h1>
+
+    <h1>
+      <strong>OF ASSISTANCE</strong> remains alarming
+    </h1>
+  </div>
+</div>
+<div style="height: 1000px"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/skrollr.min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+  /* Styling */
+  $("#burst-face-main-message").css({"marginTop" : "-" +$("#burst-face-main-message").height() /2 + "px", "marginLeft" :
+                  "-" + $("#burst-face-main-message").width()/2 + "px"});
+
+  function slide_endlessly(row, speed, square_width, direction_)
+  {
+
+      if (direction_ == "right")
+      {
+        row.prepend(row.children(".burst-face-item")[row.children(".burst-face-item").length-1])
+        // row.css("marginLeft", "-=" + square_width +"px");
+        row.animate(
+          { marginLeft: "+=" + square_width + "px" },
+          speed,
+          "linear",
+          function () {
+            row.css("marginLeft", "-=" + square_width +"px");
+            slide_endlessly(row, speed, square_width, direction_);
+          }
+        );
+      }
+      else {
+        row.append(row.children(".burst-face-item")[0]);
+        row.animate(
+          { marginLeft: "-=" + square_width + "px" },
+          speed,
+          "linear",
+          function () {
+            row.css("marginLeft", "+=" + square_width +"px");
+            slide_endlessly(row, speed, square_width, direction_); }
+        );
+      }
+
+  }
+
+  function fader(item)
+  {
+    // var timeout_delay = (Math.random() * 5000) + 1000;
+    // setTimeout(function() {
+      var delay1 = (Math.random() * 2000) + 1000;
+      var delay2 = (Math.random() * 2000) + 1000;
+
+      item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
+    // }, timeout_delay);
+  }
+
+  $.get("d/image_list.json", function (data) {
+
+      //cols
+      var square_size = ( $(window).width() / $(window).height() ) * 73;
+
+      var square_count_rows = Math.ceil($(window).height() / square_size);
+      var square_count_cols = Math.ceil($(window).width() / square_size );
+
+      var square_height = $(window).height() / (square_count_rows - 1);
+      var square_width = $(window).width() / (square_count_cols - 1);
+
+      // console.log(square_count_cols, square_count_rows);
+      var direction = ["left", "right"];
+      for ( var y = 0; y < square_count_rows - 1; y ++) {
+
+        var row = $("<div />").addClass("burst-face-row");
+
+        for ( var x = 0; x < square_count_cols - 1  + 2; x ++ ) {
+          var img_data_1 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
+          var img_data_2 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
+
+          var item_1 = $("<div />").addClass("burst-face-image burst-face-initial-image")
+                      .css({ "background-image":  "url(" + img_data_1 + ")", width : square_width + "px", height : square_height + "px" });
+          var item_2 = $("<div />").addClass("burst-face-image burst-face-over-image")
+                      .css({ "background-image": "url(" + img_data_2 + ")", width : square_width + "px", height : square_height + "px" });
+
+          // console.log(img_data_1, img_data_2);
+
+
+          var item = $("<div />").addClass("burst-face-item").width(square_width).height(square_height);
+              item.append(item_1);
+              item.append(item_2);
+
+          fader(item_1);
+          row.append(item);
+
+
+        }
+        row.height(square_height).css({"marginLeft" : "-" + square_width + "px"});
+
+        var speed = 3000 + (Math.random() * 3000);
+
+        console.log(row, speed, square_width);
+
+        slide_endlessly(row, speed, square_width, direction[y % 2]);
+
+        $("#burst-face-area").append(row);
+      }
+
+      $("#burst-face-area").width($(window).width());
+      $(".burst-face-row").width($(window).width() + (square_width * 2));
+
+  });
+});
+
+
+</script>
+</body>
+</html>
