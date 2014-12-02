@@ -11,17 +11,17 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 5200000 ,
            "label": "People targeted"
            },
            {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 692000 ,
            "label": "USD Requirements"
            },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 2700000,
            "label": "internally displaced people"
           }
@@ -43,17 +43,17 @@
       "other_fig":
         [
           {
-           "image": "",
+           "image": "images/icons/people.png",
            "count": 2000000,
            "label": "people targeted *"
           },
           {
-           "image": "",
+           "image": "images/icons/fund.png",
            "count": 613000000,
            "label": "USD Requirements"
           },
           {
-           "image": "",
+           "image": "images/icons/displaced.png",
            "count": 430000,
            "label": "internally displaced people"
           }
@@ -74,17 +74,17 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 2760000,
            "label": "people targeted"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 862600000,
            "label": "USD Requirement"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 1100000,
            "label": "Internally displaced people"
           }
@@ -104,16 +104,16 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 4100000,
            "label": "People Targeted"},
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 1800000000,
            "label": "USD Requirements"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 1950000,
            "label": "People displaced due to conflict & flooding"
            }
@@ -135,16 +135,16 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 4400000,
            "label": "people targeted"},
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 1000000000,
            "label": "USD Requirements"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 3100000,
            "label": "internally displaced people"
           }
@@ -165,17 +165,17 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 8000000,
            "label": "people targeted"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 615000000,
            "label": "USD Requirements"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/food.png",
            "count": 10600000,
            "label": "Food insecure people"
           }
@@ -196,17 +196,17 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 12200000,
            "label": "people targeted"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 2800000000,
            "label": "USD Requirements"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 7600000,
            "label": "Internally displaced people"
           }
@@ -227,15 +227,15 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 5000000,
            "label": "people targeted"},
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 1200000000,
            "label": "USD Requirements"},
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 2100000,
            "label": "newly displaced people since January 2014"
           }
@@ -250,26 +250,31 @@
 {
      "name": "occupied Palestinian territory",
      "type": "L2",
-     "map": "http://placehold.it/300x100",
+     "map": "images/maps/oPt.png",
      "image": "",
      "in_need": 1900000,
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 1600000,
            "label": "people targeted"},
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 770000000,
            "label": "USD Requirements"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 100000,
            "label": "Internally displaced people in Gaza"
           }
-        ]
+        ],
+        "style" : {
+            "padding": "10% 15% 0 0",
+            "backgroundPosition": "110% 10%",
+            "backgroundSize": "200px"
+        }
       },
 
      {
@@ -281,17 +286,17 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 3800000,
            "label": "People targeted"
            },
            {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 405000,
            "label": "USD Requirements"
            },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/nutrition.png",
            "count": 500000,
            "label": "children under five suffer from severe malnutrition"
           }
@@ -312,11 +317,11 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 421000,
            "label": "People targeted"},
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 197000000,
            "label": "USD Requirements"
           }
@@ -336,17 +341,17 @@
       "other_fig":
         [
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/people.png",
            "count": 900000,
            "label": "people targeted"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/fund.png",
            "count": 189000000,
            "label": "USD Requirements"
           },
           {
-           "image": "http://placehold.it/35x35",
+           "image": "images/icons/displaced.png",
            "count": 460000,
            "label": "Displaced people"
           }
