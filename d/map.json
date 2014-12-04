@@ -2,37 +2,26 @@
   "countries":
   [
 
-    {
-     "name": "Democratic Republic of the Congo",
+{
+     "name": "Afghanistan",
      "type": "L1",
-     "map": "images/maps/DRC.png",
-     "image": "http://placehold.it/100x100",
-     "in_need": 7000000,
+     "map": "images/maps/Afghanistan.png",
+     "image": "",
+     "in_need": 7400000,
       "other_fig":
         [
-          {
-           "image": "images/icons/people.png",
-           "count": 5200000 ,
-           "label": "People targeted"
-           },
            {
-           "image": "images/icons/fund.png",
-           "count": 692000 ,
+           "image": "images/maps-fund-icon.png",
+           "count": 405000,
            "label": "USD Requirements"
-           },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 2700000,
-           "label": "internally displaced people"
-          }
+           }
         ],
         "style" : {
-          "backgroundSize": "340px",
-          "backgroundPosition" : "0px 0px",
-          "padding" : "20px 0 0 200px"
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
         }
       },
-
 
     {
      "name": "Central African Republic",
@@ -43,19 +32,9 @@
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 2000000,
-           "label": "people targeted *"
-          },
-          {
-           "image": "images/icons/fund.png",
+           "image": "images/maps-fund-icon.png",
            "count": 613000000,
            "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 430000,
-           "label": "internally displaced people"
           }
         ],
       "style" : {
@@ -65,6 +44,84 @@
         }
     },
 
+     {
+     "name": "Democratic Republic of the Congo",
+     "type": "L1",
+     "map": "images/maps/DRC.png",
+     "image": "http://placehold.it/100x100",
+     "in_need": 7000000,
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 692000 ,
+           "label": "USD Requirements"
+           }
+        ]
+      },
+
+      {
+     "name": "Iraq",
+     "type": "L3",
+     "map": "images/maps/Iraq.png",
+     "image": "",
+     "in_need": 5200000,
+      "other_fig":
+        [
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 1200000000,
+           "label": "USD Requirements"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "171px",
+          "backgroundPosition" : "82px 180px",
+          "padding" : "0 0 22px 0"
+        }
+      },
+
+
+      {
+     "name": "Myanmar",
+     "type": "L1",
+     "map": "images/maps/Myanmar.png",
+     "image": "",
+     "in_need": 540600,
+      "other_fig":
+        [
+          {
+           "image": "images/icons/people.png",
+           "count": 421000,
+           "label": "People targeted"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "281px",
+          "backgroundPosition" : "-90px 50px",
+          "padding" : "0px 0px 102px 60px"
+        }
+      },
+{
+     "name": "occupied Palestinian territory",
+     "type": "L2",
+     "map": "images/maps/oPt.png",
+     "image": "",
+     "in_need": 1900000,
+      "other_fig":
+        [
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 770000000,
+           "label": "USD Requirements"
+          }
+        ],
+        "style" : {
+            "padding": "10% 15% 0 0",
+            "backgroundPosition": "110% 10%",
+            "backgroundSize": "200px"
+        }
+      },
     {
      "name": "Somalia",
      "type": "L1",
@@ -74,19 +131,9 @@
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 2760000,
-           "label": "people targeted"
-          },
-          {
-           "image": "images/icons/fund.png",
+           "image": "images/maps-fund-icon.png",
            "count": 862600000,
            "label": "USD Requirement"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 1100000,
-           "label": "Internally displaced people"
           }
         ],
       "style" : {
@@ -104,19 +151,10 @@
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 4100000,
-           "label": "People Targeted"},
-          {
-           "image": "images/icons/fund.png",
+           "image": "images/maps-fund-icon.png",
            "count": 1800000000,
            "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 1950000,
-           "label": "People displaced due to conflict & flooding"
-           }
+          }
         ],
         "style" : {
           "backgroundSize": "191px",
@@ -135,18 +173,9 @@
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 4400000,
-           "label": "people targeted"},
-          {
-           "image": "images/icons/fund.png",
+           "image": "images/maps-fund-icon.png",
            "count": 1000000000,
            "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 3100000,
-           "label": "internally displaced people"
           }
         ],
         "style" : {
@@ -156,38 +185,7 @@
         }
       },
 
-    {
-     "name": "Yemen",
-     "type": "L1",
-     "map": "images/maps/Yemen.png",
-     "image": "",
-     "in_need": 15900000,
-      "other_fig":
-        [
-          {
-           "image": "images/icons/people.png",
-           "count": 8000000,
-           "label": "people targeted"
-          },
-          {
-           "image": "images/icons/fund.png",
-           "count": 615000000,
-           "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/food.png",
-           "count": 10600000,
-           "label": "Food insecure people"
-          }
-        ],
-        "style" : {
-          "backgroundSize": "471px",
-          "backgroundPosition" : "0 0",
-          "padding" : "110px 220px 0 0"
-        }
-    },
-
-    {
+      {
      "name": "Syria",
      "type": "L3",
      "map": "images/maps/Syria.png",
@@ -196,19 +194,9 @@
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 12200000,
-           "label": "people targeted"
-          },
-          {
-           "image": "images/icons/fund.png",
+           "image": "images/maps-fund-icon.png",
            "count": 2800000000,
            "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 7600000,
-           "label": "Internally displaced people"
           }
         ],
         "style" : {
@@ -218,121 +206,7 @@
         }
     },
 
-{
-     "name": "Iraq",
-     "type": "L3",
-     "map": "images/maps/Iraq.png",
-     "image": "",
-     "in_need": 5200000,
-      "other_fig":
-        [
-          {
-           "image": "images/icons/people.png",
-           "count": 5000000,
-           "label": "people targeted"},
-          {
-           "image": "images/icons/fund.png",
-           "count": 1200000000,
-           "label": "USD Requirements"},
-          {
-           "image": "images/icons/displaced.png",
-           "count": 2100000,
-           "label": "newly displaced people since January 2014"
-          }
-        ],
-        "style" : {
-          "backgroundSize": "171px",
-          "backgroundPosition" : "82px 180px",
-          "padding" : "0 0 22px 0"
-        }
-      },
-
-{
-     "name": "occupied Palestinian territory",
-     "type": "L2",
-     "map": "images/maps/oPt.png",
-     "image": "",
-     "in_need": 1900000,
-      "other_fig":
-        [
-          {
-           "image": "images/icons/people.png",
-           "count": 1600000,
-           "label": "people targeted"},
-          {
-           "image": "images/icons/fund.png",
-           "count": 770000000,
-           "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 100000,
-           "label": "Internally displaced people in Gaza"
-          }
-        ],
-        "style" : {
-            "padding": "10% 15% 0 0",
-            "backgroundPosition": "110% 10%",
-            "backgroundSize": "200px"
-        }
-      },
-
-     {
-     "name": "Afghanistan",
-     "type": "L1",
-     "map": "images/maps/Afghanistan.png",
-     "image": "",
-     "in_need": 7400000,
-      "other_fig":
-        [
-          {
-           "image": "images/icons/people.png",
-           "count": 3800000,
-           "label": "People targeted"
-           },
-           {
-           "image": "images/icons/fund.png",
-           "count": 405000,
-           "label": "USD Requirements"
-           },
-          {
-           "image": "images/icons/nutrition.png",
-           "count": 500000,
-           "label": "children under five suffer from severe malnutrition"
-          }
-        ],
-        "style" : {
-          "backgroundSize": "361px",
-          "backgroundPosition" : "100px 100px",
-          "padding" : "0px 40px 132px 0px"
-        }
-      },
-
-       {
-     "name": "Myanmar",
-     "type": "L1",
-     "map": "images/maps/Myanmar.png",
-     "image": "",
-     "in_need": 540600,
-      "other_fig":
-        [
-          {
-           "image": "images/icons/people.png",
-           "count": 421000,
-           "label": "People targeted"},
-          {
-           "image": "images/icons/fund.png",
-           "count": 197000000,
-           "label": "USD Requirements"
-          }
-        ],
-        "style" : {
-          "backgroundSize": "281px",
-          "backgroundPosition" : "-90px 50px",
-          "padding" : "0px 0px 102px 60px"
-        }
-      },
-    {
+ {
      "name": "Ukraine",
      "type": "L1",
      "map": "images/maps/Ukraine.png",
@@ -341,19 +215,9 @@
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 900000,
-           "label": "people targeted"
-          },
-          {
-           "image": "images/icons/fund.png",
+           "image": "images/maps-fund-icon.png",
            "count": 189000000,
            "label": "USD Requirements"
-          },
-          {
-           "image": "images/icons/displaced.png",
-           "count": 460000,
-           "label": "Displaced people"
           }
         ],
         "style" : {
@@ -361,7 +225,37 @@
           "backgroundPosition" : "130px 0px",
           "padding" : "0px 100px 102px 30px"
         }
+    },
+    {
+     "name": "Yemen",
+     "type": "L1",
+     "map": "images/maps/Yemen.png",
+     "image": "",
+     "in_need": 15900000,
+      "other_fig":
+        [
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 615000000,
+           "label": "USD Requirements"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "471px",
+          "backgroundPosition" : "0 0",
+          "padding" : "110px 220px 0 0"
+        }
     }
+
+
+
+
+
+
+
+
+
+
 
   ]
 }

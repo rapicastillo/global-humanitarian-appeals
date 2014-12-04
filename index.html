@@ -3,22 +3,9 @@
 <head>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <style>
-    body { background-color: black; }
-    #title-slides-area { position: relative; background-color: whitesmoke; background: url(images/title-000.png); }
-    #title-slides-area > .row { position: absolute; bottom: 0; }
-    #title-slides-area > .row > div { height: 100%; position: relative; }
-    #title-slides-area #stats-area { opacity: 0; }
-    .people-fade { background-image: url(images/s1/people-row.png); background-size: cover; background-repeat: no-repeat; position: absolute; bottom: 0; width: 100%;}
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800'/>
 
-    #title-slides-area #first-needs-graph {
-      height: 0%; background-image: url(images/s1/arrow-up.png); background-position: center top; position: absolute; bottom: 0; width: 80%;
-
-    }
-
-    #ending-message-area { background-color: whitesmoke; }
-    #ending-message-area h1 { padding: 40px; margin: 0;}
-  </style>
+  <link rel="stylesheet" href="css/custom.css" />
   <!-- SLIDE 2 STYLE -->
   <style>
     body { margin: 0; padding: 0; }
@@ -37,6 +24,7 @@
     .burst-face-item { position: relative; }
     .burst-face-row { text-align: center; }
   </style>
+
 
   <!-- SLIDE 3 STYLE -->
   <style>
@@ -342,7 +330,7 @@ padding: 10px;
         <div class="row">
           <div class="col-md-12 text-right">
             <h1>Global Humanitarian </h1>
-            <h1>Overview 2014</h1>
+            <h1 class="calluna">Overview 2014</h1>
             <h3>A consolidated appeal to support people affected by disaster and conflict</h3>
           </div>
         </div>
@@ -352,6 +340,8 @@ padding: 10px;
           <h4>$<span  data-final-count="7.1" data-type="float">7.1</span>B</h4>
           <h5>required</h5>
         </div>
+      </div>
+      <div class="col-md-1">
       </div>
       <div class="col-md-4">
         <div id="stats-area" style="position: absolute; bottom: 0;">
@@ -517,7 +507,7 @@ The humanitarian outlook for 2015 is concerning. We start the year with outstand
 <!-- START OF: MAP AREA -->
 <div id="map-area">
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
-        data-100-center-top="opacity: 0" data-center-top="opacity: 1"
+        data-100-center-top="opacity: 0" data-bottom-top="opacity: 0" data-center-top="opacity: 1"
         data-bottom-bottom="opacity: 1; font-size: 32px;" data-top-bottom="font-size: 50px"
         ><img src='images/icons/people.png' height="50px"/> <h1>0</h1> People in need</div>
   <div id="map-area-countries"></div>
@@ -658,54 +648,11 @@ The humanitarian outlook for 2015 is concerning. We start the year with outstand
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 <script src="js/skrollr.min.js"></script>
+<script src="js/custom.js"></script>
   <script type="text/javascript">
 
     $(function() {
       /* Styling ..*/
-      $("#title-slides-area, #title-slides-area > .row").height($(window).height());
-
-      /* Animation ..  */
-      setTimeout ( function () {
-
-        var parent = $("#first-with-people-fades");
-        var bar_graph = $("#first-needs-graph");
-        var people_layers = 12;
-        for (var i = 0; i < people_layers; i ++) {
-
-          var new_div = $("<div />").height(parent.height() * 0.05).addClass("people-fade").css({bottom: (parent.height() * 0.05 * i) + "px" });
-          var opacity_new = ((people_layers - i) * (100/people_layers) / 100);
-          parent.append( new_div );
-
-          new_div.css("opacity", 0);
-          new_div.delay((i+1) * 150).animate({ opacity: opacity_new }, 800);
-
-        }
-
-        bar_graph.css("height", "0%");
-        bar_graph.animate({ height: "98%" }, 2000);
-
-        $("#title-slides-area").find("[data-final-count]").each(function () {
-            var $this = $(this);
-            console.log($this);
-            jQuery({ Counter: 0 }).animate({
-                      Counter: parseFloat($this.attr("data-final-count")) }, {
-                      duration: 2000,
-                      easing: 'swing',
-                      step: function () {
-                        console.log(this.Counter);
-                        if ($this.attr("data-type") == "int")
-                        { $this.text( Math.ceil(this.Counter) ); }
-                        else if ($this.attr("data-type") == "float")
-                        { $this.text( Math.ceil(this.Counter * 10) / 10 ); }
-                      }
-              });
-
-          });
-
-        $("#title-slides-area #stats-area").css("opacity", 0).animate({ "opacity" : 1, bottom : "+=30px" }, 2000);
-
-      },
-      500);
     });
 
   </script>

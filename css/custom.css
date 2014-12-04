@@ -1,0 +1,269 @@
+/* General Styling*/
+@font-face {
+  font-family: Calluna;
+  src: url(../font/Calluna-Regular); }
+body {
+  background-color: black;
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0; }
+  body .green {
+    color: #9ab62b; }
+  body .orange {
+    color: #f47932; }
+
+.calluna {
+  font-family: Calluna; }
+
+/* FIRST SLIDE */
+#title-slides-area {
+  position: relative;
+  background-color: whitesmoke;
+  background: url(../images/1-title-bg.png);
+  background-size: cover; }
+  #title-slides-area > .row {
+    position: absolute;
+    bottom: 0; }
+    #title-slides-area > .row div {
+      height: 100%;
+      position: relative; }
+  #title-slides-area #stats-area {
+    opacity: 0; }
+  #title-slides-area #first-with-people-fades > .people-fade {
+    background-image: url(../images/s1/people-row.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  #title-slides-area #first-with-people-fades #title-area h1 {
+    color: #f47932;
+    font-weight: 700; }
+    #title-slides-area #first-with-people-fades #title-area h1#first-line {
+      font-size: 83px;
+      line-height: 72px;
+      margin-left: 15px; }
+  #title-slides-area #first-with-people-fades #title-area h2#second-line {
+    font-size: 50px; }
+  #title-slides-area #first-with-people-fades #title-area h3 {
+    font-size: 18px;
+    color: white;
+    padding-left: 10px; }
+  #title-slides-area #first-needs-graph, #title-slides-area #second-needs-graph, #title-slides-area #third-needs-graph {
+    height: 0%;
+    width: 80%;
+    bottom: 0;
+    background-image: url(../images/title-arrow.png);
+    background-position: center top;
+    position: absolute;
+    color: white;
+    text-align: center; }
+    #title-slides-area #first-needs-graph h4, #title-slides-area #second-needs-graph h4, #title-slides-area #third-needs-graph h4 {
+      font-size: 24px;
+      font-weight: 700; }
+    #title-slides-area #first-needs-graph h5, #title-slides-area #second-needs-graph h5, #title-slides-area #third-needs-graph h5 {
+      text-transform: uppercase; }
+  #title-slides-area #ending-message-area {
+    background-color: whitesmoke; }
+    #title-slides-area #ending-message-area h1 {
+      padding: 40px;
+      margin: 0; }
+
+/* SECOND SLIDE */
+#second-slide-problem-at-hand .data-icon img {
+  width: 50px;
+  height: 50px; }
+#second-slide-problem-at-hand .burst-face-item {
+  display: inline-block; }
+#second-slide-problem-at-hand #burst-face-area {
+  position: relative;
+  overflow: hidden; }
+#second-slide-problem-at-hand #burst-face-area .burst-face-row {
+  opacity: 0.8; }
+#second-slide-problem-at-hand #burst-face-area .burst-face-image {
+  background-size: cover;
+  position: absolute; }
+#second-slide-problem-at-hand #burst-face-area .burst-face-initial-image {
+  z-index: 1200; }
+#second-slide-problem-at-hand #burst-face-area #burst-face-main-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  font-size: 32px;
+  z-index: 1300;
+  color: white;
+  padding: 20px; }
+#second-slide-problem-at-hand .burst-face-item {
+  position: relative; }
+#second-slide-problem-at-hand .burst-face-row {
+  text-align: center; }
+
+/* */
+#l3-slideshows {
+  /*.image-slideshow .first-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-GPfJ3z3/0/X3/December%2011%2C%202013%20A%20child%20affected%20by%20Typhoon%20Yolanda%20walk%20amid%20the%20debris%20around%20%20two%20ships%20that%20were%20carried%20inland%20by%20the%20storm%20surge.%20%20Source%20OCHA%20Gemma%20Cortes-X3.jpg) }
+  .image-slideshow .second-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-T4RszF2/0/X3/IMG_2351-X3.jpg); }
+  .image-slideshow .third-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-jPt5THK/1/X3/IMG_2408-X3.jpg); }*/ }
+  #l3-slideshows .image-slideshow-item {
+    position: relative; }
+  #l3-slideshows .image-slideshow-item .first-slide {
+    z-index: 1000; }
+  #l3-slideshows .image-slideshow-item .second-slide {
+    z-index: 900; }
+  #l3-slideshows .image-slideshow-item .third-slide {
+    z-index: 800; }
+  #l3-slideshows .image-slideshow-item .first-slide,
+  #l3-slideshows .image-slideshow-item .second-slide,
+  #l3-slideshows .image-slideshow-item .third-slide {
+    position: absolute;
+    background-size: cover;
+    background-position: center center; }
+  #l3-slideshows .image-slideshow-item .fact-item {
+    color: #f47932;
+    background-color: rgba(0, 56, 86, 0.7);
+    padding: 5px 20px;
+    font-size: 16px;
+    right: 0px; }
+  #l3-slideshows .image-slideshow-item .fact-number {
+    font-weight: 700; }
+  #l3-slideshows .image-slideshow-item .data-icon img {
+    height: 43px; }
+  #l3-slideshows .image-slideshow-item .fact-item * {
+    display: inline-block;
+    vertical-align: middle; }
+  #l3-slideshows .image-slideshow-item .country-title-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2000;
+    color: white;
+    background-color: rgba(155, 182, 44, 0.7);
+    padding: 15px 40px; }
+  #l3-slideshows .image-slideshow-item .country-title-item h1 {
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700; }
+  #l3-slideshows .image-slideshow-item .fact-item {
+    position: absolute;
+    font-size: 22px;
+    z-index: 2000;
+    opacity: 0; }
+  #l3-slideshows #slide-1-philippines .first-slide {
+    background-image: url(../images/l3/philippines/000.jpg); }
+  #l3-slideshows #slide-1-philippines .second-slide {
+    background-image: url(../images/l3/philippines/001.jpg); }
+  #l3-slideshows #slide-1-philippines .third-slide {
+    background-image: url(../images/l3/philippines/002.jpg); }
+  #l3-slideshows #slide-2-syria .first-slide {
+    background-image: url(../images/l3/syria/000.jpg); }
+  #l3-slideshows #slide-2-syria .second-slide {
+    background-image: url(../images/l3/syria/001.jpg); }
+  #l3-slideshows #slide-2-syria .third-slide {
+    background-image: url(../images/l3/syria/002.jpg); }
+  #l3-slideshows #slide-3-south-sudan .first-slide {
+    background-image: url(../images/l3/southsudan/000.jpg); }
+  #l3-slideshows #slide-3-south-sudan .second-slide {
+    background-image: url(../images/l3/southsudan/001.jpg); }
+  #l3-slideshows #slide-3-south-sudan .third-slide {
+    background-image: url(../images/l3/southsudan/002.jpg); }
+  #l3-slideshows #slide-4-car .first-slide {
+    background-image: url(../images/l3/car/000.jpg); }
+  #l3-slideshows #slide-4-car .second-slide {
+    background-image: url(../images/l3/car/001.jpg); }
+  #l3-slideshows #slide-4-car .third-slide {
+    background-image: url(../images/l3/car/002.jpg); }
+  #l3-slideshows #slide-5-iraq .first-slide {
+    background-image: url(../images/l3/iraq/000.jpg); }
+  #l3-slideshows #slide-5-iraq .second-slide {
+    background-image: url(../images/l3/iraq/001.jpg); }
+  #l3-slideshows #slide-5-iraq .third-slide {
+    background-image: url(../images/l3/iraq/002.jpg); }
+
+/* MAP SLIDES */
+#map-area {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  background-image: url(../images/maps-bg.png); }
+  #map-area .country-item-info {
+    margin-top: 80px; }
+  #map-area #background-world {
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/maps-bg.png); }
+  #map-area .map-country-item {
+    padding: 5px 20px 20px;
+    /*border: 1px solid #333333;*/
+    float: left;
+    /*width: 300px;*/ }
+  #map-area .map-country-item h3 {
+    font-size: 24px; }
+  #map-area .map-country-item::after {
+    clear: both; }
+  #map-area .country-item-info {
+    background-repeat: no-repeat; }
+  #map-area .other-fact-item {
+    margin-bottom: 2px; }
+  #map-area .other-fact-item span, #map-area .other-fact-item img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px; }
+  #map-area .other-fact-item img {
+    width: 40px;
+    height: 40px; }
+  #map-area .map-count {
+    color: #9ab62b;
+    font-size: 38px; }
+  #map-area #map-data-score {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #9ab62b;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px; }
+  #map-area #map-data-score h1 {
+    display: inline;
+    font-size: inherit; }
+  #map-area #map-data-score * {
+    font-size: 20px;
+    vertical-align: middle;
+    display: inline-block; }
+
+#mosaic-area {
+  z-index: -1;
+  position: relative; }
+  #mosaic-area .mosaic-item {
+    display: inline-block; }
+  #mosaic-area .mosaic-image {
+    background-size: cover;
+    position: absolute; }
+  #mosaic-area .mosaic-initial-image {
+    z-index: 1200; }
+  #mosaic-area .mosaic-main-message {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    font-size: 32px;
+    z-index: 1300;
+    color: white;
+    padding: 20px; }
+  #mosaic-area .mosaic-item {
+    position: relative; }
+  #mosaic-area .mosaic-row {
+    text-align: center; }
