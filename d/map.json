@@ -5,15 +5,17 @@
 {
      "name": "Afghanistan",
      "type": "L1",
-     "map": "images/maps/Afghanistan.png",
+     "map": "",
      "image": "",
-     "in_need": 7400000,
+     "in_need": 3800000,
+     "words": "3.8 MILLION",
       "other_fig":
         [
            {
            "image": "images/maps-fund-icon.png",
-           "count": 405000,
-           "label": "USD Requirements"
+           "count": 405400000,
+           "label": "USD Requirements",
+           "final": "405.4 MILLION"
            }
         ],
         "style" : {
@@ -26,15 +28,39 @@
     {
      "name": "Central African Republic",
      "type": "L3",
-     "map": "images/maps/CAR.png",
+     "map": "",
      "image": "",
-     "in_need": 2700000,
+     "in_need": 2000000,
+     "words" : "2 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 613000000,
-           "label": "USD Requirements"
+           "count": 612900000,
+           "label": "USD Requirements",
+           "final": "612.9 MILLION"
+          }
+        ],
+      "style" : {
+          "backgroundSize": "271px",
+          "backgroundPosition" : "100% 50%",
+          "padding" : "20px 90px 0 0"
+        }
+    },
+
+    {
+     "name": "Central African Republic<br/>Regional Refugee Response Plan",
+     "type": "L3",
+     "map": "",
+     "in_need": 461164,
+     "words" : "461 THOUSAND",
+      "other_fig":
+        [
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 298000000,
+           "label": "USD Requirements",
+           "final": "298 MILLION"
           }
         ],
       "style" : {
@@ -47,15 +73,17 @@
      {
      "name": "Democratic Republic of the Congo",
      "type": "L1",
-     "map": "images/maps/DRC.png",
+     "map": "",
      "image": "http://placehold.it/100x100",
-     "in_need": 7000000,
+     "in_need": 5200000,
+     "words" : "5.2 MILLION",
       "other_fig":
         [
            {
            "image": "images/maps-fund-icon.png",
-           "count": 692000 ,
-           "label": "USD Requirements"
+           "count": 692000000 ,
+           "label": "USD Requirements",
+           "final": "692 THOUSAND"
            }
         ]
       },
@@ -63,15 +91,17 @@
       {
      "name": "Iraq",
      "type": "L3",
-     "map": "images/maps/Iraq.png",
+     "map": "",
      "image": "",
-     "in_need": 5200000,
+     "in_need": 5000000,
+     "words" : "5 MILLION" ,
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
            "count": 1200000000,
-           "label": "USD Requirements"
+           "label": "USD Requirements",
+           "final": "1.2 BILLION"
           }
         ],
         "style" : {
@@ -85,15 +115,17 @@
       {
      "name": "Myanmar",
      "type": "L1",
-     "map": "images/maps/Myanmar.png",
+     "map": "",
      "image": "",
-     "in_need": 540600,
+     "in_need": 536400,
+     "words": "536.4 THOUSAND",
       "other_fig":
         [
           {
-           "image": "images/icons/people.png",
-           "count": 421000,
-           "label": "People targeted"
+           "image": "images/maps-fund-icon.png",
+           "count": 191700000,
+           "label": "USD Requirement",
+           "final": "191.7 MILLION"
           }
         ],
         "style" : {
@@ -105,15 +137,17 @@
 {
      "name": "occupied Palestinian territory",
      "type": "L2",
-     "map": "images/maps/oPt.png",
+     "map": "",
      "image": "",
-     "in_need": 1900000,
+     "in_need": 1600000,
+     "words" : "1.6 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 770000000,
-           "label": "USD Requirements"
+           "count": 735000000,
+           "label": "USD Requirements",
+           "final": "735 MILLION"
           }
         ],
         "style" : {
@@ -125,15 +159,17 @@
     {
      "name": "Somalia",
      "type": "L1",
-     "map": "images/maps/Somalia.png",
+     "map": "",
      "image": "",
-     "in_need": 3200000,
+     "in_need": 2760000,
+     "words": "2.76 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
            "count": 862600000,
-           "label": "USD Requirement"
+           "label": "USD Requirement",
+           "final": "862.6 MILLION"
           }
         ],
       "style" : {
@@ -145,15 +181,40 @@
     {
      "name": "South Sudan",
      "type": "L3",
-     "map": "images/maps/South_Sudan.png",
+     "map": "",
      "image": "",
-     "in_need": 6400000,
+     "in_need": 4100000,
+     "words": "4.1 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
            "count": 1800000000,
-           "label": "USD Requirements"
+           "label": "USD Requirements",
+           "final": "1.8 BILLION"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "191px",
+          "backgroundPosition" : "92px 60px",
+          "padding" : "0px 0 0 20px"
+        }
+      },
+
+       {
+     "name": "South Sudan<br/>Refugee Response Plan",
+     "type": "L3",
+     "map": "",
+     "image": "",
+     "in_need": 821000,
+     "words": "821 THOUSAND",
+      "other_fig":
+        [
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 783900000,
+           "label": "USD Requirements",
+           "final": "783.9 MILLION"
           }
         ],
         "style" : {
@@ -167,15 +228,17 @@
     {
      "name": "Sudan",
      "type": "L1",
-     "map": "images/maps/Sudan.png",
+     "map": "",
      "image": "",
-     "in_need": 6600000,
+     "in_need": 4400000,
+     "words": "4.4 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
            "count": 1000000000,
-           "label": "USD Requirements"
+           "label": "USD Requirements",
+           "final": "1 BILLION"
           }
         ],
         "style" : {
@@ -188,15 +251,46 @@
       {
      "name": "Syria",
      "type": "L3",
-     "map": "images/maps/Syria.png",
+     "map": "",
      "image": "",
      "in_need": 12200000,
+     "words": "12.2 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
            "count": 2800000000,
-           "label": "USD Requirements"
+           "label": "USD Requirements",
+           "final": "2.8 BILLION"
+          }
+        ],
+        "style" : {
+          "backgroundSize": "181px",
+          "backgroundPosition" : "0 0",
+          "padding" : "0 0 0 62px"
+        }
+    },
+
+    {
+     "name": "Regional Refugee and Resilience Plan",
+     "type": "L3",
+     "map": "",
+     "image": "",
+     "in_need": 6000000,
+     "words": "6 MILLION",
+      "other_fig":
+        [
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 3200000000,
+           "label": "USD Requirements (Refugee Component)",
+           "final": "3.2 BILLION"
+          },
+          {
+           "image": "images/maps-fund-icon.png",
+           "count": 1260000000,
+           "label": "USD Requirements (Resilience Component)",
+           "final": "1.26 BILLION"
           }
         ],
         "style" : {
@@ -209,15 +303,17 @@
  {
      "name": "Ukraine",
      "type": "L1",
-     "map": "images/maps/Ukraine.png",
+     "map": "",
      "image": "",
-     "in_need": 1400000,
+     "in_need": 900000,
+     "words": "900 THOUSAND",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 189000000,
-           "label": "USD Requirements"
+           "count": 189100000,
+           "label": "USD Requirements",
+           "final": "189.1 MILLION"
           }
         ],
         "style" : {
@@ -229,15 +325,17 @@
     {
      "name": "Yemen",
      "type": "L1",
-     "map": "images/maps/Yemen.png",
+     "map": "",
      "image": "",
-     "in_need": 15900000,
+     "in_need": 8000000,
+     "words" : "8 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
            "count": 615000000,
-           "label": "USD Requirements"
+           "label": "USD Requirements",
+           "final": "615 MILLION"
           }
         ],
         "style" : {
@@ -246,16 +344,5 @@
           "padding" : "110px 220px 0 0"
         }
     }
-
-
-
-
-
-
-
-
-
-
-
   ]
 }

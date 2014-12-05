@@ -40,8 +40,10 @@
      #transition-to-maps
    {
       background-color: #003855;
-      background-image: url(images/transition/People-Full.png);
-      background-size: 40%;
+      background-image: url(images/maps-bg.png);
+      background-size: 100% 100%;
+
+      background-attachment: fixed;
 
       position: relative;
    }
@@ -63,7 +65,9 @@
       position: absolute;
       z-index: 100;
       width: inherit;
-      background-image: url(images/transition/Middle-Shapes.png);
+      /*background-image: url(images/transition/Middle-Shapes.png);*/
+
+
       background-repeat: no-repeat;
       background-size: 100% 100%;
       height: 245px;
@@ -75,6 +79,8 @@
 
       z-index: 2100;
     }
+
+    #transition-to-maps-message #transition-message > div { background-color: rgba(0, 56, 86, 0.7); }
 
     #transition-to-maps #transition-to-maps-message #transition-message {
         position:relative;
@@ -97,8 +103,9 @@
       color: #f47932;
     }
 
-    #thanks-to-our-donors {
-      background-color: white;
+    #thanks-to-our-donors h1 {
+      background-color: rgba(0, 56, 86, 0.7);
+      color: white;
     }
   </style>
 
@@ -160,7 +167,7 @@
       font-size: 16px;
     }
 
-    .image-success-item .country-title-item h1 { margin: 0; font-size: 28px; white-space: nowrap; }
+    .image-success-item .country-title-item h1 { margin: 0; white-space: nowrap; }
 
     .image-success-item .fact-item {
       position: absolute;
@@ -175,11 +182,11 @@
     #slide-success-1-philippines .first-slide { background-image: url(images/successes/philippines-fg.png); }
     #slide-success-1-philippines .second-slide { background-image: url(images/successes/philippines-bg.jpg); }
 
-    #slide-success-3-south-sudan .first-slide { background-image: url(images/successes/philippines-fg.png); }
-    #slide-success-3-south-sudan .second-slide { background-image: url(images/successes/philippines-bg.jpg); }
+    #slide-success-3-south-sudan .first-slide { background-image: url(images/success/southsudan-fg.png); }
+    #slide-success-3-south-sudan .second-slide { background-image: url(images/success/southsudan-bg.png); }
 
-    #slide-success-5-iraq .first-slide { background-image: url(images/successes/philippines-fg.png); }
-    #slide-success-5-iraq .second-slide { background-image: url(images/successes/philippines-bg.jpg); }
+    #slide-success-5-iraq .first-slide { background-image: url(images/success/iraq-fg.png); }
+    #slide-success-5-iraq .second-slide { background-image: url(images/success/iraq-bg.png); }
   </style>
 
 </head>
@@ -219,8 +226,6 @@
       </div>
     </div>
 
-    <div id="transition-map-overlay">
-    </div>
   </div>
 <!-- END OF: TRANSITION FROM L3 to MAPS -->
 
@@ -228,15 +233,24 @@
 <div id="map-area">
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
         data-100-center-top="opacity: 0" data-bottom-top="opacity: 0" data-center-top="opacity: 1"
-        data-bottom-bottom="opacity: 1; font-size: 32px;" data-top-bottom="font-size: 50px"
-        ><img src='images/icons/people.png' height="50px"/> <h1>0</h1> People in need</div>
+        data-bottom-bottom="opacity: 1; font-size: 2em;" data-top-bottom="font-size: 4.5em"
+        ><img src='images/icons/white-affected.png' height="50px"/> <h1 class="number">0</h1><h1 class="text">&nbsp;PEOPLE TO BE ASSISTED</h1></div>
   <div id="map-area-countries"></div>
+  <div id="to-be-done-countries">
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <h4>... and Burkina Faso, Cameroon, Chad, Djibouti, Gambia, Mali, Mauritania, Niger, Nigeria and Senegal. </h4>
+
+        </div>
+      </div>
+      <div class="row"><div class="col-md-12">&nbsp;</div></div>
+      <div class="row"><div class="col-md-12">&nbsp;</div></div>
+      <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    </div>
+  </div>
   <div style="clear:both"></div>
-  <div id="background-world" data-anchor-target="#map-area"
-    data-bottom-top="position: absolute"
-    data-top-top="position: fixed; top: !0; bottom: auto;"
-    data-bottom-bottom="position: absolute; top: auto; bottom: !0;"
-    ></div>
 </div>
 <!-- END OF: MAP AREA -->
 
@@ -254,6 +268,7 @@
                                      data-anchor-target="#thanks-to-our-donors">
       The relentless cycle of large scale natural disasters and brutal conflicts have strained the ability of the humanitarian system to respond.
       <br/>
+      In 2015, despite the fact that only 50% of our appeal was funded, we managed to able to scale-up life-saving operations in some of the most devastating crises.
     </div>
 
     <!-- <div class="mosaic-main-message" data--200-center-top="opacity: 1" data--100-center-top="opacity: 0" data-anchor-target="#thanks-to-our-donors">
@@ -265,9 +280,8 @@
     </div> -->
   </div>
 </div>
-<div id="thanks-to-our-donors" data-20-top-top="..." data-emit-events>
-  <h1 style="padding: 40px;">In 2014, despite the fact that only 50% of our appeal was funded, we managed to able to scale-up life-saving operations in some of the most devastating crises.
-  </h1>
+<div id="thanks-to-our-donors" data-top-bottom="..." data-emit-events>
+
 </div>
 <!-- END OF: MOSAIC MESSAGE AREA -->
 
@@ -279,21 +293,21 @@
 
       <div class="first-slide"></div>
       <div class="second-slide" data-anchor-target="#slide-success-1-philippines"
-        data-bottom-top="background-size: 150%; background-position-x: 0px"
-        data-top-bottom="background-size: 100%; background-position-x: -150px;"></div>
+        data-bottom-top="background-size: 150%; background-position-x: -150px"
+        data-top-bottom="background-size: 100%; background-position-x: 0px;"></div>
 
       <!-- Facts -->
       <div class="country-title-item"><h1>PHILIPPINES</h1></div>
 
       <div class="fact-item" style="top: 40%;" data-change-to='{"width" : "50%", "opacity" : 1}' >
-        <span class="fact-number" data-count="123400">0</span>
-        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
-        <span>People in need</span>
+        <span class="fact-number" data-count="123400">570K</span>
+        <span class="data-icon"><img src="images/icons/white-housing.png" height="50px" /></span>
+        <span>HOUSEHOLD REACHED WITH<br/>EMERGENCY SHELTER</span>
       </div>
-      <div class="fact-item" style="top: 50%;" data-change-to='{"width" : "50%", "opacity" : 1}'>
-        <span class="fact-number" data-count="1553400">0</span>
-        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
-        <span>Stat Number</span>
+      <div class="fact-item" style="top: 55%;" data-change-to='{"width" : "50%", "opacity" : 1}'>
+        <span class="fact-number" data-count="1553400">158K</span>
+        <span class="data-icon"><img src="images/icons/white-roofing.png" height="50px" /></span>
+        <span>HOUSEHOLDS GIVEN DURABLE<br/>ROOFING SOLUTIONS</span>
       </div>
 
     </div>
@@ -309,16 +323,16 @@
       <!-- Facts -->
       <div class="country-title-item"><h1>SOUTH SUDAN</h1></div>
 
-      <div class="fact-item" style="top: 40%;" data-change-to='{"width" : "50%", "opacity" : 1}' >
-        <span class="fact-number" data-count="123400">0</span>
-        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
-        <span>People in need</span>
-      </div>
-      <div class="fact-item" style="top: 50%;" data-change-to='{"width" : "50%", "opacity" : 1}'>
-        <span class="fact-number" data-count="1553400">0</span>
-        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
-        <span>Stat Number</span>
-      </div>
+        <div class="fact-item" style="top: 40%;" data-change-to='{"width" : "50%", "opacity" : 1}' >
+          <span class="fact-number" data-count="123400">200K</span>
+          <span class="data-icon"><img src="images/icons/white-vaccine.png" height="50px" /></span>
+          <span>CHILDREN VACCINATED AGAINST MEASLES<br/>AND POLIO IN CONFLICT AREAS</span>
+        </div>
+        <div class="fact-item" style="top: 55%;" data-change-to='{"width" : "50%", "opacity" : 1}'>
+          <span class="fact-number" data-count="1553400">3.5M</span>
+          <span class="data-icon"><img src="images/icons/white-water.png" height="50px"/></span>
+          <span>PEOPLE PROVIDED WITH CLEAN WATER<br/>AND HEALTH SERVICES</span>
+        </div>
 
     </div>
 
@@ -328,42 +342,88 @@
 
       <div class="first-slide"></div>
       <div class="second-slide" data-anchor-target="#slide-success-5-iraq"
-        data-bottom-top="background-size: 150%; background-position-x: 0px"
-        data-top-bottom="background-size: 100%; background-position-x: -150px;"></div>
+        data-bottom-top="background-size: 150%; background-position-x: -150px"
+        data-top-bottom="background-size: 100%; background-position-x: 0px;"></div>
 
       <!-- Facts -->
       <div class="country-title-item"><h1>IRAQ</h1></div>
 
       <div class="fact-item" style="top: 40%;" data-change-to='{"width" : "50%", "opacity" : 1}' >
-        <span class="fact-number" data-count="123400">0</span>
-        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
-        <span>People in need</span>
+        <span class="fact-number" data-count="123400">1M</span>
+        <span class="data-icon"><img src="images/icons/white-health.png" height="50px"/></span>
+        <span>PROVIDED WITH MEDICINES <br />AND MEDICAL SUPPLIES</span>
       </div>
-      <div class="fact-item" style="top: 50%;" data-change-to='{"width" : "50%", "opacity" : 1}'>
-        <span class="fact-number" data-count="1553400">0</span>
-        <span class="data-icon"><img src="http://placehold.it/50x50" /></span>
-        <span>Stat Number</span>
+      <div class="fact-item" style="top: 55%;" data-change-to='{"width" : "50%", "opacity" : 1}'>
+        <span class="fact-number" data-count="1553400">500K</span>
+        <span class="data-icon"><img src="images/icons/white-water.png" height="50px"/></span>
+        <span>RECEIVED CLEAN WATER<br/>AND SANITATION SERVICES</span>
       </div>
 
       </div>
     </div>
     <!-- END OF SUCCESS STORIES -->
 
-<div id="ending-message-area">
-  <h1>
-    But in 2015 we want to be able to do more.
-  </h1>
-  <h1>
-    Saving Lives is priceless. Humanitarian assistance is imperative. Aid organizations have rethought the way they work - through better planning, more innovative approaches, and more efficient programming.
-  </h1>
-  <h1>
-    Yet, inadequate funding can only translate into less food, less shelter, less clean water, less care for the millions caught up in crises across the globe.
-  </h1>
-  <h1>
-    Together, we need to do more.
-  </h1>
+<div id="ending-message-area"
+    data-bottom-top="background-size: 150%; background-position-x: 0px"
+    data-top-bottom="background-size: 100%; background-position-x: -150px;"
+>
 
-  <h1>~ CALL TO ACTION AREA ~</h1>
+  <div class="fluid-container first-slide">
+    <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <h4 class="white">
+          But in 2015 we want to be able to do more.
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <h4 class="white">
+          Saving Lives is priceless. Humanitarian assistance is <span class="orange">IMPERATIVE</span>. Aid organizations have rethought the way they work - through better planning, more innovative approaches, and more efficient programming.
+        </h4>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <h4 class="white">
+          Yet, inadequate funding can only translate into less food, less shelter, less clean water, less care for the millions caught up in crises across the globe.
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="final-slide">
+  <div id="girls" style="">
+
+  </div>
+  <div class="fluid-container" >
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center white">
+          This has to be a <span class="orange">COLLECTIVE EFFORT</span> by the entire international community - with a more diverse range of donors ready to step up and support.
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- MESSAGE 2 -->
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center  white">
+          <span class="orange">TOGETHER</span>, WE NEED TO DO <span class="orange">MORE</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- Latest compiled and minified JavaScript -->
@@ -477,7 +537,7 @@ $(function() {
 
   $("#thanks-to-our-donors").width($(window).width()).height($(window).height());
 
-  $("#thanks-to-our-donors").on("data20TopTop", function(e, direction) {
+  $("#thanks-to-our-donors").on("dataTopBottom", function(e, direction) {
     console.log("Thanks to our donors", e, direction);
     if (direction == "down")
     {

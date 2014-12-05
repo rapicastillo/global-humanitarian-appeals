@@ -23,7 +23,7 @@
     </div>
     <div class="col-md-1 hidden-xs hidden-sm" >
       <div id="third-needs-graph" style="">
-        <h4><span  data-final-count="455" data-type="float">455</span></h4>
+        <h4><span  data-final-count="455" data-type="int">455</span></h4>
         <h5 style="font-size: 10px">aid organizations appealing this year</h5>
       </div>
     </div>

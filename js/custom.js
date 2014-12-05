@@ -4,7 +4,7 @@ $(function() {
 
   $(window).on("resize", function() {
     $("#title-slides-area, #title-slides-area > .row, #background-world").height($(window).height());
-
+    $("#ending-message-area, #final-slide").height($(window).height()).width($(window).width());
     refresh_slide2();
   });
 
@@ -84,13 +84,14 @@ $(function() {
 
         var html = "";
             html += "<div class='country-item-info map-"+  d.type +"' style='background-image: url(" + d.map +")'>";
-            html += "<h1 class='map-count' count-value='" + d.in_need + "'>0</h1>";
+            html += "<h1 class='map-count' final-value='" + d.words + "' count-value='" + d.in_need + "'>0</h1>";
+            html += "<h5 class='green'>PEOPLE TO BE ASSISTED</h5>";
             html += "<h3>" + d.name + "</h3>";
             html += "<div class='other-facts'>";
-            // for (i in d.other_fig)
-            // {
-            //   html +=   "<div class='other-fact-item'><img src='" + d.other_fig[i].image + "' /><span class='of-number' count-value='" + d.other_fig[i].count + "'>0</span><span class='of-label'> " + d.other_fig[i].label + "</span></div>";
-            // }
+            for ( var x = 0; x < d.other_fig.length; x++ )
+            {
+              html +=   "<div class='other-fact-item' data-final='" + d.other_fig[x].final + "' ><img src='" + d.other_fig[x].image + "' /><span class='of-number' count-value='" + d.other_fig[x].count + "' >0</span><span class='of-label'> " + d.other_fig[x].label + "</span></div>";
+            }
             html += "</div>";
             html += "</div>";
 
@@ -201,12 +202,14 @@ $(function() {
                 if ( perc_half > 0 && perc_half <=  1)
                 {
                   curr_local_value = Math.floor(perc_half * for_value);
-
+                  _localCounter.text(  comma_format ( curr_local_value ) );
                 }
-                else if (perc_half < 0) {  curr_local_value = 0; }
-                else if (perc_half > 1) { curr_local_value = for_value; }
+                else if (perc_half < 0) {  curr_local_value = 0; _localCounter.text(  comma_format ( curr_local_value ) );}
+                else if (perc_half >= 1) {
+                  _localCounter.html("<span style='font-weight: 700;'>" + _localCounter.attr("final-value") + "</span>");
 
-                _localCounter.text(  comma_format ( curr_local_value ) );
+                  curr_local_value = for_value;
+                }
 
                 current_overall_total += curr_local_value;
 
@@ -230,17 +233,18 @@ $(function() {
                     _otherFact.find(".of-number").text(0);
                   } else if (perc_half > 1)
                   {
-                    _otherFact.find(".of-number").text(comma_format(otherCount));
+                    _otherFact.find(".of-number").html("<span style='font-weight: 700;'>" + $(this).attr("data-final") + "</span>");
                   }
                 });
-                //$(window).height()
-                // console.log(_countryItem.find("h3").text(), countryOffset,  $(window).scrollTop(), (countryOffset - $(window).scrollTop()),
-                    // (($(window).height()/2) / (countryOffset - ($(window).scrollTop() - $(window).height()/2)))*2  );
               }
 
             });
 
-            $("#map-data-score h1").text( comma_format( current_overall_total ) );
+            if (current_overall_total > 57500000) {
+              $("#map-data-score h1.number").text("57.5 MILLION").css("font-weight", "700");
+            } else {
+              $("#map-data-score h1.number").text( comma_format( current_overall_total ) ).css("font-weight", "normal");
+            }
 
           });
 
@@ -250,6 +254,7 @@ $(function() {
           //     WTF: Math.random
           //   }
           // });
+
 
 
 });

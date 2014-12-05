@@ -13,6 +13,8 @@ body {
 
   .green { color: #9ab62b; }
   .orange { color: #f47932; }
+  .white { color: white; }
+  .black { color: #333333; }
 
 }
 
@@ -205,12 +207,16 @@ body {
 
       #slide-5-iraq .first-slide { background-image: url(../images/l3/iraq/000.jpg); }
       #slide-5-iraq .second-slide { background-image: url(../images/l3/iraq/001.jpg); }
-      #slide-5-iraq .third-slide { background-image: url(../images/l3/iraq/002.jpg); }
+      #slide-5-iraq .third-slide { background-image: url(../images/l3/iraq/003.jpg); }
 }
 
 /* MAP SLIDES */
 #map-area
 {
+  background-image: url(../images/maps-bg.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
   .country-item-info { margin-top: 80px; }
   #background-world
   {
@@ -223,10 +229,10 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(../images/maps-bg.png);
+    background-attachment: fixed;
   }
 
   position: relative;
-  background-size: cover;
     background-position: center center;
     position: absolute;
     z-index: 0;
@@ -234,7 +240,7 @@ body {
     left: 0;
     /* width: 100%;
     height: 100%; */
-    background-image: url(../images/maps-bg.png);
+
 
     .map-country-item
     {
@@ -255,7 +261,7 @@ body {
     .map-count { color: #9ab62b; font-size: 38px;}
 
     #map-data-score {
-      position: fixed; top: 0px; left: 0; width: 100%; text-align: center; color: #9ab62b; z-index: 2000;
+      position: fixed; top: 0px; left: 0; width: 100%; text-align: center; color: #f47932; z-index: 2000;
       background-color: rgba(0,0,0,0.7);
       padding: 10px;
     }
@@ -264,6 +270,36 @@ body {
 
 }
 
+
+#success-stories-area
+{
+  .country-title-item
+      {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+        z-index: 2000;
+
+        color: white;
+
+        background-color: rgba(155, 182, 44, 0.70);
+        padding: 15px 40px;
+
+
+        h1 {
+          margin: 0;
+          font-size: 58px;
+          font-weight: 700;
+        }
+      }
+
+      .image-slideshow-item .country-title-item h1 {
+
+
+      }
+}
 
 #mosaic-area {
   z-index: -1;
@@ -288,5 +324,62 @@ body {
   }
   .mosaic-row {
     text-align: center;
+  }
+}
+
+#success-stories-area
+{
+  .second-slide { background-attachment: fixed; }
+  .country-title-item {
+
+  }
+
+  .success-details {
+    position: absolute;
+    top: 50%;
+
+    .fact-item
+    {
+      margin-bottom: 10px;
+
+    }
+  }
+
+ .fact-number
+  {
+    font-weight: 700;
+    font-size: 2em;
+  }
+}
+
+#ending-message-area
+{
+  position: relative;
+  background-image: url(../images/final/Background.png);
+  background-attachment: fixed;
+
+  .first-slide {
+    background-image: url(../images/final/Foreground.png);
+    background-size: 100% auto;
+    background-position: 0 0;
+
+    height: inherit;
+  }
+}
+
+#final-slide
+{
+  background-image: url(../images/final/top.png);
+
+  #girls
+  {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-image: url(../images/final/happy.png);
+    background-position: center 110px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }

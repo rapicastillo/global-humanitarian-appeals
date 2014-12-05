@@ -11,6 +11,10 @@ body {
     color: #9ab62b; }
   body .orange {
     color: #f47932; }
+  body .white {
+    color: white; }
+  body .black {
+    color: #333333; }
 
 .calluna {
   font-family: Calluna; }
@@ -179,19 +183,20 @@ body {
   #l3-slideshows #slide-5-iraq .second-slide {
     background-image: url(../images/l3/iraq/001.jpg); }
   #l3-slideshows #slide-5-iraq .third-slide {
-    background-image: url(../images/l3/iraq/002.jpg); }
+    background-image: url(../images/l3/iraq/003.jpg); }
 
 /* MAP SLIDES */
 #map-area {
+  background-image: url(../images/maps-bg.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
   position: relative;
-  background-size: cover;
   background-position: center center;
   position: absolute;
   z-index: 0;
   left: 0;
   /* width: 100%;
-  height: 100%; */
-  background-image: url(../images/maps-bg.png); }
+  height: 100%; */ }
   #map-area .country-item-info {
     margin-top: 80px; }
   #map-area #background-world {
@@ -203,7 +208,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/maps-bg.png); }
+    background-image: url(../images/maps-bg.png);
+    background-attachment: fixed; }
   #map-area .map-country-item {
     padding: 5px 20px 20px;
     /*border: 1px solid #333333;*/
@@ -233,7 +239,7 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    color: #9ab62b;
+    color: #f47932;
     z-index: 2000;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px; }
@@ -244,6 +250,20 @@ body {
     font-size: 20px;
     vertical-align: middle;
     display: inline-block; }
+
+#success-stories-area .country-title-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2000;
+  color: white;
+  background-color: rgba(155, 182, 44, 0.7);
+  padding: 15px 40px; }
+  #success-stories-area .country-title-item h1 {
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700; }
 
 #mosaic-area {
   z-index: -1;
@@ -267,3 +287,36 @@ body {
     position: relative; }
   #mosaic-area .mosaic-row {
     text-align: center; }
+
+#success-stories-area .second-slide {
+  background-attachment: fixed; }
+#success-stories-area .success-details {
+  position: absolute;
+  top: 50%; }
+  #success-stories-area .success-details .fact-item {
+    margin-bottom: 10px; }
+#success-stories-area .fact-number {
+  font-weight: 700;
+  font-size: 2em; }
+
+#ending-message-area {
+  position: relative;
+  background-image: url(../images/final/Background.png);
+  background-attachment: fixed; }
+  #ending-message-area .first-slide {
+    background-image: url(../images/final/Foreground.png);
+    background-size: 100% auto;
+    background-position: 0 0;
+    height: inherit; }
+
+#final-slide {
+  background-image: url(../images/final/top.png); }
+  #final-slide #girls {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-image: url(../images/final/happy.png);
+    background-position: center 110px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
