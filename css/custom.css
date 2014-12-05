@@ -48,7 +48,7 @@ body {
       line-height: 72px;
       margin-left: 15px; }
   #title-slides-area #first-with-people-fades #title-area h2#second-line {
-    font-size: 50px; }
+    font-size: 4em; }
   #title-slides-area #first-with-people-fades #title-area h3 {
     font-size: 18px;
     color: white;
@@ -316,7 +316,7 @@ body {
     height: inherit;
     position: absolute;
     background-image: url(../images/final/happy.png);
-    background-position: center 110px;
+    background-position: center 150px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: fixed; }

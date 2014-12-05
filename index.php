@@ -199,7 +199,8 @@
       <div id="burst-face-main-message">
         <h3>
           Syria, South Sudan, Iraq, Central African Republic...
-  The humanitarian outlook for 2015 is concerning. We start the year with outstanding needs arising from emergencies of unprecedented severity. These four crises alone will account for XX per cent of the overall funding requirement.
+  The humanitarian outlook for 2015 is cause for serious concern. The year will open with <span class="orange">tens of millions</span> suffering the consquences of these emergencies.
+  <p>These four crises alone account for over <span class="orange">70 per cent</span> of overall funding requirements</p>
         </h3>
       </div>
     </div>
@@ -215,12 +216,12 @@
       <div id="transition-message">
         <div>
           <h3>
-            But donors and partners across the humanitarian community <strong>must step up and respond</strong> <br/>to the needs of every single emergency.
+            Donors and humanitarian partners must come together to meet the needs of people affected<br/>by each of these emergencies.
 
           </h3>
 
           <h3>
-            <strong>No country can be forgotten.</strong>
+            <strong>No country should be left to fend for itself.</strong>
           </h3>
         </div>
       </div>
@@ -241,7 +242,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
 
-          <h4>... and Burkina Faso, Cameroon, Chad, Djibouti, Gambia, Mali, Mauritania, Niger, Nigeria and Senegal. </h4>
+          <h4>...and Burkina Faso, Cameroon, Chad, Djibouti, Gambia, Mali, Mauritania, Niger, Nigeria and Senegal. </h4>
 
         </div>
       </div>
@@ -266,9 +267,9 @@
     data-200-center-top="opacity: 0;"
                                      data-center-top="opacity: 1"
                                      data-anchor-target="#thanks-to-our-donors">
-      The relentless cycle of large scale natural disasters and brutal conflicts have strained the ability of the humanitarian system to respond.
+      The relentless cycle of large-scale crises has stretched humanitarian organizations to their very limit.
       <br/>
-      In 2015, despite the fact that only 50% of our appeal was funded, we managed to able to scale-up life-saving operations in some of the most devastating crises.
+      In 2015, despite the fact that only 48 per cent shortfall in funding, we managed to scale-up life-saving operations in some of the most devastating crises.
     </div>
 
     <!-- <div class="mosaic-main-message" data--200-center-top="opacity: 1" data--100-center-top="opacity: 0" data-anchor-target="#thanks-to-our-donors">
@@ -371,31 +372,29 @@
   <div class="fluid-container first-slide">
     <div class="row"><div class="col-md-12">&nbsp;</div></div>
     <div class="row"><div class="col-md-12">&nbsp;</div></div>
-    <div class="row"><div class="col-md-12">&nbsp;</div></div>
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col-md-6" style="padding-left: 50px;">
         <h4 class="white">
-          But in 2015 we want to be able to do more.
+          <span class="orange" style="font-size: 2em;">Every life is priceless.</span> Aid organizations are re-grouping around better plans, more innovative approaches and more efficient action to make the most of the resources at hand.
         </h4>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col-md-6" style="padding-left: 50px;">
         <h4 class="white">
-          Saving Lives is priceless. Humanitarian assistance is <span class="orange">IMPERATIVE</span>. Aid organizations have rethought the way they work - through better planning, more innovative approaches, and more efficient programming.
-        </h4>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
-        <h4 class="white">
-          Yet, inadequate funding can only translate into less food, less shelter, less clean water, less care for the millions caught up in crises across the globe.
+          But inadequate funding inevitably translates into less food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
         </h4>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-6" style="padding-left: 50px;">
+        <h4 class="white">
+          <span class="orange" style="font-size: 2em;">We need these appeals to be fully funded.</span> We need more Member States to contribute humanitarian funding, and we need to foster deeper relationships with the private sector and with organizations outside our system.
+        </h4>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -407,8 +406,11 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="text-center white">
-          This has to be a <span class="orange">COLLECTIVE EFFORT</span> by the entire international community - with a more diverse range of donors ready to step up and support.
+          Our actions depend on your contributions.
         </h2>
+        <h1 class="text-center white">
+          <span class="orange" style="font-weight: 800;">LET'S ACHIEVE MORE.</span> <span class="orange" style="font-weight: 800;">TOGETHER.</span>
+        </h1>
       </div>
     </div>
   </div>
@@ -417,9 +419,7 @@
   <div class="fluid-container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center  white">
-          <span class="orange">TOGETHER</span>, WE NEED TO DO <span class="orange">MORE</span>
-        </h1>
+
       </div>
     </div>
   </div>
