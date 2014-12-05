@@ -399,9 +399,7 @@
 </div>
 
 <div id="final-slide">
-  <div id="girls" style="">
-
-  </div>
+  <div id="girls" style="z-index: 1000"></div>
   <div class="fluid-container" >
     <div class="row">
       <div class="col-md-12">
@@ -414,16 +412,6 @@
       </div>
     </div>
   </div>
-
-  <!-- MESSAGE 2 -->
-  <div class="fluid-container">
-    <div class="row">
-      <div class="col-md-12">
-
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <!-- Latest compiled and minified JavaScript -->
