@@ -17,6 +17,11 @@
 
   <!-- SLIDE 3 STYLE -->
   <style>
+
+<?php if (isset($_GET['calluna']) && $_GET['calluna'] == 'true'): ?>
+  .calluna { font-family: Calluna; }
+<?php endif; ?>
+
     #s3-slide-show-stats .image-slideshow { position: relative; }
     #s3-slide-show-stats .image-slideshow .first-slide { z-index: 1000; }
     #s3-slide-show-stats .image-slideshow .second-slide { z-index: 900; }
@@ -207,12 +212,12 @@
   <div id="second-slide-problem-at-hand">
     <div id="burst-face-area">
       <div id="burst-face-main-message">
-        <h3 style="margin: -5px;">
+        <h3>
           Syria, <span style="display: inline-block">South Sudan</span>, Iraq, <span style="display: inline-block">Central African Republic...</span>
         </h3>
         <h4>The humanitarian outlook is cause for serious concern in 2015.</h4>
       </div>
-      <div id="burst-face-second-message">
+      <div id="burst-face-second-message" class="calluna">
         <h4>
            The year will open with <span class="orange">tens  of millions</span> suffering the consequences of these emergencies.
 
@@ -232,7 +237,7 @@
     <div id="transition-to-maps-message">
       <div id="transition-message">
         <div>
-          <h3>
+          <h3 class="calluna">
             Donors and humanitarian partners must come together<br/>to meet the needs of <strong class="orange highlighted">millions of people</strong> affected by each and every emergency.
 
 
@@ -250,17 +255,19 @@
 
 <!-- START OF: MAP AREA -->
 <div id="map-area">
+  <div id="map-data-flash-item"></div>
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
         data-100-center-top="opacity: 0" data-bottom-top="opacity: 0" data-center-top="opacity: 1"
         data-bottom-bottom="opacity: 1; font-size: 2em;" data-top-bottom="font-size: 3.7em"
-        ><img src='images/icons/white-affected.png' height="50px"/> <h1 class="number">0</h1><h1 class="text">&nbsp;PEOPLE TO BE ASSISTED IN 2015</h1></div>
-  <div id="map-area-countries"></div>
+        >
+        <img src='images/icons/green-affected.png' height="50px"/> <h1 class="number green">0</h1><h1 class="text">&nbsp;PEOPLE TO BE ASSISTED IN 2015</h1></div>
+  <div id="map-area-countries" style="padding-top: 40%;"></div>
   <div id="to-be-done-countries">
     <div class="fluid-container">
       <div class="row">
         <div class="col-md-12 text-center">
 
-          <h4>...and Burkina Faso, Cameroon, Chad, Djibouti, Gambia, Mali, Mauritania, Niger, Nigeria and Senegal. </h4>
+          <h4 class="calluna">...and Burkina Faso, Cameroon, Chad, Djibouti, Gambia, Mali, Mauritania, Niger, Nigeria and Senegal. </h4>
 
         </div>
       </div>
@@ -281,10 +288,11 @@
       data-bottom-top="position: relative"
       data-top-top="position: fixed; z-index: 1900; top: 0; left: 0; ">
 
-    <div class="mosaic-main-message" id="mosaic-main-message"
-                                    data-200-center-top="opacity: 0;"
-                                     data-100-center-top="opacity: 1"
-                                     data-anchor-target="#thanks-to-our-donors">
+    <div class="mosaic-main-message calluna" id="mosaic-main-message"
+                                    style="opacity: 0;"
+                                     data-150-center-top=""
+                                     data-anchor-target="#thanks-to-our-donors"
+                                     data-emit-events >
 
       <p>The relentless cycle of large-scale crises has stretched<br/>humanitarian organizations to their very limit.</p>
 
@@ -395,14 +403,14 @@
     <div class="row"><div class="col-md-12" style="padding-left: 50px;"><h1 class="orange"><strong>EVERY LIFE IS PRICELESS.</strong></h1> </div></div>
     <div class="row">
       <div class="col-md-7" style="padding-left: 50px;">
-        <h3 class="white">
+        <h3 class="white calluna">
           Aid organizations are re-grouping around better plans, more innovative approaches and more efficient action to make the most of the resources at hand.
         </h3>
       </div>
     </div>
     <div class="row">
       <div class="col-md-7" style="padding-left: 50px;">
-        <h3 class="white">
+        <h3 class="white calluna">
           But inadequate funding inevitably translates into less food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
         </h3>
       </div>
@@ -410,7 +418,7 @@
 
     <div class="row">
       <div class="col-md-7" style="padding-left: 50px;">
-        <h3 class="white">
+        <h3 class="white calluna">
           <strong class="orange">We need these appeals to be fully funded.</strong> We need more Member States and a more diverse group of donors to support our efforts.
         </h3>
       </div>
@@ -425,7 +433,7 @@
   <div class="fluid-container" data-anchor-target="#final-slide">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="text-center white">
+        <h2 class="text-center white calluna">
           Our actions depend on your contributions.
         </h2>
         <h1 class="text-center white">
@@ -448,7 +456,7 @@
 
               <div class="cta-content">
                 <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
-                  <img src="http://placehold.it/200x100" width="100%" height="200px"/>
+                  <img src="images/final/video-icon.png" width="100%"/>
                 </a>
               </div>
 
@@ -461,14 +469,12 @@
               <div class="cta-content">
                 <div class="fb-share-button" data-href="http://www.unocha.org/2015appeal" data-layout="box_count"></div>
 
-                <a href="javascript: void(0);">
-                  <img src="http://placehold.it/200x200" width="100%"/>
-                </a>
-
                 <p>
-                  <a class="facebook-logo" id="facebook-link" target="_blank" href="javascript: void(0);">Share on Facebook</a>
+                  <a class="facebook-logo" id="facebook-link" target="_blank" href="javascript: void(0);"
+                    <img src="images/final/facebook-icon.png" />
+                  </a>
                   <a class="twitter-logo" href="javascript: void(0);">
-                    Share on Twitter
+                    <img src="images/final/twitter-icon.png" />
                   </a>
                 </p>
               </div>
@@ -481,7 +487,7 @@
 
               <div class="cta-content">
                 <a href="downloads/report.pdf" target="_blank">
-                  <img src="images/final/dl.png" style="width: 100%;"/>
+                  <img src="images/final/download-report.png" style="width: 100%;"/>
                 </a>
               </div>
 

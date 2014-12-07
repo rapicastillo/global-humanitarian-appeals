@@ -3,9 +3,11 @@
     <div class="col-md-7" id="first-with-people-fades">
       <div class="row">
         <div class="col-md-12" id="title-area">
-          <h1 id="first-line">Global<br/>Humanitarian</h1>
-          <h2 id="second-line" class="calluna orange text-right">Appeal <span class="green">2015</span></h2>
-          <h3>A consolidated appeal to support people affected by disaster and conflict</h3>
+          <!-- <h1 id="first-line">Global<br/>Humanitarian</h1>
+          <h2 id="second-line" class="calluna orange text-right">Appeal <span class="green">2015</span></h2> -->
+          <div>
+            <img src="images/title.png" style="width: 100%;"/>
+          </div>
         </div>
       </div>
     </div>

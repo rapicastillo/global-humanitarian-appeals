@@ -18,8 +18,6 @@ body {
 
 }
 
-.calluna { font-family: Calluna; }
-
 /* FIRST SLIDE */
 #title-slides-area
 {
@@ -116,14 +114,14 @@ body {
     #burst-face-area #burst-face-second-message
      {
 
-      position: absolute; background-color: rgba(0, 56, 86, 0.7); width: 100%; font-size: 32px; z-index: 1300; color: white; padding: 20px 10%;
+      position: absolute; background-color: rgba(0, 56, 86, 0.7); width: 100%; font-size: 32px; z-index: 1300; color: white; padding: 20px 5%;
       text-align: center;
 
-        h3 { font-size: 1.4em; }
+        h3 { font-size: 1.1em; margin-top: 10px}
         h4 { font-size: 0.7em; }
 
     }
-    #burst-face-area #burst-face-main-message { background-color: rgba(0, 56, 86, 0.9);  }
+    #burst-face-area #burst-face-main-message { background-color: rgba(0, 56, 86, 0.9);  h4 { margin-top: 20px; } }
 
     .burst-face-item { position: relative; }
     .burst-face-row { text-align: center; }
@@ -230,7 +228,27 @@ body {
     background-size: 100% 100%;
     background-attachment: fixed;
 
-  .country-item-info { margin-top: 80px; }
+  .country-item-info {
+    margin-top: 80px;
+    position: relative;
+
+    img.map-country-affected {
+
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: -40px;
+      top: 0;
+    }
+  }
+
+  .map-country-item.text-right {
+      img.map-country-affected {
+        left: auto;
+        right: -40px;
+
+      }
+    }
   #background-world
   {
     background-size: cover;
@@ -277,10 +295,16 @@ body {
 
     .map-count { color: #9ab62b; font-size: 38px;}
 
-    #map-data-score {
+    #map-data-score, #map-data-flash-item {
       position: fixed; top: 0px; left: 0; width: 100%; text-align: center; color: #f47932; z-index: 2000;
-      background-color: rgba(0, 56, 86, 0.9);
+      background-color: rgba(0, 56, 86, 0.7);
       padding: 10px;
+    }
+
+    #map-data-flash-item {
+      background-color: rgba(255,255,255,1);
+      opacity:  0;
+      z-index: 1999;
     }
     #map-data-score h1 { display: inline; font-size: inherit;}
     #map-data-score * { font-size: 20px; vertical-align: middle; display: inline-block; }

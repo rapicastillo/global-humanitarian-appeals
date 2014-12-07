@@ -16,9 +16,6 @@ body {
   body .black {
     color: #333333; }
 
-.calluna {
-  font-family: Calluna; }
-
 /* FIRST SLIDE */
 #title-slides-area {
   position: relative;
@@ -97,16 +94,19 @@ body {
   font-size: 32px;
   z-index: 1300;
   color: white;
-  padding: 20px 10%;
+  padding: 20px 5%;
   text-align: center; }
   #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h3,
   #second-slide-problem-at-hand #burst-face-area #burst-face-second-message h3 {
-    font-size: 1.4em; }
+    font-size: 1.1em;
+    margin-top: 10px; }
   #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h4,
   #second-slide-problem-at-hand #burst-face-area #burst-face-second-message h4 {
     font-size: 0.7em; }
 #second-slide-problem-at-hand #burst-face-area #burst-face-main-message {
   background-color: rgba(0, 56, 86, 0.9); }
+  #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h4 {
+    margin-top: 20px; }
 #second-slide-problem-at-hand .burst-face-item {
   position: relative; }
 #second-slide-problem-at-hand .burst-face-row {
@@ -208,7 +208,17 @@ body {
   /* width: 100%;
   height: 100%; */ }
   #map-area .country-item-info {
-    margin-top: 80px; }
+    margin-top: 80px;
+    position: relative; }
+    #map-area .country-item-info img.map-country-affected {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: -40px;
+      top: 0; }
+  #map-area .map-country-item.text-right img.map-country-affected {
+    left: auto;
+    right: -40px; }
   #map-area #background-world {
     background-size: cover;
     background-position: center center;
@@ -244,7 +254,7 @@ body {
   #map-area .map-count {
     color: #9ab62b;
     font-size: 38px; }
-  #map-area #map-data-score {
+  #map-area #map-data-score, #map-area #map-data-flash-item {
     position: fixed;
     top: 0px;
     left: 0;
@@ -252,8 +262,12 @@ body {
     text-align: center;
     color: #f47932;
     z-index: 2000;
-    background-color: rgba(0, 56, 86, 0.9);
+    background-color: rgba(0, 56, 86, 0.7);
     padding: 10px; }
+  #map-area #map-data-flash-item {
+    background-color: white;
+    opacity: 0;
+    z-index: 1999; }
   #map-area #map-data-score h1 {
     display: inline;
     font-size: inherit; }

@@ -101,19 +101,19 @@ $(function() {
           $map_div.append( $current_row );
         }
 
-        var $country_item = $("<div />").addClass("map-country-item col-md-5");
+        var $country_item = $("<div />").addClass("map-country-item col-md-5").attr("data-count-complete", 'false');
 
         if (i % 2 != 0) { $country_item.addClass("text-right"); }
 
         var html = "";
-            html += "<div class='country-item-info map-"+  d.type +"' style='background-image: url(" + d.map +")'>";
+            html += "<div class='country-item-info map-"+  d.type +"' style='background-image: url(" + d.map +")'><img src='images/icons/green-affected.png' class='map-country-affected' />";
             html += "<h1 class='map-count' final-value='" + d.words + "' count-value='" + d.in_need + "'>0</h1>";
             html += "<h5 class='green'>PEOPLE TO BE ASSISTED</h5>";
             html += "<h3>" + d.name + "</h3>";
             html += "<div class='other-facts'>";
             for ( var x = 0; x < d.other_fig.length; x++ )
             {
-              html +=   "<div class='other-fact-item' data-final='" + d.other_fig[x].final + "' ><img src='" + d.other_fig[x].image + "' /><span class='of-number' count-value='" + d.other_fig[x].count + "' >0</span><span class='of-label'> " + d.other_fig[x].label + "</span></div>";
+              html +=   "<div class='other-fact-item calluna' data-final='" + d.other_fig[x].final + "' ><img src='" + d.other_fig[x].image + "' /><span class='of-number' count-value='" + d.other_fig[x].count + "' >0</span><span class='of-label'> " + d.other_fig[x].label + "</span></div>";
             }
             html += "</div>";
             html += "</div>";
@@ -250,12 +250,23 @@ $(function() {
 
                   if (perc_half > 0 && perc_half <= 1)
                   {
+                    if (_countryItem.attr("data-count-complete") == 'true')
+                     {
+                        _countryItem.attr("data-count-complete", 'false');
+                     }
+
                     _otherFact.find(".of-number").text(comma_format(Math.floor(otherCount * perc_half)));
                   } else if (perc_half <= 0)
                   {
                     _otherFact.find(".of-number").text(0);
                   } else if (perc_half > 1)
                   {
+                    if (_countryItem.attr("data-count-complete") == 'false')
+                    {
+                      _countryItem.attr("data-count-complete", 'true');
+                      $("#map-data-flash-item").trigger('light-up-scoreboard');
+                    }
+
                     _otherFact.find(".of-number").html("<span style='font-weight: 700;'>" + $(this).attr("data-final") + "</span>");
                   }
                 });
@@ -277,6 +288,31 @@ $(function() {
           //     WTF: Math.random
           //   }
           // });
+
+    /* TRIGGER MAP COUNTER TO LIGHT */
+    $("#map-data-flash-item").height($("#map-data-score").height());
+    $("#map-data-flash-item").on('light-up-scoreboard', function() {
+      var $this = $(this);
+      console.log($this);
+
+
+      $this.css({ "opacity" : 0.5}).delay(100).animate({ "opacity" : 0 }, 300);
+    });
+
+    $("#mosaic-main-message").on('data150CenterTop', function(event, direction) {
+      var $this  = $(this);
+      console.log($this);
+
+      if ( direction == "down" )
+      {
+        $this.stop(true, true).animate({"opacity" : 1}, 500);
+      }
+      else
+      {
+        $this.stop(true, true).animate({"opacity" : 0}, 500);
+      }
+
+    });
 
     /* LIGHTBOX */
    $(".ss-youtube").colorbox({iframe:true, innerWidth:740, innerHeight: 500});
