@@ -18,9 +18,7 @@
   <!-- SLIDE 3 STYLE -->
   <style>
 
-<?php if (isset($_GET['calluna']) && $_GET['calluna'] == 'true'): ?>
   .calluna { font-family: Calluna; }
-<?php endif; ?>
 
     #s3-slide-show-stats .image-slideshow { position: relative; }
     #s3-slide-show-stats .image-slideshow .first-slide { z-index: 1000; }
@@ -411,7 +409,7 @@
     <div class="row">
       <div class="col-md-7" style="padding-left: 50px;">
         <h3 class="white calluna">
-          But inadequate funding inevitably translates into less food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
+          <strong class="orange">But inadequate funding inevitably translates into less</strong> food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
         </h3>
       </div>
     </div>

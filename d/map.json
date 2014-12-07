@@ -14,7 +14,7 @@
            {
            "image": "images/maps-fund-icon.png",
            "count": 405400000,
-           "label": "USD Requirements",
+           "label": "USD Required",
            "final": "405.4 MILLION"
            }
         ],
@@ -37,7 +37,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 612900000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "612.9 MILLION"
           }
         ],
@@ -59,7 +59,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 298000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "298 MILLION"
           }
         ],
@@ -82,8 +82,8 @@
            {
            "image": "images/maps-fund-icon.png",
            "count": 692000000 ,
-           "label": "USD Requirements",
-           "final": "692 K"
+           "label": "Required",
+           "final": "692 MILLION"
            }
         ]
       },
@@ -100,7 +100,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 1200000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "1.2 BILLION"
           }
         ],
@@ -124,7 +124,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 191700000,
-           "label": "USD Requirement",
+           "label": "Requirement",
            "final": "191.7 MILLION"
           }
         ],
@@ -146,7 +146,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 735000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "735 MILLION"
           }
         ],
@@ -168,7 +168,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 862600000,
-           "label": "USD Requirement",
+           "label": "Required",
            "final": "862.6 MILLION"
           }
         ],
@@ -190,7 +190,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 1800000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "1.8 BILLION"
           }
         ],
@@ -213,7 +213,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 783900000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "783.9 MILLION"
           }
         ],
@@ -237,7 +237,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 1000000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "1 BILLION"
           }
         ],
@@ -260,7 +260,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 2800000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "2.8 BILLION"
           }
         ],
@@ -283,13 +283,13 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 3200000000,
-           "label": "USD Requirements (Refugee Component)",
+           "label": "Required (Refugee Component)",
            "final": "3.2 BILLION"
           },
           {
            "image": "images/maps-fund-icon.png",
            "count": 1260000000,
-           "label": "USD Requirements (Resilience Component)",
+           "label": "Required (Resilience Component)",
            "final": "1.26 BILLION"
           }
         ],
@@ -312,7 +312,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 189100000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "189.1 MILLION"
           }
         ],
@@ -334,7 +334,7 @@
           {
            "image": "images/maps-fund-icon.png",
            "count": 615000000,
-           "label": "USD Requirements",
+           "label": "Required",
            "final": "615 MILLION"
           }
         ],
