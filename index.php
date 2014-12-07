@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta property="og:title" content="Global Humanitarian Appeal 2015" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.unocha.org/2015appeal" />
+<meta property="og:image" content="http://www.unocha.org/2015appeal/images/opengraph1.jpg" />
+<meta property="og:image" content="http://www.unocha.org/2015appeal/images/opengraph2.jpg" />
+<meta property="og:image" content="http://www.unocha.org/2015appeal/images/opengraph3.jpg" />
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/colorbox.css">
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800'/>
 
   <link rel="stylesheet" href="css/custom.css" />
@@ -40,7 +48,7 @@
      #transition-to-maps
    {
       background-color: #003855;
-      background-image: url(images/maps-bg.png);
+      background-image: url(images/map-00v1.png);
       background-size: 100% 100%;
 
       background-attachment: fixed;
@@ -179,8 +187,8 @@
       overflow: hidden;
     }
 
-    #slide-success-1-philippines .first-slide { background-image: url(images/successes/philippines-fg.png); }
-    #slide-success-1-philippines .second-slide { background-image: url(images/successes/philippines-bg.jpg); }
+    #slide-success-1-philippines .first-slide { background-image: url(images/success/philippines-fg.png); }
+    #slide-success-1-philippines .second-slide { background-image: url(images/success/philippines-bg.jpg); }
 
     #slide-success-3-south-sudan .first-slide { background-image: url(images/success/southsudan-fg.png); }
     #slide-success-3-south-sudan .second-slide { background-image: url(images/success/southsudan-bg.png); }
@@ -191,17 +199,26 @@
 
 </head>
 <body>
+
+
   <?php include("partials/title_page.php"); ?>
 
   <!-- SECOND SLIDE:: FLOATING IMAGES -->
   <div id="second-slide-problem-at-hand">
     <div id="burst-face-area">
       <div id="burst-face-main-message">
-        <h3>
-          Syria, South Sudan, Iraq, Central African Republic...
-  The humanitarian outlook for 2015 is cause for serious concern. The year will open with <span class="orange">tens of millions</span> suffering the consquences of these emergencies.
-  <p>These four crises alone account for over <span class="orange">70 per cent</span> of overall funding requirements</p>
+        <h3 style="margin: -5px;">
+          Syria, <span style="display: inline-block">South Sudan</span>, Iraq, <span style="display: inline-block">Central African Republic...</span>
         </h3>
+        <h4>The humanitarian outlook is cause for serious concern in 2015.</h4>
+      </div>
+      <div id="burst-face-second-message">
+        <h4>
+           The year will open with <span class="orange">tens  of millions</span> suffering the consequences of these emergencies.
+
+          <p>These four crises alone account for over <span class="orange">70 per cent</span>  of overall funding requirements<br/>for the global appeal. </p>
+
+        </h4>
       </div>
     </div>
   </div>
@@ -216,13 +233,14 @@
       <div id="transition-message">
         <div>
           <h3>
-            Donors and humanitarian partners must come together to meet the needs of people affected<br/>by each of these emergencies.
+            Donors and humanitarian partners must come together<br/>to meet the needs of <strong class="orange highlighted">millions of people</strong> affected by each and every emergency.
+
 
           </h3>
 
-          <h3>
+          <h2 class="orange">
             <strong>No country should be left to fend for itself.</strong>
-          </h3>
+          </h2>
         </div>
       </div>
     </div>
@@ -234,8 +252,8 @@
 <div id="map-area">
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
         data-100-center-top="opacity: 0" data-bottom-top="opacity: 0" data-center-top="opacity: 1"
-        data-bottom-bottom="opacity: 1; font-size: 2em;" data-top-bottom="font-size: 4.5em"
-        ><img src='images/icons/white-affected.png' height="50px"/> <h1 class="number">0</h1><h1 class="text">&nbsp;PEOPLE TO BE ASSISTED</h1></div>
+        data-bottom-bottom="opacity: 1; font-size: 2em;" data-top-bottom="font-size: 3.7em"
+        ><img src='images/icons/white-affected.png' height="50px"/> <h1 class="number">0</h1><h1 class="text">&nbsp;PEOPLE TO BE ASSISTED IN 2015</h1></div>
   <div id="map-area-countries"></div>
   <div id="to-be-done-countries">
     <div class="fluid-container">
@@ -263,13 +281,16 @@
       data-bottom-top="position: relative"
       data-top-top="position: fixed; z-index: 1900; top: 0; left: 0; ">
 
-    <div class="mosaic-main-message"
-    data-200-center-top="opacity: 0;"
-                                     data-center-top="opacity: 1"
+    <div class="mosaic-main-message" id="mosaic-main-message"
+                                    data-200-center-top="opacity: 0;"
+                                     data-100-center-top="opacity: 1"
                                      data-anchor-target="#thanks-to-our-donors">
-      The relentless cycle of large-scale crises has stretched humanitarian organizations to their very limit.
-      <br/>
-      In 2015, despite the fact that only 48 per cent shortfall in funding, we managed to scale-up life-saving operations in some of the most devastating crises.
+
+      <p>The relentless cycle of large-scale crises has stretched<br/>humanitarian organizations to their very limit.</p>
+
+      <p>
+      In 2014, despite a <strong class="orange">48 per cent shortfall in funding</strong> we managed to scale up <strong class="orange">life-saving operations</strong> in some of the most devastating crises.</p>
+
     </div>
 
     <!-- <div class="mosaic-main-message" data--200-center-top="opacity: 1" data--100-center-top="opacity: 0" data-anchor-target="#thanks-to-our-donors">
@@ -371,27 +392,27 @@
 
   <div class="fluid-container first-slide">
     <div class="row"><div class="col-md-12">&nbsp;</div></div>
-    <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    <div class="row"><div class="col-md-12" style="padding-left: 50px;"><h1 class="orange"><strong>EVERY LIFE IS PRICELESS.</strong></h1> </div></div>
     <div class="row">
-      <div class="col-md-6" style="padding-left: 50px;">
-        <h4 class="white">
-          <span class="orange" style="font-size: 2em;">Every life is priceless.</span> Aid organizations are re-grouping around better plans, more innovative approaches and more efficient action to make the most of the resources at hand.
-        </h4>
+      <div class="col-md-7" style="padding-left: 50px;">
+        <h3 class="white">
+          Aid organizations are re-grouping around better plans, more innovative approaches and more efficient action to make the most of the resources at hand.
+        </h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6" style="padding-left: 50px;">
-        <h4 class="white">
+      <div class="col-md-7" style="padding-left: 50px;">
+        <h3 class="white">
           But inadequate funding inevitably translates into less food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
-        </h4>
+        </h3>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-6" style="padding-left: 50px;">
-        <h4 class="white">
-          <span class="orange" style="font-size: 2em;">We need these appeals to be fully funded.</span> We need more Member States to contribute humanitarian funding, and we need to foster deeper relationships with the private sector and with organizations outside our system.
-        </h4>
+      <div class="col-md-7" style="padding-left: 50px;">
+        <h3 class="white">
+          <strong class="orange">We need these appeals to be fully funded.</strong> We need more Member States and a more diverse group of donors to support our efforts.
+        </h3>
       </div>
     </div>
 
@@ -399,8 +420,9 @@
 </div>
 
 <div id="final-slide">
-  <div id="girls" style="z-index: 1000"></div>
-  <div class="fluid-container" >
+  <div id="girls" style="z-index: 1000; opacity: 0" data-anchor-target="#call-to-action" data-target="#call-to-action"
+      data-bottom-top="background-position: center 150px; background-size: 100%" data-bottom-bottom="background-position: center -200px; background-size: 100%;" data-100-bottom-top="..." data-emit-events></div>
+  <div class="fluid-container" data-anchor-target="#final-slide">
     <div class="row">
       <div class="col-md-12">
         <h2 class="text-center white">
@@ -414,10 +436,72 @@
   </div>
 </div>
 
+<div id="call-to-action">
+  <div class="container">
+    <div class="row"><div class="col-md-12">&nbsp;</div></div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+          <div class="row">
+          <!-- WATCH -->
+            <div class="col-md-6">
+
+              <div class="cta-content">
+                <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
+                  <img src="http://placehold.it/200x100" width="100%" height="200px"/>
+                </a>
+              </div>
+
+
+            </div>
+
+            <!-- SHARE -->
+            <div class="col-md-3">
+
+              <div class="cta-content">
+                <div class="fb-share-button" data-href="http://www.unocha.org/2015appeal" data-layout="box_count"></div>
+
+                <a href="javascript: void(0);">
+                  <img src="http://placehold.it/200x200" width="100%"/>
+                </a>
+
+                <p>
+                  <a class="facebook-logo" id="facebook-link" target="_blank" href="javascript: void(0);">Share on Facebook</a>
+                  <a class="twitter-logo" href="javascript: void(0);">
+                    Share on Twitter
+                  </a>
+                </p>
+              </div>
+
+
+            </div>
+
+            <!-- LEARN MORE -->
+            <div class="col-md-3">
+
+              <div class="cta-content">
+                <a href="downloads/report.pdf" target="_blank">
+                  <img src="images/final/dl.png" style="width: 100%;"/>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center"><h4 class="text-center white">WATCH</h4></div>
+            <div class="col-md-3 text-center"><h4 class="text-center white">SHARE</h4></div>
+            <div class="col-md-3 text-center"><h4 class="text-center white">LEARN MORE</h4></div>
+          </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+<script src="js/jquery.colorbox-min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 <script src="js/skrollr.min.js"></script>
@@ -537,14 +621,14 @@ $(function() {
     }
   })
 
-  $(".mosaic-main-message").each(function() {
-      $(this).css({
-          "marginTop" : "-" + $(this).height() /2 + "px",
-          "marginLeft" : "-" + $(this).width()/2 + "px",
-          "left" : $(window).width()/2 + "px",
-          "top" : $(window).height()/2 + "px",
-      });
-    });
+  // $(".mosaic-main-message").each(function() {
+  //     $(this).css({
+  //         "marginTop" : "-" + $(this).height() /2 + "px",
+  //         "marginLeft" : "-" + $(this).width()/2 + "px",
+  //         "left" : $(window).width()/2 + "px",
+  //         "top" : $(window).height()/2 + "px",
+  //     });
+  //   });
 
   function fader(item)
   {
@@ -559,7 +643,7 @@ $(function() {
   $.get("d/image_list.json", function (data) {
 
       //cols
-      var square_size = ( $(window).width() / $(window).height() ) * 64;
+      var square_size =  $(window).height()/5; //( $(window).width() / $(window).height() ) * 64;
 
       var square_count_rows = Math.ceil($(window).height() / square_size);
       var square_count_cols = Math.ceil($(window).width() / square_size );
@@ -606,6 +690,7 @@ $(function() {
 
       var s = skrollr.init({
       keyframe: function(element,name, direction) {
+          console.log(element, name, direction);
           $(element).trigger(name, direction);
       }
       ,

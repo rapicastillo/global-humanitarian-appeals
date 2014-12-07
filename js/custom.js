@@ -3,12 +3,35 @@ $(function() {
   var comma_format = d3.format(",");
 
   $(window).on("resize", function() {
+    var _w = $(window).width();
+    var _h = $(window).height();
     $("#title-slides-area, #title-slides-area > .row, #background-world").height($(window).height());
     $("#ending-message-area, #final-slide").height($(window).height()).width($(window).width());
+
     refresh_slide2();
+
+    $("#burst-face-main-message, #burst-face-area #burst-face-second-message").css({ "top" : _h/4 + "px", "left" : 0 , "height" : _h/4 + "px"});
+
+    $("#burst-face-area #burst-face-second-message").css("top", (2* _h/4) + "px");
+
+    /* For map */
+    $("#mosaic-main-message").css({ "top" : 2 * _h/4 + "px", "height" : _h/4 * 2 + "px"});
   });
 
   $(window).trigger("resize");
+
+  $("#girls").on("data100BottomTop", function(event, direction) {
+
+    if ( direction == "down" )
+    {
+        $("#girls").animate({ opacity: 1}, 1000);
+    }
+    else
+    {
+      $("#girls").animate({ opacity: 0}, 1000);
+    }
+
+  });
       /* Animation ..  */
 
       //SLIDE 1:
@@ -255,6 +278,40 @@ $(function() {
           //   }
           // });
 
+    /* LIGHTBOX */
+   $(".ss-youtube").colorbox({iframe:true, innerWidth:740, innerHeight: 500});
 
+  /*TWITTER*/
+  var win;
+  $(".ch-info .ch-info-back, .twitter-logo").each(function(i, item) {
+
+    $(this).bind("click", function() {
+      if (win)
+      {
+        win.close();
+      }
+
+      show_text = $(this).find("p").text();
+
+      var param = $.param({
+        url: "http://www.unocha.org/2015appeal",
+        via: "unocha",
+        hashtags: "2015Appeal",
+        text: "Every life is priceless."
+      });
+
+      win = window.open("https://twitter.com/intent/tweet?" + param, "twitter", "height=300,width=600,modal=yes,alwaysRaised=yes");
+      win.focus();
+    })
+
+
+    //$(this).appendTo($link);
+  });
+
+  $("#facebook-link").on("click", function() {
+    var INTERACTIVE_URL = encodeURIComponent("http://www.unocha.org/2015appeal");
+    window.open('http://www.facebook.com/sharer.php?u='+ INTERACTIVE_URL,'sharer','toolbar=0,status=0,width=626,height=436');return false;
+
+  });
 
 });

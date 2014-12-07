@@ -49,11 +49,11 @@
     },
 
     {
-     "name": "Central African Republic<br/>Regional Refugee Response Plan",
+     "name": "Central African Republic<br/><span class='green sub-heading'>Regional Refugee Response Plan</span>",
      "type": "L3",
      "map": "",
      "in_need": 461164,
-     "words" : "461 THOUSAND",
+     "words" : "461 K",
       "other_fig":
         [
           {
@@ -83,7 +83,7 @@
            "image": "images/maps-fund-icon.png",
            "count": 692000000 ,
            "label": "USD Requirements",
-           "final": "692 THOUSAND"
+           "final": "692 K"
            }
         ]
       },
@@ -118,7 +118,7 @@
      "map": "",
      "image": "",
      "in_need": 536400,
-     "words": "536.4 THOUSAND",
+     "words": "536.4 K",
       "other_fig":
         [
           {
@@ -202,12 +202,12 @@
       },
 
        {
-     "name": "South Sudan<br/>Refugee Response Plan",
+     "name": "South Sudan<br/><span class='green sub-heading'>Refugee Response Plan</span>",
      "type": "L3",
      "map": "",
      "image": "",
      "in_need": 821000,
-     "words": "821 THOUSAND",
+     "words": "821 K",
       "other_fig":
         [
           {
@@ -272,7 +272,7 @@
     },
 
     {
-     "name": "Regional Refugee and Resilience Plan",
+     "name": "Syria<br/><span class='green sub-heading'>Regional Refugee and Resilience Plan</span>",
      "type": "L3",
      "map": "",
      "image": "",
@@ -306,7 +306,7 @@
      "map": "",
      "image": "",
      "in_need": 900000,
-     "words": "900 THOUSAND",
+     "words": "900 K",
       "other_fig":
         [
           {

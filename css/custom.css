@@ -89,16 +89,24 @@ body {
   position: absolute; }
 #second-slide-problem-at-hand #burst-face-area .burst-face-initial-image {
   z-index: 1200; }
-#second-slide-problem-at-hand #burst-face-area #burst-face-main-message {
+#second-slide-problem-at-hand #burst-face-area #burst-face-main-message,
+#second-slide-problem-at-hand #burst-face-area #burst-face-second-message {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 80%;
+  background-color: rgba(0, 56, 86, 0.7);
+  width: 100%;
   font-size: 32px;
   z-index: 1300;
   color: white;
-  padding: 20px; }
+  padding: 20px 10%;
+  text-align: center; }
+  #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h3,
+  #second-slide-problem-at-hand #burst-face-area #burst-face-second-message h3 {
+    font-size: 1.4em; }
+  #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h4,
+  #second-slide-problem-at-hand #burst-face-area #burst-face-second-message h4 {
+    font-size: 0.7em; }
+#second-slide-problem-at-hand #burst-face-area #burst-face-main-message {
+  background-color: rgba(0, 56, 86, 0.9); }
 #second-slide-problem-at-hand .burst-face-item {
   position: relative; }
 #second-slide-problem-at-hand .burst-face-row {
@@ -130,12 +138,14 @@ body {
     font-size: 16px;
     right: 0px; }
   #l3-slideshows .image-slideshow-item .fact-number {
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 2em; }
   #l3-slideshows .image-slideshow-item .data-icon img {
-    height: 43px; }
+    height: 50px; }
   #l3-slideshows .image-slideshow-item .fact-item * {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    text-transform: uppercase; }
   #l3-slideshows .image-slideshow-item .country-title-item {
     position: absolute;
     top: 0;
@@ -183,11 +193,11 @@ body {
   #l3-slideshows #slide-5-iraq .second-slide {
     background-image: url(../images/l3/iraq/001.jpg); }
   #l3-slideshows #slide-5-iraq .third-slide {
-    background-image: url(../images/l3/iraq/003.jpg); }
+    background-image: url(../images/l3/iraq/iraq-003.png); }
 
 /* MAP SLIDES */
 #map-area {
-  background-image: url(../images/maps-bg.png);
+  background-image: url(../images/map-00v1.png);
   background-size: 100% 100%;
   background-attachment: fixed;
   position: relative;
@@ -208,7 +218,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/maps-bg.png);
     background-attachment: fixed; }
   #map-area .map-country-item {
     padding: 5px 20px 20px;
@@ -217,6 +226,8 @@ body {
     /*width: 300px;*/ }
   #map-area .map-country-item h3 {
     font-size: 24px; }
+    #map-area .map-country-item h3 span.sub-heading {
+      font-size: 18px; }
   #map-area .map-country-item::after {
     clear: both; }
   #map-area .country-item-info {
@@ -241,7 +252,7 @@ body {
     text-align: center;
     color: #f47932;
     z-index: 2000;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 56, 86, 0.9);
     padding: 10px; }
   #map-area #map-data-score h1 {
     display: inline;
@@ -277,12 +288,15 @@ body {
     z-index: 1200; }
   #mosaic-area .mosaic-main-message {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 80%;
+    background-color: rgba(0, 56, 86, 0.9);
+    width: 100%;
+    left: 0;
     font-size: 32px;
     z-index: 1300;
     color: white;
-    padding: 20px; }
+    padding: 20px;
+    padding: 40px 5%;
+    text-align: center; }
   #mosaic-area .mosaic-item {
     position: relative; }
   #mosaic-area .mosaic-row {
@@ -320,3 +334,6 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: fixed; }
+
+#call-to-action {
+  background-image: url(../images/final/top.png); }

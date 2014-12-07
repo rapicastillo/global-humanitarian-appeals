@@ -44,18 +44,15 @@ function fader(item)
 function refresh_slide2 ()
 {
   $("#burst-face-area .burst-face-row").remove();
-  $("#burst-face-main-message").css({"marginTop" : "-" +$("#burst-face-main-message").height() /2 + "px", "marginLeft" :
-                  "-" + $("#burst-face-main-message").width()/2 + "px"});
+  // $("#burst-face-main-message").css({"marginTop" : "-" +$("#burst-face-main-message").height() /2 + "px", "marginLeft" :
+  //                 "-" + $("#burst-face-main-message").width()/2 + "px"});
 
     /* Image lists ... */
      // $("#burst-face-area *").remove();
-
-     $.get("d/image_list.json", function (data) {
-
-      //cols
-      var square_size = ($(window).width() > $(window).height()
-                              ? ( $(window).width() / $(window).height() )
-                              : ( $(window).height() / $(window).width() ) ) * 73;
+    // var square_size = ($(window).width() > $(window).height()
+    //                           ? ( $(window).width() / $(window).height() )
+    //                           : ( $(window).height() / $(window).width() ) ) * 73;
+      var square_size = $(window).height()/5;
 
       var square_count_rows = Math.ceil($(window).height() / square_size);
       var square_count_cols = Math.ceil($(window).width() / square_size );
@@ -65,6 +62,11 @@ function refresh_slide2 ()
 
       // console.log(square_count_cols, square_count_rows);
       var direction = ["left", "right"];
+
+
+     $.get("d/image_list.json", function (data) {
+
+      //cols
       for ( var y = 0; y < square_count_rows - 1; y ++) {
 
         var row = $("<div />").addClass("burst-face-row");
@@ -92,7 +94,7 @@ function refresh_slide2 ()
         }
         row.height(square_height).css({"marginLeft" : "-" + square_width + "px"});
 
-        var speed =  1000 + (Math.random() * 10000);
+        var speed =  2000 + (Math.ceil(Math.random() * 10) * 1000);
 
         console.log(row, speed, square_width);
 

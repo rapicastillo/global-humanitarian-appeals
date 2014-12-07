@@ -59,7 +59,7 @@
       <div class="fact-item" style="bottom: 100px;">
         <span class="fact-number" data-count="1.95" data-final="1.95" data-nth="M">0</span>
         <span class="data-icon"><img src="images/icons/white-displaced.png" /></span>
-        <span>People Displaced Due to Conflict and Flooding</span>
+        <span>People Displaced Due<br/>to Conflict and Flooding</span>
       </div>
 
       <div class="country-title-item"><h1>SOUTH SUDAN</h1></div>
@@ -103,7 +103,7 @@
         <div class="fact-item" style="bottom: 100px;">
           <span class="fact-number" data-count="2.1" data-final="2.1" data-nth="M">0</span>
           <span class="data-icon"><img src="images/icons/white-displaced.png" /></span>
-          <span>Newly Displaced People since January 2014</span>
+          <span>Newly Displaced People<br/>since January 2014</span>
         </div>
 
 
