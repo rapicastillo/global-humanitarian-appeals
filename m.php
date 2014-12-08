@@ -39,7 +39,7 @@
 
       <h4 class="text-center white" style="font-weight: 800">Download Appeal</h4>
               <div class="cta-content cta-square text-center">
-                <a href="downloads/report.pdf" target="_blank">
+                <a href="https://docs.unocha.org/sites/dms/Documents/GHO-FINAL-web.pdf" target="_blank">
                   <img src="images/final/download-report.png" style="height: 150px;"/>
                 </a>
               </div>

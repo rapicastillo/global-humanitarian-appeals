@@ -194,7 +194,7 @@
 
     .image-success-item .fact-item {
       position: absolute;
-      font-size: 22px;
+      font-size: 1.5em;
       z-index: 2000;
       opacity: 0;
 
@@ -231,9 +231,9 @@
       </div>
       <div id="burst-face-second-message" class="calluna">
         <h4>
-           The year will open with <span class="orange">tens  of millions</span> suffering the consequences of these emergencies.
-
           <p>These four crises alone account for over <span class="orange">70 per cent</span>  of overall funding requirements<br/>for the global appeal. </p>
+
+          <p>The year will open with <span class="orange">tens  of millions</span> suffering the consequences of these emergencies.</p>
 
         </h4>
       </div>
@@ -417,14 +417,14 @@
     <div class="row">
       <div class="col-md-7" style="padding-left: 50px;">
         <h3 class="white calluna">
-          Aid organizations are re-grouping around better plans, more innovative approaches and more efficient action to make the most of the resources at hand.
+          Aid organizations are re-grouping around <span class="orange">better plans, more innovative approaches and more efficient action</span> to make the most of the resources at hand.
         </h3>
       </div>
     </div>
     <div class="row">
       <div class="col-md-7" style="padding-left: 50px;">
         <h3 class="white calluna">
-          <strong class="orange">But inadequate funding inevitably translates into less</strong> food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
+          <strong class="orange">But inadequate funding inevitably translates into less:</strong> less food, less shelter, less clean water and less care for the millions caught up in crises around the globe.
         </h3>
       </div>
     </div>
@@ -470,7 +470,7 @@
               <h4 class="text-center white " style="font-weight: 800">WATCH</h4>
               <div class="cta-content text-center">
                 <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
-                  <img src="images/final/video-icon.png" height="150px"/>
+                  <img src="images/final/video-icon.png" height="200px"/>
                 </a>
               </div>
             </div>
@@ -482,10 +482,10 @@
 
                 <p class="text-center">
                   <a class="facebook-logo" id="facebook-link" target="_blank" href="javascript: void(0);">
-                    <img src="images/final/facebookicon.png" height="75px"/>
+                    <img src="images/final/facebookicon.png" height="100px"/>
                   </a>
                   <a class="twitter-logo" href="javascript: void(0);">
-                    <img src="images/final/twittericon.png" height="75px" />
+                    <img src="images/final/twittericon.png" height="100px" />
                   </a>
                 </p>
               </div>
@@ -497,8 +497,8 @@
             <div class="col-md-3">
               <h4 class="text-center white" style="font-weight: 800">LEARN MORE</h4>
               <div class="cta-content cta-square text-center">
-                <a href="downloads/report.pdf" target="_blank">
-                  <img src="images/final/download-report.png" style="height: 150px;"/>
+                <a href="https://docs.unocha.org/sites/dms/Documents/GHO-FINAL-web.pdf" target="_blank">
+                  <img src="images/final/download-report.png" style="height: 200px;"/>
                 </a>
               </div>
 

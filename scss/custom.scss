@@ -203,7 +203,7 @@ body {
 
       .image-slideshow-item .country-title-item h1 {
         margin: 0;
-        font-size: 58px;
+        font-size: 4em;
         font-weight: 700;
       }
 
@@ -213,7 +213,7 @@ body {
 
       .image-slideshow-item .fact-item {
         position: absolute;
-        font-size: 22px;
+        font-size: 1.4em;
         z-index: 2000;
         opacity: 0;
       }
@@ -354,7 +354,7 @@ body {
 
         h1 {
           margin: 0;
-          font-size: 58px;
+          font-size: 4em;
           font-weight: 700;
         }
       }
@@ -381,7 +381,7 @@ body {
     background-color: rgba(0, 56, 86, 0.9);
     width: 100%;
     left: 0;
-    font-size: 32px;
+    font-size: 2.4em;
     z-index: 1300; color: white; padding: 20px;
     padding: 40px 5%;
     text-align: center;
@@ -431,6 +431,11 @@ body {
     background-position: 0 0;
 
     height: inherit;
+  }
+
+  h3
+  {
+    font-size: 1.7em;
   }
 }
 
