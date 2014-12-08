@@ -517,14 +517,7 @@ $(function() {
     });
 
     $("#final-slide").on("data100TopTop", function(e, direction) {
-      if ( direction == "down" )
-      {
-        $(this).stop(true, true).find("#video-content").animate({opacity: 1}, 500);
-      }
-      else
-      {
-        $(this).stop(true, true).find("#video-content").animate({opacity: 0}, 500);
-      }
+
     });
 
     var s;

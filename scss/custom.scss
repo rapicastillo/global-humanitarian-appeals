@@ -421,15 +421,15 @@ body {
 #final-slide
 {
   background-image: url(../images/final/top.png);
-  #video-content { opacity: 0; }
+
   #girls, #girls-background
   {
     width: 100%;
     height: inherit;
     background-image: url(../images/final/happy.png);
-    background-size: 140% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: middle center;
     background-attachment: fixed;
   }
 }

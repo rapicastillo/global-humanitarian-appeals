@@ -215,7 +215,7 @@
     <div id="burst-face-area">
       <div id="burst-face-main-message">
         <h3>
-          Syria, <span style="display: inline-block">South Sudan</span>, Iraq, <span style="display: inline-block">Central African Republic...</span>
+          Syria, <span style="display: inline-block">South Sudan</span>, Iraq, <span style="display: inline-block">Central African Republic.</span>
         </h3>
         <h4>The humanitarian outlook is cause for serious concern in 2015.</h4>
       </div>
@@ -448,19 +448,6 @@
 
     <div class="row">
       <div class="col-md-12" id="girls-background">
-        <div class="row">
-          <div class="col-md-8"></div>
-          <div class="col-md-4">
-            <div id="video-content" style="opacity: 0" data-anchor-target="#final-slide" data-bottom-top="opacity: 0">
-              <h3 class="text-center white " style="font-weight: 800">WATCH</h3>
-              <div class="cta-content text-center">
-                <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
-                  <img src="images/final/video-icon.png" height="200px"/>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -469,9 +456,18 @@
       <div class="col-md-1"></div>
       <div class="col-md-10" id="final-cta">
           <div class="row">
-
-            <!-- SHARE -->
             <div class="col-md-6">
+              <div id="video-content" >
+              <h4 class="text-center white " style="font-weight: 800">WATCH</h4>
+              <div class="cta-content text-center">
+                <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
+                  <img src="images/final/video-icon.png" height="150px"/>
+                </a>
+              </div>
+            </div>
+            </div>
+            <!-- SHARE -->
+            <div class="col-md-3">
               <h4 class="text-center white" style="font-weight: 800">SHARE</h4>
               <div class="cta-content cta-square">
 
@@ -489,7 +485,7 @@
             </div>
 
             <!-- LEARN MORE -->
-            <div class="col-md-6">
+            <div class="col-md-3">
               <h4 class="text-center white" style="font-weight: 800">LEARN MORE</h4>
               <div class="cta-content cta-square text-center">
                 <a href="downloads/report.pdf" target="_blank">
