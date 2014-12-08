@@ -425,7 +425,7 @@ $(function() {
       show_text = $(this).find("p").text();
 
       var param = $.param({
-        url: "http://www.unocha.org/2015appeal",
+        url: "http://ow.ly/FxnCb",
         via: "unocha",
         hashtags: "2015Appeal",
         text: "An innovative snapshot of the humanitarian landscape in 2015"

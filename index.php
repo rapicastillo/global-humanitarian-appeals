@@ -212,6 +212,7 @@
     #slide-success-5-iraq .second-slide { background-image: url(images/success/iraq-bg.png); }
 
     body > * { opacity: 0; }
+    body > #colorbox { opacity: 1 !important; }
   </style>
 
 </head>
@@ -469,7 +470,7 @@
               <div id="video-content" >
               <h4 class="text-center white " style="font-weight: 800">WATCH</h4>
               <div class="cta-content text-center">
-                <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
+                <a class="ss-youtube" href="http://www.youtube.com/embed/6hUHir3W8oE?rel=0&amp;wmode=transparent&amp;autoplay=1">
                   <img src="images/final/video-icon.png" height="200px"/>
                 </a>
               </div>
