@@ -233,7 +233,7 @@
         <h4>
           <p>These four crises alone account for over <span class="orange">70 per cent</span>  of overall funding requirements<br/>for the global appeal. </p>
 
-          <p>The year will open with <span class="orange">tens  of millions</span> suffering the consequences of these emergencies.</p>
+          <p style="margin-top: 20px;">The year will open with <span class="orange">tens of millions</span> suffering the consequences of these and other emergencies.</p>
 
         </h4>
       </div>
