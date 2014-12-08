@@ -1,7 +1,11 @@
 var comma_format = d3.format(",");
 $(function() {
-  /* SET WINDOW AREA */
+  /* Set all ajax calls to false.. */
+  $.ajaxSetup({
+    async: false
+  });
 
+  /* SET WINDOW AREA */
   var s = null;
 
   $(window).on("resize", function() {
@@ -53,7 +57,7 @@ $(function() {
       /* Animation ..  */
 
       //SLIDE 1:
-    setTimeout ( function () {
+    function startTitleSlide() {
 
       var parent = $("#first-with-people-fades");
       var people_layers = 12;
@@ -90,8 +94,7 @@ $(function() {
 
         });
 
-    },
-    500);
+    }
 
 
     // MAP AREA
@@ -520,9 +523,9 @@ $(function() {
 
     });
 
-    var s;
-    setTimeout(function() {
-     s = skrollr.init({
+    var s = skrollr.init({
+        render: function(data) {
+        },
         keyframe: function(element,name, direction) {
 
             // console.log(element, name, direction);
@@ -534,6 +537,7 @@ $(function() {
           easing: {
             WTF: Math.random
           }
-        });
-   }, 500);
+      });
+
+    startTitleSlide();
 });
