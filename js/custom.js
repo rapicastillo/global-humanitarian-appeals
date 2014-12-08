@@ -532,7 +532,7 @@ $(function() {
      s = skrollr.init({
         keyframe: function(element,name, direction) {
 
-            console.log(element, name, direction);
+            // console.log(element, name, direction);
 
             $(element).trigger(name, direction);
         }
