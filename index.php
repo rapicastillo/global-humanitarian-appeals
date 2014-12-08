@@ -5,9 +5,9 @@
 <meta property="og:title" content="Global Humanitarian Appeal 2015" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.unocha.org/2015appeal" />
-<meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb-1.png" />
+<meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb-1.jpg" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb2.jpg" />
-<meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb3.png" />
+<meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb3.jpg" />
 
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 <META HTTP-EQUIV="Expires" CONTENT="-1">
