@@ -294,14 +294,13 @@
     <div class="mosaic-main-message calluna" id="mosaic-main-message"
                                     style="opacity: 0;"
                                      data-200-center-top="..."
-                                     data--100-center-top="..."
                                      data-anchor-target="#thanks-to-our-donors"
                                      data-emit-events >
 
       <p id="first-slide-item-text">The relentless cycle of large-scale crises has stretched<br/>humanitarian organizations to their very limit.</p>
 
-      <p id="second-slide-item-text" style="display: none">
-      When we have the funds, we can save lives and avert further suffering. For example, in 2014, despite a <strong class="orange">48 per cent shortfall in funding</strong> we managed to scale up <strong class="orange">life-saving operations</strong> in some of the most devastating crises.</p>
+      <p id="second-slide-item-text" >
+      In 2014, despite a <strong class="orange">48 per cent shortfall in funding</strong> we managed to scale up <strong class="orange">life-saving operations</strong> in some of the most devastating crises.</p>
 
     </div>
 
