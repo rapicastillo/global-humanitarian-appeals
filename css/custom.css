@@ -6,7 +6,8 @@ body {
   background-color: black;
   font-family: 'Open Sans';
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden !important; }
   body .green {
     color: #9ab62b; }
   body .orange {
@@ -271,6 +272,8 @@ body {
   #map-area #map-data-score h1 {
     display: inline;
     font-size: inherit; }
+    #map-area #map-data-score h1.number {
+      font-weight: 800; }
   #map-area #map-data-score * {
     font-size: 20px;
     vertical-align: middle;
@@ -339,14 +342,13 @@ body {
 
 #final-slide {
   background-image: url(../images/final/top.png); }
-  #final-slide #girls {
-    width: inherit;
+  #final-slide #girls, #final-slide #girls-background {
+    width: 100%;
     height: inherit;
-    position: absolute;
     background-image: url(../images/final/happy.png);
-    background-position: center 150px;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed; }
 
 #call-to-action {

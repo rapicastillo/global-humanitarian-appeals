@@ -32,7 +32,7 @@
       <div class="fact-item" style="bottom: 200px;">
         <span class="fact-number" data-count="12.2" data-final="12.2" data-nth="M">0</span>
         <span class="data-icon"><img src="images/icons/white-affected.png" /></span>
-        <span>People in dire need</span>
+        <span>People in need</span>
       </div>
       <div class="fact-item" style="bottom: 100px;">
         <span class="fact-number" data-count="7.6" data-final="7.6" data-nth="M">0</span>

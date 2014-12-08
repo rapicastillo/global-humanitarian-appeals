@@ -16,6 +16,8 @@ body {
   .white { color: white; }
   .black { color: #333333; }
 
+  overflow-x: hidden !important;
+
 }
 
 /* FIRST SLIDE */
@@ -222,6 +224,7 @@ body {
 }
 
 /* MAP SLIDES */
+
 #map-area
 {
   background-image: url(../images/map-00v1.png);
@@ -229,7 +232,8 @@ body {
     background-attachment: fixed;
 
   .country-item-info {
-    margin-top: 80px;
+
+    margin-bottom: 80px;
     position: relative;
 
     img.map-country-affected {
@@ -241,6 +245,9 @@ body {
       top: 0;
     }
   }
+
+
+
 
   .map-country-item.text-right {
       img.map-country-affected {
@@ -306,7 +313,7 @@ body {
       opacity:  0;
       z-index: 1999;
     }
-    #map-data-score h1 { display: inline; font-size: inherit;}
+    #map-data-score h1 { display: inline; font-size: inherit; &.number { font-weight: 800; }}
     #map-data-score * { font-size: 20px; vertical-align: middle; display: inline-block; }
 
 }
@@ -414,16 +421,15 @@ body {
 #final-slide
 {
   background-image: url(../images/final/top.png);
-
-  #girls
+  #video-content { opacity: 0; }
+  #girls, #girls-background
   {
-    width: inherit;
+    width: 100%;
     height: inherit;
-    position: absolute;
     background-image: url(../images/final/happy.png);
-    background-position: center 150px;
-    background-size: 100% auto;
+    background-size: 140% auto;
     background-repeat: no-repeat;
+    background-position: right center;
     background-attachment: fixed;
   }
 }

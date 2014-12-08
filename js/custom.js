@@ -1,6 +1,8 @@
+var comma_format = d3.format(",");
 $(function() {
   /* SET WINDOW AREA */
-  var comma_format = d3.format(",");
+
+  var s = null;
 
   $(window).on("resize", function() {
     var _w = $(window).width();
@@ -16,6 +18,22 @@ $(function() {
 
     /* For map */
     $("#mosaic-main-message").css({ "top" : 2 * _h/4 + "px", "height" : _h/4 * 2 + "px"});
+
+    /* For girls background */
+    var height_girls = $(window).height() - ($("#final-message").height() + $("#final-cta").height());
+    $("#girls-background").height(height_girls);
+
+    $("#transition-to-maps").width($(window).width()).height($(window).height());
+    $("#thanks-to-our-donors").width($(window).width()).height($(window).height());
+
+    $("#mosaic-area").width($(window).width()).height($(window).height());
+
+    $(".image-slideshow-item, .image-slideshow-item .first-slide, \
+              .image-slideshow-item .second-slide, \
+              .image-slideshow-item .third-slide")
+            .width($(window).width())
+            .height($(window).height());
+
   });
 
   $(window).trigger("resize");
@@ -58,13 +76,11 @@ $(function() {
 
       $("#title-slides-area").find("[data-final-count]").each(function () {
           var $this = $(this);
-          console.log($this);
           jQuery({ Counter: 0 }).animate({
                     Counter: parseFloat($this.attr("data-final-count")) }, {
                     duration: 2000,
                     easing: 'swing',
                     step: function () {
-                      console.log(this.Counter);
                       if ($this.attr("data-type") == "int")
                       { $this.text( Math.ceil(this.Counter) ); }
                       else if ($this.attr("data-type") == "float")
@@ -125,6 +141,52 @@ $(function() {
           // console.log($current_row);
       }
     });
+
+   $.get("d/image_list.json", function (data) {
+
+          //cols
+          var square_size =  $(window).height()/5; //( $(window).width() / $(window).height() ) * 64;
+
+          var square_count_rows = Math.ceil($(window).height() / square_size);
+          var square_count_cols = Math.ceil($(window).width() / square_size );
+
+          var square_height = $(window).height() / (square_count_rows - 1);
+          var square_width = $(window).width() / (square_count_cols - 1);
+
+          // console.log(square_count_cols, square_count_rows);
+          for ( var y = 0; y < square_count_rows - 1; y ++) {
+
+            var row = $("<div />").addClass("mosaic-row");
+
+            for ( var x = 0; x < square_count_cols - 1; x ++ ) {
+
+
+
+              var img_data_1 = data.image_list[ (y * square_count_rows + x) % data.image_list.length ];
+              var img_data_2 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
+
+              var item_1 = $("<div />").addClass("mosaic-image mosaic-initial-image")
+                          .css({ "background-image":  "url(" + img_data_1 + ")", width : square_width + "px", height : square_height + "px" });
+              var item_2 = $("<div />").addClass("mosaic-image mosaic-over-image")
+                          .css({ "background-image": "url(" + img_data_2 + ")", width : square_width + "px", height : square_height + "px" });
+
+              // console.log(img_data_1, img_data_2);
+
+
+              var item = $("<div />").addClass("mosaic-item").width(square_width).height(square_height);
+                  item.append(item_1);
+                  item.append(item_2);
+
+              second_fader(item_1);
+              row.append(item);
+
+            }
+            row.height(square_height);
+
+            $("#mosaic-area-container").append(row);
+
+          }
+      });
     // d3.json("d/map.json", function(error, json)
     //   {
     //     console.log(json);
@@ -211,7 +273,7 @@ $(function() {
             $(".map-country-item").each(function(i, item) {
               var _countryItem = $(this);
               var _localCounter = $(this).find('.map-count');
-
+              var _humanIcon = _countryItem.find("img.map-country-affected");
               var countryOffset = _countryItem.offset().top;
 
               if( i >= 0 ) {
@@ -225,13 +287,18 @@ $(function() {
                 if ( perc_half > 0 && perc_half <=  1)
                 {
                   curr_local_value = Math.floor(perc_half * for_value);
-                  _localCounter.text(  comma_format ( curr_local_value ) );
+                  _localCounter.html( "<span>" +  comma_format ( curr_local_value ) + "</span>");
                 }
-                else if (perc_half < 0) {  curr_local_value = 0; _localCounter.text(  comma_format ( curr_local_value ) );}
+                else if (perc_half < 0) {  curr_local_value = 0; _localCounter.html("<span>" + comma_format ( curr_local_value ) + "</span>");}
                 else if (perc_half >= 1) {
                   _localCounter.html("<span style='font-weight: 700;'>" + _localCounter.attr("final-value") + "</span>");
 
                   curr_local_value = for_value;
+                }
+
+                //If it's at the right.. set the image to be the width of counter..
+                if (_countryItem.hasClass("text-right")) {
+                  _humanIcon.css("right", _localCounter.find("span").width());
                 }
 
                 current_overall_total += curr_local_value;
@@ -255,7 +322,7 @@ $(function() {
                         _countryItem.attr("data-count-complete", 'false');
                      }
 
-                    _otherFact.find(".of-number").text(comma_format(Math.floor(otherCount * perc_half)));
+                    _otherFact.find(".of-number").html("<span>" + comma_format(Math.floor(otherCount * perc_half)) + "</span>");
                   } else if (perc_half <= 0)
                   {
                     _otherFact.find(".of-number").text(0);
@@ -277,7 +344,7 @@ $(function() {
             if (current_overall_total > 57500000) {
               $("#map-data-score h1.number").text("57.5 MILLION").css("font-weight", "700");
             } else {
-              $("#map-data-score h1.number").text( comma_format( current_overall_total ) ).css("font-weight", "normal");
+              $("#map-data-score h1.number").text( comma_format( current_overall_total ) );
             }
 
           });
@@ -293,15 +360,12 @@ $(function() {
     $("#map-data-flash-item").height($("#map-data-score").height());
     $("#map-data-flash-item").on('light-up-scoreboard', function() {
       var $this = $(this);
-      console.log($this);
-
 
       $this.css({ "opacity" : 0.5}).delay(100).animate({ "opacity" : 0 }, 300);
     });
 
-    $("#mosaic-main-message").on('data150CenterTop', function(event, direction) {
+    $("#mosaic-main-message").on('data200CenterTop', function(event, direction) {
       var $this  = $(this);
-      console.log($this);
 
       if ( direction == "down" )
       {
@@ -310,6 +374,22 @@ $(function() {
       else
       {
         $this.stop(true, true).animate({"opacity" : 0}, 500);
+      }
+
+    });
+
+    $("#mosaic-main-message").on('data-100CenterTop', function(event, direction) {
+      var $this  = $(this);
+
+      if ( direction == "down" )
+      {
+        $this.stop(true, true).animate({"opacity" : 1}, 500);
+
+        $("#first-slide-item-text").fadeOut("fast", function() { $("#second-slide-item-text").fadeIn("fast"); });
+      }
+      else
+      {
+        $("#second-slide-item-text").fadeOut("fast", function() { $("#first-slide-item-text").fadeIn("fast"); });
       }
 
     });
@@ -350,4 +430,117 @@ $(function() {
 
   });
 
+  /* OTHER EVENTS */
+   $(".image-success-item, .image-success-item .first-slide, \
+          .image-success-item .second-slide, \
+          .image-success-item .third-slide")
+        .width($(window).width())
+        .height($(window).height());
+
+
+    /* DATA EVENT LISTENERS */
+    $(".image-success-item").on("dataCenterTop", function(e, direction) {
+
+      if (direction == "down")
+      {
+        var window_w = $(window).width();
+        $(this).find(".country-title-item").stop(true, true).animate({ width : window_w + "px", opacity: "1"}, 2000);
+      }
+      else //down
+      {
+        $(this).find(".country-title-item").stop(true, true).animate({ width : "0", opacity: "0"}, 2000);
+      }
+
+    });
+
+    $(".image-success-item").on("data100TopTop", function(e, direction) {
+
+        if (direction == "down")
+        {
+
+          $(this).find(".fact-item").each(function (i, item) {
+            var change_json = JSON.parse( $(this).attr("data-change-to") );
+            $(this).stop(true, true).delay(i * 500).animate(change_json, 2000);
+          });
+
+        }
+        else //down
+        {
+          $(this).stop(true, true).find(".fact-item").animate({ width : "30px", opacity: "0"}, 2000);
+        }
+
+    });
+
+    $(".image-success-item").on("dataBottomCenter", function(e, direction) {
+
+        // console.log( $(this).offset().top, $(window).scrollTop(), $(this).offset().top - $(window).scrollTop() );
+        // console.log("THIS", $(this), e, direction);
+        var played = $(this).attr("data-played-out") == "true";
+
+        if (!played) {
+          var $target = $(this);
+
+          play_animation ($target);
+
+          $(this).attr("data-played-out", "true");
+        }
+
+    });
+
+
+  $("#thanks-to-our-donors").on("dataTopBottom", function(e, direction) {
+      if (direction == "down")
+      {
+        $("#mosaic-area-container, #map-data-score").fadeOut("fast");
+      }
+      else // direction == "down"
+      {
+        $("#mosaic-area-container, #map-data-score").fadeIn("fast");
+      }
+    });
+
+  /* DATA EVENT LISTENERS */
+    $(".image-slideshow-item").on("dataBottomCenter", function(e, direction) {
+
+        // console.log( $(this).offset().top, $(window).scrollTop(), $(this).offset().top - $(window).scrollTop() );
+        // console.log("THIS", $(this), e, direction);
+        var played = $(this).attr("data-played-out") == "true";
+
+        if (!played) {
+          var $target = $(this);
+
+          play_animation ($target);
+
+          $(this).attr("data-played-out", "true");
+        }
+
+    });
+
+    $("#final-slide").on("data100TopTop", function(e, direction) {
+      if ( direction == "down" )
+      {
+        $(this).stop(true, true).find("#video-content").animate({opacity: 1}, 500);
+      }
+      else
+      {
+        $(this).stop(true, true).find("#video-content").animate({opacity: 0}, 500);
+      }
+    });
+
+    var s;
+    setTimeout(function() {
+     s = skrollr.init({
+        keyframe: function(element,name, direction) {
+
+            console.log(element, name, direction);
+
+            $(element).trigger(name, direction);
+        }
+        ,
+        edgeStrategy: 'set',
+          easing: {
+            WTF: Math.random
+          }
+        });
+   }, 500);
 });

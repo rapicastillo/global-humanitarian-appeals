@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Global Humanitarian Appeal 2015</title>
 <meta property="og:title" content="Global Humanitarian Appeal 2015" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.unocha.org/2015appeal" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/opengraph1.jpg" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/opengraph2.jpg" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/opengraph3.jpg" />
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -257,9 +261,10 @@
   <div id="map-data-score" data-anchor-target="#map-area" data-target="#map-area"
         data-100-center-top="opacity: 0" data-bottom-top="opacity: 0" data-center-top="opacity: 1"
         data-bottom-bottom="opacity: 1; font-size: 2em;" data-top-bottom="font-size: 3.7em"
+        style="opacity: 0;"
         >
         <img src='images/icons/green-affected.png' height="50px"/> <h1 class="number green">0</h1><h1 class="text">&nbsp;PEOPLE TO BE ASSISTED IN 2015</h1></div>
-  <div id="map-area-countries" style="padding-top: 40%;"></div>
+  <div id="map-area-countries" style="padding-top: 30%;"></div>
   <div id="to-be-done-countries">
     <div class="fluid-container">
       <div class="row">
@@ -288,14 +293,15 @@
 
     <div class="mosaic-main-message calluna" id="mosaic-main-message"
                                     style="opacity: 0;"
-                                     data-150-center-top=""
+                                     data-200-center-top="..."
+                                     data--100-center-top="..."
                                      data-anchor-target="#thanks-to-our-donors"
                                      data-emit-events >
 
-      <p>The relentless cycle of large-scale crises has stretched<br/>humanitarian organizations to their very limit.</p>
+      <p id="first-slide-item-text">The relentless cycle of large-scale crises has stretched<br/>humanitarian organizations to their very limit.</p>
 
-      <p>
-      In 2014, despite a <strong class="orange">48 per cent shortfall in funding</strong> we managed to scale up <strong class="orange">life-saving operations</strong> in some of the most devastating crises.</p>
+      <p id="second-slide-item-text" style="display: none">
+      When we have the funds, we can save lives and avert further suffering. For example, in 2014, despite a <strong class="orange">48 per cent shortfall in funding</strong> we managed to scale up <strong class="orange">life-saving operations</strong> in some of the most devastating crises.</p>
 
     </div>
 
@@ -425,12 +431,12 @@
   </div>
 </div>
 
-<div id="final-slide">
-  <div id="girls" style="z-index: 1000; opacity: 0" data-anchor-target="#call-to-action" data-target="#call-to-action"
-      data-bottom-top="background-position: center 150px; background-size: 100%" data-bottom-bottom="background-position: center -200px; background-size: 100%;" data-100-bottom-top="..." data-emit-events></div>
+<div id="final-slide"  data-100-top-top="..." data-emit-events>
+  <!-- <div id="girls" style="z-index: 1000; opacity: 0" data-anchor-target="#call-to-action" data-target="#call-to-action"
+      data-bottom-top="background-position: center 150px; background-size: 100%" data-bottom-bottom="background-position: center -200px; background-size: 100%;" data-100-bottom-top="..." data-emit-events></div> -->
   <div class="fluid-container" data-anchor-target="#final-slide">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12" id="final-message">
         <h2 class="text-center white calluna">
           Our actions depend on your contributions.
         </h2>
@@ -439,40 +445,42 @@
         </h1>
       </div>
     </div>
-  </div>
-</div>
 
-<div id="call-to-action">
-  <div class="container">
-    <div class="row"><div class="col-md-12">&nbsp;</div></div>
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-          <div class="row">
-          <!-- WATCH -->
-            <div class="col-md-6">
-
-              <div class="cta-content">
+      <div class="col-md-12" id="girls-background">
+        <div class="row">
+          <div class="col-md-8"></div>
+          <div class="col-md-4">
+            <div id="video-content" style="opacity: 0" data-anchor-target="#final-slide" data-bottom-top="opacity: 0">
+              <h3 class="text-center white " style="font-weight: 800">WATCH</h3>
+              <div class="cta-content text-center">
                 <a class="ss-youtube" href="http://player.vimeo.com/video/113755969?rel=0&amp;wmode=transparent&amp;autoplay=1">
-                  <img src="images/final/video-icon.png" width="100%"/>
+                  <img src="images/final/video-icon.png" height="200px"/>
                 </a>
               </div>
-
-
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10" id="final-cta">
+          <div class="row">
 
             <!-- SHARE -->
-            <div class="col-md-3">
+            <div class="col-md-6">
+              <h4 class="text-center white" style="font-weight: 800">SHARE</h4>
+              <div class="cta-content cta-square">
 
-              <div class="cta-content">
-                <div class="fb-share-button" data-href="http://www.unocha.org/2015appeal" data-layout="box_count"></div>
-
-                <p>
-                  <a class="facebook-logo" id="facebook-link" target="_blank" href="javascript: void(0);"
-                    <img src="images/final/facebook-icon.png" />
+                <p class="text-center">
+                  <a class="facebook-logo" id="facebook-link" target="_blank" href="javascript: void(0);">
+                    <img src="images/final/facebookicon.png" height="75px"/>
                   </a>
                   <a class="twitter-logo" href="javascript: void(0);">
-                    <img src="images/final/twitter-icon.png" />
+                    <img src="images/final/twittericon.png" height="75px" />
                   </a>
                 </p>
               </div>
@@ -481,21 +489,17 @@
             </div>
 
             <!-- LEARN MORE -->
-            <div class="col-md-3">
-
-              <div class="cta-content">
+            <div class="col-md-6">
+              <h4 class="text-center white" style="font-weight: 800">LEARN MORE</h4>
+              <div class="cta-content cta-square text-center">
                 <a href="downloads/report.pdf" target="_blank">
-                  <img src="images/final/download-report.png" style="width: 100%;"/>
+                  <img src="images/final/download-report.png" style="height: 150px;"/>
                 </a>
               </div>
 
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 text-center"><h4 class="text-center white">WATCH</h4></div>
-            <div class="col-md-3 text-center"><h4 class="text-center white">SHARE</h4></div>
-            <div class="col-md-3 text-center"><h4 class="text-center white">LEARN MORE</h4></div>
-          </div>
+
       </div>
       <div class="col-md-1"></div>
     </div>
@@ -512,268 +516,5 @@
 
 <script src="js/functions.js"></script>
 <script src="js/custom.js"></script>
-
-<script type="text/javascript">
-
-  $(function () {
-
-    var comma_format = d3.format(",");
-    $(".image-slideshow-item, .image-slideshow-item .first-slide, \
-          .image-slideshow-item .second-slide, \
-          .image-slideshow-item .third-slide")
-        .width($(window).width())
-        .height($(window).height());
-
-
-    /* DATA EVENT LISTENERS */
-    $(".image-slideshow-item").on("dataBottomCenter", function(e, direction) {
-
-        // console.log( $(this).offset().top, $(window).scrollTop(), $(this).offset().top - $(window).scrollTop() );
-        // console.log("THIS", $(this), e, direction);
-        var played = $(this).attr("data-played-out") == "true";
-
-        if (!played) {
-          var $target = $(this);
-
-          console.log($(this));
-          play_animation ($target);
-
-          $(this).attr("data-played-out", "true");
-        }
-
-    });
-
-    function play_animation($target) {
-        $target.find(".country-title-item");
-
-        $target.find(".country-title-item").animate({opacity: 1, width: "100%"}, 2000);
-        $target.find(".first-slide").delay(500).fadeOut(500, function() {
-
-
-
-            $(this).closest(".image-slideshow-item")
-              .find(".fact-number").each(function() {
-
-              var $this = $(this);
-              console.log($this);
-
-              var ext = $this.attr("data-nth");
-
-              $this.closest(".fact-item").delay(200).animate({opacity: 1, bottom: "+=20px" }, 3000, "swing");
-              jQuery({ Counter: 0 }).animate({ Counter: parseInt($this.attr("data-count")) }, {
-                duration: 2000,
-                easing: 'swing',
-                step: function () {
-                  var amt = "";
-                  if (ext == "K") {
-                    amt = comma_format( Math.ceil(this.Counter));
-                  } else {
-                    amt = comma_format( Math.ceil(this.Counter * 10) / 10 );
-
-                    if ( amt % 1 == 0 ) { amt = amt + ".0"; }
-                  }
-
-                  $this.text( amt + "" + ext);
-                },
-
-                complete: function() {
-                    console.log("XXX");
-                    $this.text($this.attr("data-final") + ext);
-
-                  }
-              });
-            });
-
-            $target.find(".second-slide").delay(800).fadeOut(500, function() {});
-
-        });
-    };
-
-
-  });
-
-  </script>
-  <script>
-    $(function() {
-      $("#transition-to-maps").width($(window).width()).height($(window).height());
-    });
-  </script>
-
-
-  <script type="text/javascript">
-
-$(function() {
-});
-
-</script>
-<script type="text/javascript">
-
-$(function() {
-  /* Styling */
-
-  $("#thanks-to-our-donors").width($(window).width()).height($(window).height());
-
-  $("#thanks-to-our-donors").on("dataTopBottom", function(e, direction) {
-    console.log("Thanks to our donors", e, direction);
-    if (direction == "down")
-    {
-      $("#mosaic-area-container, #map-data-score").fadeOut("fast");
-    }
-    else // direction == "down"
-    {
-      $("#mosaic-area-container, #map-data-score").fadeIn("fast");
-    }
-  })
-
-  // $(".mosaic-main-message").each(function() {
-  //     $(this).css({
-  //         "marginTop" : "-" + $(this).height() /2 + "px",
-  //         "marginLeft" : "-" + $(this).width()/2 + "px",
-  //         "left" : $(window).width()/2 + "px",
-  //         "top" : $(window).height()/2 + "px",
-  //     });
-  //   });
-
-  function fader(item)
-  {
-    var timeout_delay = (Math.random() * 5000) + 1000;
-    setTimeout(function() {
-      var delay1 = (Math.random() * 5000) + 3000;
-      var delay2 = (Math.random() * 5000) + 3000;
-
-      item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
-    }, timeout_delay);
-  }
-  $.get("d/image_list.json", function (data) {
-
-      //cols
-      var square_size =  $(window).height()/5; //( $(window).width() / $(window).height() ) * 64;
-
-      var square_count_rows = Math.ceil($(window).height() / square_size);
-      var square_count_cols = Math.ceil($(window).width() / square_size );
-
-      var square_height = $(window).height() / (square_count_rows - 1);
-      var square_width = $(window).width() / (square_count_cols - 1);
-
-      // console.log(square_count_cols, square_count_rows);
-      for ( var y = 0; y < square_count_rows - 1; y ++) {
-
-        var row = $("<div />").addClass("mosaic-row");
-
-        for ( var x = 0; x < square_count_cols - 1; x ++ ) {
-
-
-
-          var img_data_1 = data.image_list[ (y * square_count_rows + x) % data.image_list.length ];
-          var img_data_2 = data.image_list[ Math.floor( Math.random() * data.image_list.length ) ];
-
-          var item_1 = $("<div />").addClass("mosaic-image mosaic-initial-image")
-                      .css({ "background-image":  "url(" + img_data_1 + ")", width : square_width + "px", height : square_height + "px" });
-          var item_2 = $("<div />").addClass("mosaic-image mosaic-over-image")
-                      .css({ "background-image": "url(" + img_data_2 + ")", width : square_width + "px", height : square_height + "px" });
-
-          // console.log(img_data_1, img_data_2);
-
-
-          var item = $("<div />").addClass("mosaic-item").width(square_width).height(square_height);
-              item.append(item_1);
-              item.append(item_2);
-
-          fader(item_1);
-          row.append(item);
-
-        }
-        row.height(square_height);
-
-        $("#mosaic-area-container").append(row);
-
-      }
-
-      $("#mosaic-area").width($(window).width()).height($(window).height());
-
-
-      var s = skrollr.init({
-      keyframe: function(element,name, direction) {
-          console.log(element, name, direction);
-          $(element).trigger(name, direction);
-      }
-      ,
-      edgeStrategy: 'set',
-        easing: {
-          WTF: Math.random
-        }
-      });
-  });
-});
-
-
-</script>
-
-<script type="text/javascript">
-
-  $(function () {
-
-    var comma_format = d3.format(",");
-    $(".image-success-item, .image-success-item .first-slide, \
-          .image-success-item .second-slide, \
-          .image-success-item .third-slide")
-        .width($(window).width())
-        .height($(window).height());
-
-
-    /* DATA EVENT LISTENERS */
-    $(".image-success-item").on("dataCenterTop", function(e, direction) {
-
-      if (direction == "down")
-      {
-        var window_w = $(window).width();
-        $(this).find(".country-title-item").stop(true, true).animate({ width : window_w + "px", opacity: "1"}, 2000);
-      }
-      else //down
-      {
-        console.log("UP", $(this).find(".country-title-item") );
-        $(this).find(".country-title-item").stop(true, true).animate({ width : "0", opacity: "0"}, 2000);
-      }
-
-    });
-
-    $(".image-success-item").on("data100TopTop", function(e, direction) {
-
-        if (direction == "down")
-        {
-
-          $(this).find(".fact-item").each(function (i, item) {
-            var change_json = JSON.parse( $(this).attr("data-change-to") );
-            $(this).stop(true, true).delay(i * 500).animate(change_json, 2000);
-          });
-
-        }
-        else //down
-        {
-          $(this).stop(true, true).find(".fact-item").animate({ width : "30px", opacity: "0"}, 2000);
-        }
-
-    });
-
-    $(".image-success-item").on("dataBottomCenter", function(e, direction) {
-
-        // console.log( $(this).offset().top, $(window).scrollTop(), $(this).offset().top - $(window).scrollTop() );
-        // console.log("THIS", $(this), e, direction);
-        var played = $(this).attr("data-played-out") == "true";
-
-        if (!played) {
-          var $target = $(this);
-
-          console.log($(this));
-          play_animation ($target);
-
-          $(this).attr("data-played-out", "true");
-        }
-
-    });
-
-  });
-  </script>
-
 </body>
 </html>

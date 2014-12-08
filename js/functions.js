@@ -1,3 +1,5 @@
+var comma_format = d3.format(",");
+
 function slide_endlessly(row, speed, square_width, direction_)
 {
 
@@ -96,8 +98,6 @@ function refresh_slide2 ()
 
         var speed =  2000 + (Math.ceil(Math.random() * 10) * 1000);
 
-        console.log(row, speed, square_width);
-
         slide_endlessly(row, speed, square_width, direction[y % 2]);
 
         $("#burst-face-area").append(row);
@@ -109,3 +109,58 @@ function refresh_slide2 ()
   });
 
 }
+
+function second_fader(item)
+  {
+    var timeout_delay = (Math.random() * 5000) + 1000;
+    setTimeout(function() {
+      var delay1 = (Math.random() * 5000) + 3000;
+      var delay2 = (Math.random() * 5000) + 3000;
+
+      item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
+    }, timeout_delay);
+  }
+
+ function play_animation($target) {
+        $target.find(".country-title-item");
+
+        $target.find(".country-title-item").animate({opacity: 1, width: "100%"}, 2000);
+        $target.find(".first-slide").delay(100).fadeOut(500, function() {
+
+
+
+            $(this).closest(".image-slideshow-item")
+              .find(".fact-number").each(function() {
+
+              var $this = $(this);
+
+              var ext = $this.attr("data-nth");
+
+              $this.closest(".fact-item").delay(200).animate({opacity: 1, bottom: "+=20px" }, 1000, "swing");
+              jQuery({ Counter: 0 }).animate({ Counter: parseInt($this.attr("data-count")) }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function () {
+                  var amt = "";
+                  if (ext == "K") {
+                    amt = comma_format( Math.ceil(this.Counter));
+                  } else {
+                    amt = comma_format( Math.ceil(this.Counter * 10) / 10 );
+
+                    if ( amt % 1 == 0 ) { amt = amt + ".0"; }
+                  }
+
+                  $this.text( amt + "" + ext);
+                },
+
+                complete: function() {
+                    $this.text($this.attr("data-final") + ext);
+
+                  }
+              });
+            });
+
+            $target.find(".second-slide").delay(800).fadeOut(500, function() {});
+
+        });
+    };
