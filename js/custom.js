@@ -2,11 +2,6 @@ var comma_format = d3.format(",");
 
 
 $(function() {
-  var uagent = navigator.userAgent.toLowerCase();
-
-  if (uagent.search("iphone") > -1 || uagent.search("android") > -1) {
-    window.location = "./m.php";
-  }
 
   /* Set all ajax calls to false.. */
   // $.ajaxSetup({

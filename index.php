@@ -18,7 +18,15 @@
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800'/>
 
   <link rel="stylesheet" href="css/custom.css" />
+  <script type="text/javascript">
 
+  var uagent = navigator.userAgent.toLowerCase();
+
+  if (uagent.search("iphone") > -1 || uagent.search("android") > -1) {
+    window.location = "./m.php";
+  }
+
+  </script>
   <!-- SLIDE 3 STYLE -->
   <style>
 
