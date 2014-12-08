@@ -413,7 +413,7 @@ $(function() {
         url: "http://www.unocha.org/2015appeal",
         via: "unocha",
         hashtags: "2015Appeal",
-        text: "Every life is priceless."
+        text: "An innovative snapshot of the humanitarian landscape in 2015"
       });
 
       win = window.open("https://twitter.com/intent/tweet?" + param, "twitter", "height=300,width=600,modal=yes,alwaysRaised=yes");
