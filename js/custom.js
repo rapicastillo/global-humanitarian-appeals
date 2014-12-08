@@ -4,9 +4,9 @@ var comma_format = d3.format(",");
 $(function() {
 
   /* Set all ajax calls to false.. */
-  // $.ajaxSetup({
-  //   async: false
-  // });
+  $.ajaxSetup({
+    async: false
+  });
 
   /* SET WINDOW AREA */
   var s = null;
@@ -555,6 +555,6 @@ $(function() {
     setTimeout(function() {
       $("body").css("opacity", 1);
       // $("#initial-cover").fadeOut("fast");
-      $(window).trigger("resize");
+      // $(window).trigger("resize");
     }, 100);
 });
