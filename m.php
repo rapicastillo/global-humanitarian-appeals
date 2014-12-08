@@ -37,7 +37,7 @@
     <div class="col-sm-12 text-center">
       <h3 class="white">Mobile version coming soon.</h3>
 
-      <h4 class="text-center white" style="font-weight: 800">Download</h4>
+      <h4 class="text-center white" style="font-weight: 800">Download Appeal</h4>
               <div class="cta-content cta-square text-center">
                 <a href="downloads/report.pdf" target="_blank">
                   <img src="images/final/download-report.png" style="height: 150px;"/>
