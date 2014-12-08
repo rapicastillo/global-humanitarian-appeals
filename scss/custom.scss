@@ -5,6 +5,21 @@
     src: url(../font/Calluna-Regular.otf);
 }
 
+#initial-cover
+{
+  background-color: black;
+
+  position: fixed;
+  background-color: whitesmoke;
+  background: url(../images/1-title-bg.png) ;
+  background-size: cover;
+
+  z-index: 10000;
+
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: black;
   font-family: 'Open Sans';
@@ -18,6 +33,7 @@ body {
 
   overflow-x: hidden !important;
 
+  opacity: 0;
 }
 
 /* FIRST SLIDE */

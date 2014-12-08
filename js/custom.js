@@ -1,9 +1,15 @@
 var comma_format = d3.format(",");
+var uagent = navigator.userAgent.toLowerCase();
+
+if (uagent.search("iphone") > -1 || uagent.search("android") > -1) {
+  window.location = "./m.php";
+}
+
 $(function() {
   /* Set all ajax calls to false.. */
-  $.ajaxSetup({
-    async: false
-  });
+  // $.ajaxSetup({
+  //   async: false
+  // });
 
   /* SET WINDOW AREA */
   var s = null;
@@ -11,6 +17,9 @@ $(function() {
   $(window).on("resize", function() {
     var _w = $(window).width();
     var _h = $(window).height();
+
+
+
     $("#title-slides-area, #title-slides-area > .row, #background-world").height($(window).height());
     $("#ending-message-area, #final-slide").height($(window).height()).width($(window).width());
 
@@ -57,7 +66,8 @@ $(function() {
       /* Animation ..  */
 
       //SLIDE 1:
-    function startTitleSlide() {
+
+  setTimeout(function() {
 
       var parent = $("#first-with-people-fades");
       var people_layers = 12;
@@ -94,12 +104,16 @@ $(function() {
 
         });
 
-    }
+    }, 150);
 
 
     // MAP AREA
     var data;
-    $.get("d/map.json", function(data) {
+    $.ajax(
+      {
+        url: "d/map.json",
+        async: false,
+        success: function(data) {
 
       var $map_div = $("#map-area-countries");
       var current_row;
@@ -143,7 +157,8 @@ $(function() {
           $current_row.append( $("<div />").addClass("col-md-1") );
           // console.log($current_row);
       }
-    });
+    }
+  });
 
    $.get("d/image_list.json", function (data) {
 
@@ -524,20 +539,25 @@ $(function() {
     });
 
     var s = skrollr.init({
-        render: function(data) {
-        },
-        keyframe: function(element,name, direction) {
+      render: function(data) {
+      },
+      keyframe: function(element,name, direction) {
 
-            // console.log(element, name, direction);
+          // console.log(element, name, direction);
 
-            $(element).trigger(name, direction);
+          $(element).trigger(name, direction);
+      }
+      ,
+      edgeStrategy: 'set',
+        easing: {
+          WTF: Math.random
         }
-        ,
-        edgeStrategy: 'set',
-          easing: {
-            WTF: Math.random
-          }
-      });
+    });
 
-    startTitleSlide();
+
+    setTimeout(function() {
+      $("body").css("opacity", 1);
+      // $("#initial-cover").fadeOut("fast");
+      $(window).trigger("resize");
+    }, 100);
 });

@@ -202,11 +202,13 @@
 
     #slide-success-5-iraq .first-slide { background-image: url(images/success/iraq-fg.png); }
     #slide-success-5-iraq .second-slide { background-image: url(images/success/iraq-bg.png); }
+
+    body > * { opacity: 0; }
   </style>
 
 </head>
 <body>
-
+  <!-- <div id="initial-cover" style="width: 100%; height: 100%;"></div> -->
 
   <?php include("partials/title_page.php"); ?>
 
@@ -508,6 +510,9 @@
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 <script src="js/skrollr.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/skrollr-ie.min.js"></script>
+<![endif]-->
 
 <script src="js/functions.js"></script>
 <script src="js/custom.js"></script>
@@ -522,6 +527,10 @@
   ga('send', 'pageview');
 
 </script>
-
+<script type="text/javascript">
+$(function() {
+  $("body > *").css("opacity", 1);
+});
+</script>
 </body>
 </html>
