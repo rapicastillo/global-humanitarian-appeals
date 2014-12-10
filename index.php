@@ -8,9 +8,9 @@
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb-1.jpg" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb2.jpg" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb3.jpg" />
-
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 <META HTTP-EQUIV="Expires" CONTENT="-1">
+<meta name="keywords" content="Global humanitarian appeal, UN, United Nations, crises, aid, 16.4 million, 57.5 million, people, globe, world funding, funds, ERC Chief, VAlerie Amos, OCHA, Syria, Iraq, South Sudan, CAR, Central African Republic">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">

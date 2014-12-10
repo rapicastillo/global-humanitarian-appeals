@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Calluna;
+  src: url(../font/Calluna-Regular.otf); }
+[bold] {
+  font-weight: 800; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 10px 5px; }
+
+.calluna {
+  font-family: Calluna, Georgia, Times New Roman, serif; }
+
+body {
+  opacity: 1;
+  font-family: Open Sans;
+  color: white;
+  background-color: white;
+  background: url(images/1-title-bg.png); }
+
+#cover-page {
+  background-image: url(../images/mob/title-bg.png);
+  background-position: center center;
+  background-size: cover; }
+
+.mobile-image {
+  width: 100%; }
+
+.mobile-icon {
+  width: 40px; }
+
+.blue-bg {
+  background-color: #003856;
+  color: white; }
+  .blue-bg.translucent {
+    background-color: rgba(0, 56, 86, 0.7); }
+
+.green-bg {
+  background-color: #9ab62b;
+  color: white; }
+  .green-bg.translucent {
+    background-color: rgba(78, 108, 6, 0.6); }
+
+.green {
+  color: #9ab62b; }
+
+.orange {
+  color: #f47932; }
+
+.white {
+  color: white; }
+
+.row .col-sm-12 .free-flying-top, .row .col-sm-12 .free-flying-bottom {
+  width: 100%;
+  position: absolute; }
+.row .col-sm-12 .free-flying-top {
+  top: 0; }
+.row .col-sm-12 .free-flying-bottom {
+  bottom: 0; }
+
+#map-area {
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-image: url(../images/mob/maps-bg.png);
+  background-position: center center; }
+  #map-area .map-country-affected {
+    height: 40px; }
+  #map-area .other-fact-item img {
+    width: 40px; }
+
+#final-cta {
+  background-image: url(../images/mob/cta-bg.png); }

@@ -2,12 +2,23 @@
 @font-face {
   font-family: Calluna;
   src: url(../font/Calluna-Regular.otf); }
+#initial-cover {
+  background-color: black;
+  position: fixed;
+  background-color: whitesmoke;
+  background: url(../images/1-title-bg.png);
+  background-size: cover;
+  z-index: 10000;
+  width: 100%;
+  height: 100%; }
+
 body {
   background-color: black;
   font-family: 'Open Sans';
   margin: 0;
   padding: 0;
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  opacity: 0; }
   body .green {
     color: #9ab62b; }
   body .orange {
@@ -16,6 +27,8 @@ body {
     color: white; }
   body .black {
     color: #333333; }
+  body #colorbox {
+    opacity: 1 !important; }
 
 /* FIRST SLIDE */
 #title-slides-area {
@@ -158,11 +171,11 @@ body {
     padding: 15px 40px; }
   #l3-slideshows .image-slideshow-item .country-title-item h1 {
     margin: 0;
-    font-size: 58px;
+    font-size: 4em;
     font-weight: 700; }
   #l3-slideshows .image-slideshow-item .fact-item {
     position: absolute;
-    font-size: 22px;
+    font-size: 1.4em;
     z-index: 2000;
     opacity: 0; }
   #l3-slideshows #slide-1-philippines .first-slide {
@@ -209,7 +222,7 @@ body {
   /* width: 100%;
   height: 100%; */ }
   #map-area .country-item-info {
-    margin-top: 80px;
+    margin-bottom: 80px;
     position: relative; }
     #map-area .country-item-info img.map-country-affected {
       position: absolute;
@@ -290,7 +303,7 @@ body {
   padding: 15px 40px; }
   #success-stories-area .country-title-item h1 {
     margin: 0;
-    font-size: 58px;
+    font-size: 4em;
     font-weight: 700; }
 
 #mosaic-area {
@@ -308,7 +321,7 @@ body {
     background-color: rgba(0, 56, 86, 0.9);
     width: 100%;
     left: 0;
-    font-size: 32px;
+    font-size: 2.4em;
     z-index: 1300;
     color: white;
     padding: 20px;
@@ -339,6 +352,8 @@ body {
     background-size: 100% auto;
     background-position: 0 0;
     height: inherit; }
+  #ending-message-area h3 {
+    font-size: 1.7em; }
 
 #final-slide {
   background-image: url(../images/final/top.png); }
@@ -348,7 +363,7 @@ body {
     background-image: url(../images/final/happy.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: middle center;
     background-attachment: fixed; }
 
 #call-to-action {
