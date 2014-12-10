@@ -4,6 +4,8 @@
 }
 [bold] { font-weight: 800; }
 
+
+body > .container-fluid { overflow-x: hidden !important; }
 h1, h2, h3, h4, h5 { margin: 0; padding: 10px 5px;}
 .calluna { font-family: Calluna, Georgia, Times New Roman, serif; }
 body { opacity: 1; font-family: Open Sans; color: white; background-color: white; background: url(images/1-title-bg.png) ;

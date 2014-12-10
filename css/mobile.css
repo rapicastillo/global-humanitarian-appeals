@@ -4,6 +4,9 @@
 [bold] {
   font-weight: 800; }
 
+body > .container-fluid {
+  overflow-x: hidden !important; }
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 10px 5px; }
