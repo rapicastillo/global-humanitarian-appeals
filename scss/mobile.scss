@@ -6,7 +6,10 @@
 
 h1, h2, h3, h4, h5 { margin: 0; padding: 10px 5px;}
 .calluna { font-family: Calluna, Georgia, Times New Roman, serif; }
-body { opacity: 1; font-family: Open Sans; color: white; background-color: white; background: url(images/1-title-bg.png) ; }
+body { opacity: 1; font-family: Open Sans; color: white; background-color: white; background: url(images/1-title-bg.png) ;
+
+  overflow-x: hidden !important;
+}
 
 #cover-page
 {
@@ -30,12 +33,12 @@ body { opacity: 1; font-family: Open Sans; color: white; background-color: white
 .orange { color: #f47932; }
 .white { color: white; }
 
-.row
+.row, .row-fluid
 {
+
   .col-sm-12
   {
-
-    .free-flying-top, .free-flying-bottom { width: 100%; position: absolute; }
+    .free-flying-top, .free-flying-bottom { width: inherit; position: absolute; }
     .free-flying-top { top: 0; }
     .free-flying-bottom { bottom: 0; }
   }

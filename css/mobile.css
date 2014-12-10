@@ -16,7 +16,8 @@ body {
   font-family: Open Sans;
   color: white;
   background-color: white;
-  background: url(images/1-title-bg.png); }
+  background: url(images/1-title-bg.png);
+  overflow-x: hidden !important; }
 
 #cover-page {
   background-image: url(../images/mob/title-bg.png);
@@ -50,12 +51,12 @@ body {
 .white {
   color: white; }
 
-.row .col-sm-12 .free-flying-top, .row .col-sm-12 .free-flying-bottom {
-  width: 100%;
+.row .col-sm-12 .free-flying-top, .row .col-sm-12 .free-flying-bottom, .row-fluid .col-sm-12 .free-flying-top, .row-fluid .col-sm-12 .free-flying-bottom {
+  width: inherit;
   position: absolute; }
-.row .col-sm-12 .free-flying-top {
+.row .col-sm-12 .free-flying-top, .row-fluid .col-sm-12 .free-flying-top {
   top: 0; }
-.row .col-sm-12 .free-flying-bottom {
+.row .col-sm-12 .free-flying-bottom, .row-fluid .col-sm-12 .free-flying-bottom {
   bottom: 0; }
 
 #map-area {
