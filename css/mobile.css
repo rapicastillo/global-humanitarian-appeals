@@ -4,7 +4,7 @@
 [bold] {
   font-weight: 800; }
 
-body > .container-fluid {
+body > .fluid-container {
   overflow-x: hidden !important; }
 
 h1, h2, h3, h4, h5 {
@@ -55,7 +55,7 @@ body {
   color: white; }
 
 .row .col-sm-12 .free-flying-top, .row .col-sm-12 .free-flying-bottom, .row-fluid .col-sm-12 .free-flying-top, .row-fluid .col-sm-12 .free-flying-bottom {
-  width: inherit;
+  width: 100%;
   position: absolute; }
 .row .col-sm-12 .free-flying-top, .row-fluid .col-sm-12 .free-flying-top {
   top: 0; }
