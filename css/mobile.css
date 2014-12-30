@@ -4,6 +4,9 @@
 [bold] {
   font-weight: 800; }
 
+body, html {
+  overflow-x: hidden; }
+
 body > .fluid-container {
   overflow-x: hidden !important; }
 
@@ -11,9 +14,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 10px 5px; }
 
-.calluna {
-  font-family: Calluna, Georgia, Times New Roman, serif; }
-
+/* .calluna { font-family: Calluna, Georgia, Times New Roman, serif; } */
 body {
   opacity: 1;
   font-family: Open Sans;
@@ -54,6 +55,8 @@ body {
 .white {
   color: white; }
 
+.row.no-gutter, .row.no-gutter [class^="col-"], .row-fluid.no-gutter, .row-fluid.no-gutter [class^="col-"] {
+  padding: 0; }
 .row .col-sm-12 .free-flying-top, .row .col-sm-12 .free-flying-bottom, .row-fluid .col-sm-12 .free-flying-top, .row-fluid .col-sm-12 .free-flying-bottom {
   width: 100%;
   position: absolute; }
@@ -66,7 +69,8 @@ body {
   background-size: 100% auto;
   background-attachment: fixed;
   background-image: url(../images/mob/maps-bg.png);
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat; }
   #map-area .map-country-affected {
     height: 40px; }
   #map-area .other-fact-item img {

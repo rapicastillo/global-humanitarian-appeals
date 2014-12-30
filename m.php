@@ -9,6 +9,8 @@
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb2.jpg" />
 <meta property="og:image" content="http://www.unocha.org/2015appeal/images/fb/fb3.png" />
 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 <META HTTP-EQUIV="Expires" CONTENT="-1">
 
@@ -20,7 +22,7 @@
   <link rel="stylesheet" href="css/mobile.css" />
 </head>
 <body>
-<!-- <div class="fluid-container">
+<!-- <div class="container-fluid">
   <div class="row" style=" width: 100% ">
     <div class="col-sm-12">
       <img src="images/title.png" style="width: 100%;"/>
@@ -38,7 +40,7 @@
   </div>
 </div> -->
 
-<div class="fluid-container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-12" id="cover-page">
       <div class="row">
@@ -56,7 +58,7 @@
   <!-- SLIDE 2 -->
   <div class="row">
     <div class='col-sm-12'>
-      <div class='row'>
+      <div class='row no-gutter'>
         <div class='col-sm-12'><img src='images/mob/mosaic_1a.png' class='mobile-image' /></div>
       </div>
       <div class='row blue-bg'>
@@ -68,7 +70,7 @@
           <h3 class='calluna'>The year will open with <span class='orange'>tens of millions</span> suffering the consequences of these and other emergencies.</h3>
         </div>
       </div>
-      <div class='row'><div class='col-sm-12'><img src='images/mob/mosaic_1b.png' class='mobile-image' /></div></div>
+      <div class='row no-gutter'><div class='col-sm-12'><img src='images/mob/mosaic_1b.png' class='mobile-image' /></div></div>
     </div>
   </div>
 
@@ -76,22 +78,30 @@
   <div class='row'>
     <div class='col-sm-12'>
 
-      <div class='row'><div class='col-sm-12'>
-        <img src='images/mob/l3_syria.png' class='mobile-image' />
-         <div class='free-flying-bottom' class='fluid-container'>
-          <div class='row'>
-            <div class='col-sm-12 green-bg text-left translucent'><h1 bold>SYRIA</h1></div>
+      <div class='row no-gutter'>
+        <div class='col-sm-12'>
+          <img src='images/mob/l3_syria.png' class='mobile-image' />
+
+          <div class='free-flying-top container-fluid'>
+
           </div>
-          <div class='row'>
-            <div class='col-sm-12 blue-bg translucent'>
-              <h2 bold class='orange'>12.2 M</h2>
-              <h3 class='orange'>PEOPLE IN NEED</h3>
-              <h2 bold class='orange' style="margin-top: 10px;">7.6 M</h2>
-              <h3 class='orange'>INTERNALLY DISPLACED PEOPLE</h3>
+
+          <div class='free-flying-bottom container-fluid'>
+            <div class='row'>
+              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>SYRIA</h1></div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-12 blue-bg translucent'>
+                <h2 bold class='orange'>12.2 M</h2>
+                <h3 class='orange'>PEOPLE IN NEED</h3>
+                <h2 bold class='orange' style="margin-top: 10px;">7.6 M</h2>
+                <h3 class='orange'>INTERNALLY DISPLACED PEOPLE</h3>
+              </div>
             </div>
           </div>
+
         </div>
-      </div></div>
+      </div>
     </div>
   </div>
 
@@ -99,15 +109,15 @@
   <div class='row'>
     <div class='col-sm-12'>
 
-      <div class='row'>
+      <div class='row no-gutter'>
         <div class='col-sm-12'>
           <img src='images/mob/l3_southsudan.png' class='mobile-image' />
 
-          <div class='free-flying-top fluid-container'>
+          <div class='free-flying-top container-fluid'>
 
           </div>
 
-          <div class='free-flying-bottom fluid-container'>
+          <div class='free-flying-bottom container-fluid'>
             <div class='row'>
               <div class='col-sm-12 green-bg text-left translucent'><h1 bold>SOUTH SUDAN</h1></div>
             </div>
@@ -130,22 +140,31 @@
   <div class='row'>
     <div class='col-sm-12'>
 
-      <div class='row'><div class='col-sm-12'>
-        <img src='images/mob/l3_car.png' class='mobile-image' />
-         <div class='free-flying-bottom' class='fluid-container'>
-          <div class='row'>
-            <div class='col-sm-12 green-bg text-left translucent'><h1 bold>CENTRAL AFRICAN REPUBLIC</h1></div>
+      <div class='row no-gutter'>
+        <div class='col-sm-12'>
+          <img src='images/mob/l3_car.png' class='mobile-image' />
+
+          <div class='free-flying-top container-fluid'>
+
           </div>
-          <div class='row'>
-            <div class='col-sm-12 blue-bg translucent'>
-              <h2 bold class='orange'>2.7 M</h2>
-              <h3 class='orange'>PEOPLE IN NEED</h3>
-              <h2 bold class='orange' style="margin-top: 10px;">1.95 M</h2>
-              <h3 class='orange'>INTERNALLY DISPLACED PEOPLE</h3>
+
+          <div class='free-flying-bottom container-fluid'>
+            <div class='row'>
+              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>CENTRAL AFRICAN REPUBLIC</h1></div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-12 blue-bg translucent'>
+                <h2 bold class='orange'>2.7 M</h2>
+                <h3 class='orange'>PEOPLE IN NEED</h3>
+                <h2 bold class='orange' style="margin-top: 10px;">430 K</h2>
+                <h3 class='orange'>INTERNALLY DISPLACED PEOPLE</h3>
+              </div>
             </div>
           </div>
+
         </div>
-      </div></div>
+      </div>
+
     </div>
   </div>
 
@@ -154,22 +173,33 @@
   <div class='row'>
     <div class='col-sm-12'>
 
-      <div class='row'><div class='col-sm-12'>
-        <img src='images/mob/l3_iraq.png' class='mobile-image' />
-         <div class='free-flying-bottom' class='fluid-container'>
-          <div class='row'>
-            <div class='col-sm-12 green-bg text-left translucent'><h1 bold>IRAQ</h1></div>
+
+      <div class='row no-gutter'>
+        <div class='col-sm-12'>
+          <img src='images/mob/l3_iraq.png' class='mobile-image' />
+
+          <div class='free-flying-top container-fluid'>
+
           </div>
-          <div class='row'>
-            <div class='col-sm-12 blue-bg translucent'>
-              <h2 bold class='orange'>5.2 M</h2>
-              <h3 class='orange'>PEOPLE IN NEED</h3>
-              <h2 bold class='orange' style="margin-top: 10px;">2.1 M</h2>
-              <h3 class='orange'>NEWLY DISPLACED PEOPLE SINCE JANUARY 2014</h3>
+
+          <div class='free-flying-bottom container-fluid'>
+            <div class='row'>
+              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>IRAQ</h1></div>
+            </div>
+            <div class='row'>
+              <div class='col-sm-12 blue-bg translucent'>
+                <h2 bold class='orange'>5.2 M</h2>
+                <h3 class='orange'>PEOPLE IN NEED</h3>
+                <h2 bold class='orange' style="margin-top: 10px;">2.1M</h2>
+                <h3 class='orange'>NEWLY DISPLACED PEOPLE SINCE JANUARY 2014</h3>
+              </div>
             </div>
           </div>
+
         </div>
-      </div></div>
+      </div>
+
+
     </div>
   </div>
 
@@ -201,7 +231,7 @@
   <div class='row'>
     <div class='col-sm-12 blue-bg text-center' bold><h1 bold><span class='green'>57.5M</span> <span class='orange'>PEOPLE TO BE ASSISTED IN 2015</span></h1></div>
   </div>
-  <div class='row'>
+  <div class='row no-gutter'>
     <div class='col-sm-12'>
       <img src='images/mob/mosaic_2a.png' class='mobile-image'/>
     </div>
@@ -215,7 +245,7 @@
       <br/>
     </div>
   </div>
-  <div class='row'>
+  <div class='row no-gutter'>
     <div class='col-sm-12'>
       <img src='images/mob/mosaic_2b.png' class='mobile-image'  />
     </div>
@@ -239,10 +269,9 @@
         <h4 class='orange'><span bold>158K</span> <img src='images/icons/white-roofing.png' class='mobile-icon'> PEOPLE PROVIDED WITH CLEAN WATER AND HEALTH SERVICES</h4>
       </div>
     </div>
-    <div class='row'>
+    <div class='row no-gutter'>
       <div class='col-sm-12'>
         <img src='images/mob/success_philippines.png' class='mobile-image' />
-        <hr color="black" style="padding: 0px; height: 10px; margin: 0; border: none;"></hr>
       </div>
     </div>
   </div>
@@ -264,10 +293,9 @@
         <h4 class='orange'><span bold>3.5M</span> <img src='images/icons/white-water.png' class='mobile-icon'> PEOPLE PROVIDED WITH CLEAN WATER AND HEALTH SERVICES</h4>
       </div>
     </div>
-    <div class='row'>
+    <div class='row no-gutter'>
       <div class='col-sm-12'>
         <img src='images/mob/success_southsudan.png' class='mobile-image' />
-        <hr color="black" style="padding: 0px; height: 10px; margin: 0; border: none;"></hr>
       </div>
     </div>
   </div>
@@ -290,10 +318,9 @@
         <h4 class='orange'><span bold>500K</span>  <img src='images/icons/white-water.png' class='mobile-icon'> RECEIVED CLEAN WATER AND SANITATION SERVICES</h4>
       </div>
     </div>
-    <div class='row'>
+    <div class='row no-gutter'>
       <div class='col-sm-12'>
         <img src='images/mob/success_iraq.png' class='mobile-image' />
-        <hr color="black" style="padding: 0px; height: 10px; margin: 0; border: none;"></hr>
       </div>
     </div>
   </div>
@@ -310,6 +337,10 @@ Aid organizations are re-grouping around <span class='orange' bold>better plans,
     <h4 class='calluna'>
 <span class='orange'>We need these appeals to be fully funded.</span> We need more Member States and a more diverse group of donors to support our efforts.
     </h4>
+  </div>
+</div>
+<div class='row no-gutter'>
+  <div class='col-sm-12'>
     <img src='images/mob/last-mom.png' class='mobile-image' />
   </div>
 </div>
@@ -318,6 +349,12 @@ Aid organizations are re-grouping around <span class='orange' bold>better plans,
   <div class='col-sm-12 blue-bg text-center'>
     <h3 class='calluna'>Our actions depend on your contributions.</h3>
     <h2 class='orange' bold>LET'S ACHIEVE MORE. TOGETHER.</h2>
+  </div>
+</div>
+
+
+<div class='row no-gutter'>
+  <div class='col-sm-12'>
     <img src='images/mob/last-girls.png' class='mobile-image'>
   </div>
 </div>
