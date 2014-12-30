@@ -218,7 +218,7 @@
 </head>
 <body>
   <!-- <div id="initial-cover" style="width: 100%; height: 100%;"></div> -->
-
+<div id="skollr-body">
   <?php include("partials/title_page.php"); ?>
 
   <!-- SECOND SLIDE:: FLOATING IMAGES -->
@@ -512,6 +512,7 @@
   </div>
 </div>
 
+</div> <!-- END OF SKROLLR BODY -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
