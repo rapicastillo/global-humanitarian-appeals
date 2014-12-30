@@ -20,6 +20,15 @@
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800'/>
 
   <link rel="stylesheet" href="css/mobile.css" />
+  <style>
+  #map-area {
+    background-attachment: scroll;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-image: url(images/mob/maps-bg.png);
+    background-position: center center;
+  }
+  </style>
 </head>
 <body>
 <!-- <div class="container-fluid">
@@ -62,7 +71,7 @@
         <div class='col-sm-12'><img src='images/mob/mosaic_1a.png' class='mobile-image' /></div>
       </div>
       <div class='row blue-bg'>
-        <div class='col-sm-12 hero-unit text-center'>
+        <div class='col-sm-12 hero-unit text-center' >
           <h2>Syria, South Sudan, Iraq, Central African Republic.</h2>
           <h3>The humanitarian outlook is cause for serious concern in 2015.</h3>
           <hr width='80%'/>
@@ -88,10 +97,10 @@
 
           <div class='free-flying-bottom container-fluid'>
             <div class='row'>
-              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>SYRIA</h1></div>
+              <div class='col-sm-12 green-bg text-left translucent' style='padding: 0px 10px;'><h1 bold>SYRIA</h1></div>
             </div>
             <div class='row'>
-              <div class='col-sm-12 blue-bg translucent'>
+              <div class='col-sm-12 blue-bg translucent' style='padding: 0px 10px;'>
                 <h2 bold class='orange'>12.2 M</h2>
                 <h3 class='orange'>PEOPLE IN NEED</h3>
                 <h2 bold class='orange' style="margin-top: 10px;">7.6 M</h2>
@@ -119,10 +128,10 @@
 
           <div class='free-flying-bottom container-fluid'>
             <div class='row'>
-              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>SOUTH SUDAN</h1></div>
+              <div class='col-sm-12 green-bg text-left translucent' style='padding: 0px 10px;'><h1 bold>SOUTH SUDAN</h1></div>
             </div>
             <div class='row'>
-              <div class='col-sm-12 blue-bg translucent'>
+              <div class='col-sm-12 blue-bg translucent' style='padding: 0px 10px;'>
                 <h2 bold class='orange'>6.4 M</h2>
                 <h3 class='orange'>PEOPLE IN NEED</h3>
                 <h2 bold class='orange' style="margin-top: 10px;">1.95 M</h2>
@@ -150,10 +159,10 @@
 
           <div class='free-flying-bottom container-fluid'>
             <div class='row'>
-              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>CENTRAL AFRICAN REPUBLIC</h1></div>
+              <div class='col-sm-12 green-bg text-left translucent' style='padding: 0px 10px;'><h1 bold>CENTRAL AFRICAN REPUBLIC</h1></div>
             </div>
             <div class='row'>
-              <div class='col-sm-12 blue-bg translucent'>
+              <div class='col-sm-12 blue-bg translucent' style='padding: 0px 10px;'>
                 <h2 bold class='orange'>2.7 M</h2>
                 <h3 class='orange'>PEOPLE IN NEED</h3>
                 <h2 bold class='orange' style="margin-top: 10px;">430 K</h2>
@@ -183,11 +192,11 @@
           </div>
 
           <div class='free-flying-bottom container-fluid'>
-            <div class='row'>
-              <div class='col-sm-12 green-bg text-left translucent'><h1 bold>IRAQ</h1></div>
+            <div class='row' >
+              <div class='col-sm-12 green-bg text-left translucent' style='padding: 0px 10px;'><h1 bold>IRAQ</h1></div>
             </div>
             <div class='row'>
-              <div class='col-sm-12 blue-bg translucent'>
+              <div class='col-sm-12 blue-bg translucent' style='padding: 0px 10px;'>
                 <h2 bold class='orange'>5.2 M</h2>
                 <h3 class='orange'>PEOPLE IN NEED</h3>
                 <h2 bold class='orange' style="margin-top: 10px;">2.1M</h2>
@@ -208,7 +217,7 @@
     <div class='col-sm-12' id='map-area'>
       <div class='row'><div class='col-sm-12'>&nbsp;</div></div>
       <div class='row'>
-        <div class='col-sm-12'>
+        <div class='col-sm-12' >
           <h3 class='calluna text-center white'>
             Donors and humanitarian partners must come together to meet the needs of <span class='orange'>millions of people</span> affected by each and every emergency.
           </h3>
@@ -327,7 +336,7 @@
 </div>
 
 <div class='row'>
-  <div class='col-sm-12 blue-bg' >
+  <div class='col-sm-12 blue-bg' style="padding-top: 10px; padding-bottom: 10px">
     <h2 class='orange' bold>EVERY LIFE IS PRICELESS.</h2>
     <h4 class='calluna'>
 Aid organizations are re-grouping around <span class='orange' bold>better plans, more innovative approaches and more efficient action</span> to make the most of the resources at hand</h4>
@@ -346,7 +355,7 @@ Aid organizations are re-grouping around <span class='orange' bold>better plans,
 </div>
 
 <div class='row'>
-  <div class='col-sm-12 blue-bg text-center'>
+  <div class='col-sm-12 blue-bg text-center' style="padding-top: 10px; padding-bottom: 10px">
     <h3 class='calluna'>Our actions depend on your contributions.</h3>
     <h2 class='orange' bold>LET'S ACHIEVE MORE. TOGETHER.</h2>
   </div>
