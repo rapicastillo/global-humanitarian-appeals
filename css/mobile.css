@@ -67,10 +67,8 @@ body {
 
 #map-area {
   background-size: 100% auto;
-  background-attachment: fixed;
-  background-image: url(../images/mob/maps-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat; }
+  background-image: url(../images/mob/proper-bg-mob.png);
+  background-position: center center; }
   #map-area .map-country-affected {
     height: 40px; }
   #map-area .other-fact-item img {

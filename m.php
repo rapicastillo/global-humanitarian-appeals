@@ -20,15 +20,6 @@
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800'/>
 
   <link rel="stylesheet" href="css/mobile.css" />
-  <style>
-  #map-area {
-    background-attachment: scroll;
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    background-image: url(images/mob/maps-bg.png);
-    background-position: center center;
-  }
-  </style>
 </head>
 <body>
 <!-- <div class="container-fluid">

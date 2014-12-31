@@ -53,10 +53,8 @@ body { opacity: 1; font-family: Open Sans; color: white; background-color: white
 #map-area
 {
   background-size: 100% auto;
-  background-attachment: fixed;
-  background-image: url(../images/mob/maps-bg.png);
+  background-image: url(../images/mob/proper-bg-mob.png);
   background-position: center center;
-  background-repeat: no-repeat;
 
   .map-country-affected { height: 40px; }
   .other-fact-item {
