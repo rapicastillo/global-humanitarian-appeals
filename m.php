@@ -355,29 +355,29 @@ Aid organizations are re-grouping around <span class='orange' bold>better plans,
 
 <div class='row no-gutter'>
   <div class='col-sm-12'>
-    <img src='images/mob/last-girls.png' class='mobile-image'>
+    <div style='position: relative;'>
+      <img src='images/mob/last-girls.png' class='mobile-image'>
+      <div style='position: absolute; bottom: 10px; right: 10px;'>
+          <a href='http://mobile.twitter.com/home?status=An%20innovative%20snapshot%20of%20the%20humanitarian%20landscape%20in%202015%20http%3A%2F%2Fow.ly%2FFxnCb%20%232015Appeal%20via%20%40unocha'>
+          <img src='images/mob/cta-new-twitter.png' class='mobile-image' style="width: 50px;"/>
+        </a>
+        <a href="http://m.facebook.com/sharer.php?u=http%3A%2F%2Fwww.unocha.org%2F2015appeal%2F&t=Global%20Humanitarian%20Appeal%202015">
+          <img src='images/mob/cta-new-fb.png' class='mobile-image' style="width: 50px;"/>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class='row text-center' id='final-cta'>
-  <div class='col-sm-3 col-xs-3'>
+  <div class='col-sm-6 col-xs-6'>
     <a href="http://m.youtube.com/watch?v=6hUHir3W8oE">
-      <img src='images/mob/cta-video.png' class='mobile-image'/>
+      <img src='images/mob/cta-new-video.png' class='mobile-image'/>
     </a>
   </div>
-  <div class='col-sm-3 col-xs-3'>
-    <a href="http://m.facebook.com/sharer.php?u=http%3A%2F%2Fwww.unocha.org%2F2015appeal%2F&t=Global%20Humanitarian%20Appeal%202015">
-      <img src='images/mob/cta-fb.png' class='mobile-image' />
-    </a>
-  </div>
-  <div class='col-sm-3 col-xs-3'>
-    <a href='http://mobile.twitter.com/home?status=An%20innovative%20snapshot%20of%20the%20humanitarian%20landscape%20in%202015%20http%3A%2F%2Fow.ly%2FFxnCb%20%232015Appeal%20via%20%40unocha'>
-      <img src='images/mob/cta-twitter.png' class='mobile-image' />
-    </a>
-  </div>
-  <div class='col-sm-3 col-xs-3'>
+  <div class='col-sm-6 col-xs-6'>
     <a href='https://docs.unocha.org/sites/dms/Documents/GHO-FINAL-web.pdf'>
-      <img src='images/mob/cta-report.png' class='mobile-image'/>
+      <img src='images/mob/cta-new-gho-doc.jpg' class='mobile-image'/>
     </a>
   </div>
 </div>
