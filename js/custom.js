@@ -16,6 +16,14 @@ $(function() {
     var _h = $(window).height();
 
 
+    /* Half sized image */
+    $(".half-sized-image").height(_h/2);
+    $(".threequarter-sized-image").height(_h*3/4);
+    $(".half-sized-image .half-sized-message, .threequarter-sized-image .half-sized-message").css("marginTop",
+        function() {
+          return -1 * $(this).height()/2;
+        }
+    );
 
     $("#title-slides-area, #title-slides-area > .row, #background-world").height($(window).height());
     $("#ending-message-area, #final-slide").height($(window).height()).width($(window).width());

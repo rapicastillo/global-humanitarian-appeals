@@ -5,6 +5,36 @@
     src: url(../font/Calluna-Regular.otf);
 }
 
+$orange: #f47932;
+
+
+.half-sized-image, .threequarter-sized-image {
+  background-image: url(../images/map-00v1.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+
+  .half-sized-message {
+    padding: 5px 0;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 56, 86, 0.6);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.25;
+
+    .highlight { font-weight: bold; color: $orange; }
+  }
+}
+
+.threequarter-sized-image {
+  .half-sized-message {
+    background-color: rgba(0, 56, 86, 0);
+  }
+}
+
 #initial-cover
 {
   background-color: black;
@@ -134,14 +164,14 @@ body {
     #burst-face-area #burst-face-second-message
      {
 
-      position: absolute; background-color: rgba(0, 56, 86, 0.7); width: 100%; font-size: 32px; z-index: 1300; color: white; padding: 20px 5%;
+      position: absolute; background-color: rgba(0, 56, 86, 1); width: 100%; font-size: 32px; z-index: 1300; color: white; padding: 20px 5%;
       text-align: center;
 
-        h3 { font-size: 1.1em; margin-top: 10px}
-        h4 { font-size: 0.7em; }
+        h3 { font-size: 2em; margin-top: 0px; line-height: 1.2; color: #f47932; font-weight: bold;}
+        h4 { font-size: 1.25em; font-family: 'Open Sans', Arial; line-height: 1.25;}
 
     }
-    #burst-face-area #burst-face-main-message { background-color: rgba(0, 56, 86, 0.9);  h4 { margin-top: 20px; } }
+    #burst-face-area #burst-face-main-message { background-color: rgba(0, 56, 86, 1);  h4 { margin-top: 20px; } }
 
     .burst-face-item { position: relative; }
     .burst-face-row { text-align: center; }
@@ -149,7 +179,7 @@ body {
 
 /* */
 
-#l3-slideshows
+#l3-slideshows, #pre-l3-slideshows
 {
   .image-slideshow-item { position: relative; }
       .image-slideshow-item .first-slide { z-index: 1000; }
@@ -208,6 +238,10 @@ body {
         font-size: 4em;
         font-weight: 700;
       }
+      .image-slideshow-item .country-title-item h3 {
+          margin-top: 5px;
+          margin-bottom: 5px;
+      }
 
       /*.image-slideshow .first-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-GPfJ3z3/0/X3/December%2011%2C%202013%20A%20child%20affected%20by%20Typhoon%20Yolanda%20walk%20amid%20the%20debris%20around%20%20two%20ships%20that%20were%20carried%20inland%20by%20the%20storm%20surge.%20%20Source%20OCHA%20Gemma%20Cortes-X3.jpg) }
       .image-slideshow .second-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-T4RszF2/0/X3/IMG_2351-X3.jpg); }
@@ -219,6 +253,10 @@ body {
         z-index: 2000;
         opacity: 0;
       }
+
+      #slide-0-vanuatu .first-slide { background-image: url(http://ocha.smugmug.com/Countries/VUT/Cyclone-Pam/i-qGM7v2p/0/X3/DSC_8807-X3.jpg); }
+      #slide-0-vanuatu .second-slide { background-image: url(http://ocha.smugmug.com/Countries/VUT/Cyclone-Pam/i-ZvZbTs9/0/X3/DSC_9000-X3.jpg); }
+      #slide-0-vanuatu .third-slide { background-image: url(http://ocha.smugmug.com/Countries/VUT/Cyclone-Pam/i-Bng3r4k/0/X3/IMG_5574-X3.jpg); }
 
       #slide-1-philippines .first-slide { background-image: url(../images/l3/philippines/000.jpg); }
       #slide-1-philippines .second-slide { background-image: url(../images/l3/philippines/001.jpg); }

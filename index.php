@@ -226,20 +226,72 @@
     <div id="burst-face-area">
       <div id="burst-face-main-message">
         <h3>
-          Syria, <span style="display: inline-block">South Sudan</span>, Iraq, <span style="display: inline-block">Central African Republic.</span>
+          The humanitarian outlook is cause for</br>serious concern in 2015
         </h3>
-        <h4>The humanitarian outlook is cause for serious concern in 2015.</h4>
       </div>
       <div id="burst-face-second-message" class="calluna">
         <h4>
-          <p>These four crises alone account for over <span class="orange">70 per cent</span>  of overall funding requirements<br/>for the global appeal. </p>
-
-          <p style="margin-top: 20px;">The year will open with <span class="orange">tens of millions</span> suffering the consequences of these and other emergencies.</p>
-
+          The year opened with tens of millions suffering the<br/>
+          consequences of new and protracted emergencies
         </h4>
       </div>
     </div>
   </div>
+
+  <!-- START OF HALF-SIZED SCREEN -->
+  <div id="latest-crises-intro" class="half-sized-image">
+    <h3 class="half-sized-message">
+      Natural disasters of devastating proportions<br/>
+      will continue to tear apart the lives of millions.
+    </h3>
+  </div>
+
+  <div id="pre-l3-slideshows">
+    <div id="slide-0-vanuatu" class="image-slideshow-item" data-played-out="false"
+          data-bottom-center="..." data-top-bottom="..." data-emit-events
+      >
+        <div class="first-slide"></div>
+        <div class="second-slide"></div>
+        <div class="third-slide"></div>
+
+        <!-- Facts -->
+        <div class="fact-item" style="bottom: 300px;">
+          <span class="fact-number" data-count="110" data-final="110" data-nth="M">0</span>
+          <span class="data-icon"><img src="images/icons/white-water.png" height="50px"/></span>
+          <span>People left without access<br/>to safe drinking water</span>
+        </div>
+        <div class="fact-item" style="bottom: 200px;">
+          <span class="fact-number" data-count="166" data-final="166" data-nth="K">0</span>
+          <span class="data-icon"><img src="images/icons/white-affected.png" /></span>
+          <span>People in urgent need of<br/>life-saving assistance</span>
+        </div>
+        <div class="fact-item" style="bottom: 100px;">
+          <span>US$</span>
+          <span class="fact-number" data-count="29.9" data-final="29.9" data-nth="M">0</span>
+          <span class="data-icon"><img src="images/maps-fund-icon.png" height="50px"></span>
+          <span>Requested to cover people's<br/>immediate needs until 24 June 2015</span>
+        </div>
+
+
+        <div class="country-title-item">
+          <h1>VANUATU</h1>
+          <h3>Tropical Storm PAM</h3>
+          <h3>13 March 2015</h3>
+        </div>
+    </div>
+  </div>
+
+  <div id="latest-crises-outro" class="threequarter-sized-image">
+    <h3 class="half-sized-message">
+      Brutal conflict continues to wrack<br/>
+      <span class="highlight">Syria, South sudan, Iraq, and the Central African Republic,</span><br/>
+      forcing millions to flee their homes.
+      <br/><br/>
+      In 2015, these four crises alone account for over 70 per cent of<br/>
+      overall funding requirements for the global appeal
+    </h3>
+  </div>
+
 
 <!-- START OF: L3 SLIDES -->
  <?php include("partials/_l3_slides.php"); ?>

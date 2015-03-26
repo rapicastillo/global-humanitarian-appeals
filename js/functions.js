@@ -7,26 +7,26 @@ function slide_endlessly(row, speed, square_width, direction_)
     {
       row.prepend(row.children(".burst-face-item")[row.children(".burst-face-item").length-1])
       // row.css("marginLeft", "-=" + square_width +"px");
-      row.animate(
-        { marginLeft: "+=" + square_width + "px" },
-        speed,
-        "linear",
-        function () {
-          row.css("marginLeft", "-=" + square_width +"px");
-          slide_endlessly(row, speed, square_width, direction_);
-        }
-      );
+      // row.delay(speed/4).animate(
+      //   { marginLeft: "+=" + square_width + "px" },
+      //   speed/4,
+      //   "linear",
+      //   function () {
+      //     row.css("marginLeft", "-=" + square_width +"px");
+      //     slide_endlessly(row, speed, square_width, direction_);
+      //   }
+      // );
     }
     else {
       row.append(row.children(".burst-face-item")[0]);
-      row.animate(
-        { marginLeft: "-=" + square_width + "px" },
-        speed,
-        "linear",
-        function () {
-          row.css("marginLeft", "+=" + square_width +"px");
-          slide_endlessly(row, speed, square_width, direction_); }
-      );
+      // row.delay(speed/4).animate(
+      //   { marginLeft: "-=" + square_width + "px" },
+      //   speed/4,
+      //   "linear",
+      //   function () {
+      //     row.css("marginLeft", "+=" + square_width +"px");
+      //     slide_endlessly(row, speed, square_width, direction_); }
+      // );
     }
 
 }
@@ -35,8 +35,8 @@ function fader(item)
 {
   // var timeout_delay = (Math.random() * 5000) + 1000;
   // setTimeout(function() {
-    var delay1 = (Math.random() * 5000) + 10000;
-    var delay2 = (Math.random() * 10000) + 5000;
+    var delay1 = (Math.random() * 3000) + 2000;
+    var delay2 = (Math.random() * 3000) + 2000;
 
     item.delay(delay1).fadeOut("slow").delay(delay2).fadeIn("slow", function () { fader(item); });
   // }, timeout_delay);

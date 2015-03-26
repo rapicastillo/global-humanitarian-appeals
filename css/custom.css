@@ -2,6 +2,28 @@
 @font-face {
   font-family: Calluna;
   src: url(../font/Calluna-Regular.otf); }
+.half-sized-image, .threequarter-sized-image {
+  background-image: url(../images/map-00v1.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative; }
+  .half-sized-image .half-sized-message, .threequarter-sized-image .half-sized-message {
+    padding: 5px 0;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 56, 86, 0.6);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    line-height: 1.25; }
+    .half-sized-image .half-sized-message .highlight, .threequarter-sized-image .half-sized-message .highlight {
+      font-weight: bold;
+      color: #f47932; }
+
+.threequarter-sized-image .half-sized-message {
+  background-color: rgba(0, 56, 86, 0); }
+
 #initial-cover {
   background-color: black;
   position: fixed;
@@ -103,7 +125,7 @@ body {
 #second-slide-problem-at-hand #burst-face-area #burst-face-main-message,
 #second-slide-problem-at-hand #burst-face-area #burst-face-second-message {
   position: absolute;
-  background-color: rgba(0, 56, 86, 0.7);
+  background-color: #003856;
   width: 100%;
   font-size: 32px;
   z-index: 1300;
@@ -112,13 +134,18 @@ body {
   text-align: center; }
   #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h3,
   #second-slide-problem-at-hand #burst-face-area #burst-face-second-message h3 {
-    font-size: 1.1em;
-    margin-top: 10px; }
+    font-size: 2em;
+    margin-top: 0px;
+    line-height: 1.2;
+    color: #f47932;
+    font-weight: bold; }
   #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h4,
   #second-slide-problem-at-hand #burst-face-area #burst-face-second-message h4 {
-    font-size: 0.7em; }
+    font-size: 1.25em;
+    font-family: 'Open Sans', Arial;
+    line-height: 1.25; }
 #second-slide-problem-at-hand #burst-face-area #burst-face-main-message {
-  background-color: rgba(0, 56, 86, 0.9); }
+  background-color: #003856; }
   #second-slide-problem-at-hand #burst-face-area #burst-face-main-message h4 {
     margin-top: 20px; }
 #second-slide-problem-at-hand .burst-face-item {
@@ -127,40 +154,42 @@ body {
   text-align: center; }
 
 /* */
-#l3-slideshows {
+#l3-slideshows, #pre-l3-slideshows {
   /*.image-slideshow .first-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-GPfJ3z3/0/X3/December%2011%2C%202013%20A%20child%20affected%20by%20Typhoon%20Yolanda%20walk%20amid%20the%20debris%20around%20%20two%20ships%20that%20were%20carried%20inland%20by%20the%20storm%20surge.%20%20Source%20OCHA%20Gemma%20Cortes-X3.jpg) }
   .image-slideshow .second-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-T4RszF2/0/X3/IMG_2351-X3.jpg); }
   .image-slideshow .third-slide { background-image: url(http://ocha.smugmug.com/Countries/Philippines/Typhoon-Haiyan-Life-inside-and/i-jPt5THK/1/X3/IMG_2408-X3.jpg); }*/ }
-  #l3-slideshows .image-slideshow-item {
+  #l3-slideshows .image-slideshow-item, #pre-l3-slideshows .image-slideshow-item {
     position: relative; }
-  #l3-slideshows .image-slideshow-item .first-slide {
+  #l3-slideshows .image-slideshow-item .first-slide, #pre-l3-slideshows .image-slideshow-item .first-slide {
     z-index: 1000; }
-  #l3-slideshows .image-slideshow-item .second-slide {
+  #l3-slideshows .image-slideshow-item .second-slide, #pre-l3-slideshows .image-slideshow-item .second-slide {
     z-index: 900; }
-  #l3-slideshows .image-slideshow-item .third-slide {
+  #l3-slideshows .image-slideshow-item .third-slide, #pre-l3-slideshows .image-slideshow-item .third-slide {
     z-index: 800; }
   #l3-slideshows .image-slideshow-item .first-slide,
   #l3-slideshows .image-slideshow-item .second-slide,
-  #l3-slideshows .image-slideshow-item .third-slide {
+  #l3-slideshows .image-slideshow-item .third-slide, #pre-l3-slideshows .image-slideshow-item .first-slide,
+  #pre-l3-slideshows .image-slideshow-item .second-slide,
+  #pre-l3-slideshows .image-slideshow-item .third-slide {
     position: absolute;
     background-size: cover;
     background-position: center center; }
-  #l3-slideshows .image-slideshow-item .fact-item {
+  #l3-slideshows .image-slideshow-item .fact-item, #pre-l3-slideshows .image-slideshow-item .fact-item {
     color: #f47932;
     background-color: rgba(0, 56, 86, 0.7);
     padding: 5px 20px;
     font-size: 16px;
     right: 0px; }
-  #l3-slideshows .image-slideshow-item .fact-number {
+  #l3-slideshows .image-slideshow-item .fact-number, #pre-l3-slideshows .image-slideshow-item .fact-number {
     font-weight: 700;
     font-size: 2em; }
-  #l3-slideshows .image-slideshow-item .data-icon img {
+  #l3-slideshows .image-slideshow-item .data-icon img, #pre-l3-slideshows .image-slideshow-item .data-icon img {
     height: 50px; }
-  #l3-slideshows .image-slideshow-item .fact-item * {
+  #l3-slideshows .image-slideshow-item .fact-item *, #pre-l3-slideshows .image-slideshow-item .fact-item * {
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase; }
-  #l3-slideshows .image-slideshow-item .country-title-item {
+  #l3-slideshows .image-slideshow-item .country-title-item, #pre-l3-slideshows .image-slideshow-item .country-title-item {
     position: absolute;
     top: 0;
     left: 0;
@@ -169,44 +198,53 @@ body {
     color: white;
     background-color: rgba(78, 108, 6, 0.7);
     padding: 15px 40px; }
-  #l3-slideshows .image-slideshow-item .country-title-item h1 {
+  #l3-slideshows .image-slideshow-item .country-title-item h1, #pre-l3-slideshows .image-slideshow-item .country-title-item h1 {
     margin: 0;
     font-size: 4em;
     font-weight: 700; }
-  #l3-slideshows .image-slideshow-item .fact-item {
+  #l3-slideshows .image-slideshow-item .country-title-item h3, #pre-l3-slideshows .image-slideshow-item .country-title-item h3 {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  #l3-slideshows .image-slideshow-item .fact-item, #pre-l3-slideshows .image-slideshow-item .fact-item {
     position: absolute;
     font-size: 1.4em;
     z-index: 2000;
     opacity: 0; }
-  #l3-slideshows #slide-1-philippines .first-slide {
+  #l3-slideshows #slide-0-vanuatu .first-slide, #pre-l3-slideshows #slide-0-vanuatu .first-slide {
+    background-image: url(http://ocha.smugmug.com/Countries/VUT/Cyclone-Pam/i-qGM7v2p/0/X3/DSC_8807-X3.jpg); }
+  #l3-slideshows #slide-0-vanuatu .second-slide, #pre-l3-slideshows #slide-0-vanuatu .second-slide {
+    background-image: url(http://ocha.smugmug.com/Countries/VUT/Cyclone-Pam/i-ZvZbTs9/0/X3/DSC_9000-X3.jpg); }
+  #l3-slideshows #slide-0-vanuatu .third-slide, #pre-l3-slideshows #slide-0-vanuatu .third-slide {
+    background-image: url(http://ocha.smugmug.com/Countries/VUT/Cyclone-Pam/i-Bng3r4k/0/X3/IMG_5574-X3.jpg); }
+  #l3-slideshows #slide-1-philippines .first-slide, #pre-l3-slideshows #slide-1-philippines .first-slide {
     background-image: url(../images/l3/philippines/000.jpg); }
-  #l3-slideshows #slide-1-philippines .second-slide {
+  #l3-slideshows #slide-1-philippines .second-slide, #pre-l3-slideshows #slide-1-philippines .second-slide {
     background-image: url(../images/l3/philippines/001.jpg); }
-  #l3-slideshows #slide-1-philippines .third-slide {
+  #l3-slideshows #slide-1-philippines .third-slide, #pre-l3-slideshows #slide-1-philippines .third-slide {
     background-image: url(../images/l3/philippines/002.jpg); }
-  #l3-slideshows #slide-2-syria .first-slide {
+  #l3-slideshows #slide-2-syria .first-slide, #pre-l3-slideshows #slide-2-syria .first-slide {
     background-image: url(../images/l3/syria/000.jpg); }
-  #l3-slideshows #slide-2-syria .second-slide {
+  #l3-slideshows #slide-2-syria .second-slide, #pre-l3-slideshows #slide-2-syria .second-slide {
     background-image: url(../images/l3/syria/001.jpg); }
-  #l3-slideshows #slide-2-syria .third-slide {
+  #l3-slideshows #slide-2-syria .third-slide, #pre-l3-slideshows #slide-2-syria .third-slide {
     background-image: url(../images/l3/syria/002.jpg); }
-  #l3-slideshows #slide-3-south-sudan .first-slide {
+  #l3-slideshows #slide-3-south-sudan .first-slide, #pre-l3-slideshows #slide-3-south-sudan .first-slide {
     background-image: url(../images/l3/southsudan/000.jpg); }
-  #l3-slideshows #slide-3-south-sudan .second-slide {
+  #l3-slideshows #slide-3-south-sudan .second-slide, #pre-l3-slideshows #slide-3-south-sudan .second-slide {
     background-image: url(../images/l3/southsudan/001.jpg); }
-  #l3-slideshows #slide-3-south-sudan .third-slide {
+  #l3-slideshows #slide-3-south-sudan .third-slide, #pre-l3-slideshows #slide-3-south-sudan .third-slide {
     background-image: url(../images/l3/southsudan/002.jpg); }
-  #l3-slideshows #slide-4-car .first-slide {
+  #l3-slideshows #slide-4-car .first-slide, #pre-l3-slideshows #slide-4-car .first-slide {
     background-image: url(../images/l3/car/000.jpg); }
-  #l3-slideshows #slide-4-car .second-slide {
+  #l3-slideshows #slide-4-car .second-slide, #pre-l3-slideshows #slide-4-car .second-slide {
     background-image: url(../images/l3/car/001.jpg); }
-  #l3-slideshows #slide-4-car .third-slide {
+  #l3-slideshows #slide-4-car .third-slide, #pre-l3-slideshows #slide-4-car .third-slide {
     background-image: url(../images/l3/car/002.jpg); }
-  #l3-slideshows #slide-5-iraq .first-slide {
+  #l3-slideshows #slide-5-iraq .first-slide, #pre-l3-slideshows #slide-5-iraq .first-slide {
     background-image: url(../images/l3/iraq/000.jpg); }
-  #l3-slideshows #slide-5-iraq .second-slide {
+  #l3-slideshows #slide-5-iraq .second-slide, #pre-l3-slideshows #slide-5-iraq .second-slide {
     background-image: url(../images/l3/iraq/001.jpg); }
-  #l3-slideshows #slide-5-iraq .third-slide {
+  #l3-slideshows #slide-5-iraq .third-slide, #pre-l3-slideshows #slide-5-iraq .third-slide {
     background-image: url(../images/l3/iraq/iraq-003.png); }
 
 /* MAP SLIDES */
@@ -368,3 +406,5 @@ body {
 
 #call-to-action {
   background-image: url(../images/final/top.png); }
+
+/*# sourceMappingURL=custom.css.map */
