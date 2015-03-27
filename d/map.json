@@ -25,6 +25,53 @@
         }
       },
 
+      {
+     "name": "Burkina Faso",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 939148,
+     "words": "939 K",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 98761764,
+           "label": "Required",
+           "final": "98.7 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
+      {
+     "name": "Cameroon",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 1618000,
+     "words": "1.62 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 264000000,
+           "label": "Required",
+           "final": "264 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
     {
      "name": "Central African Republic",
      "type": "L3",
@@ -70,6 +117,32 @@
         }
     },
 
+
+{
+     "name": "Chad",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 2500000,
+     "words": "2.5 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 540882000,
+           "label": "Required",
+           "final": "540.9 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
+
      {
      "name": "Democratic Republic of the Congo",
      "type": "L1",
@@ -87,6 +160,33 @@
            }
         ]
       },
+
+
+{
+     "name": "Gambia",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 314504,
+     "words": "314.5 K",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 23687972,
+           "label": "Required",
+           "final": "23.7 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
+
 
       {
      "name": "Iraq",
@@ -108,6 +208,53 @@
           "backgroundSize": "171px",
           "backgroundPosition" : "82px 180px",
           "padding" : "0 0 22px 0"
+        }
+      },
+
+
+{
+     "name": "Mali",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 1600000,
+     "words": "1.6 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 377381000,
+           "label": "Required",
+           "final": "377.4 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+{
+     "name": "Mauritania",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 547658,
+     "words": "547.7 K",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 105171809,
+           "label": "Required",
+           "final": "105.1 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
         }
       },
 
@@ -134,6 +281,57 @@
           "padding" : "0px 0px 102px 60px"
         }
       },
+
+
+{
+     "name": "Niger",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 2518000,
+     "words": "251.8 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 375720000,
+           "label": "Required",
+           "final": "375.7 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
+
+{
+     "name": "Nigeria",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 2800000,
+     "words": "2.8 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 100263000,
+           "label": "Required",
+           "final": "100.3 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
 {
      "name": "occupied Palestinian territory",
      "type": "L2",
@@ -156,6 +354,59 @@
             "backgroundSize": "200px"
         }
       },
+
+
+{
+     "name": "Sahel<br/><span class='green sub-heading'>Regional</span>",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 13916000,
+     "words": "13.9 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 10336000,
+           "label": "Required",
+           "final": "10.3 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
+
+
+
+{
+     "name": "Senegal",
+     "type": "L1",
+     "map": "",
+     "image": "",
+     "in_need": 1121291,
+     "words": "1.1 MILLION",
+      "other_fig":
+        [
+           {
+           "image": "images/maps-fund-icon.png",
+           "count": 59427000,
+           "label": "Required",
+           "final": "59.4 MILLION"
+           }
+        ],
+        "style" : {
+          "backgroundSize": "361px",
+          "backgroundPosition" : "100px 100px",
+          "padding" : "0px 40px 132px 0px"
+        }
+      },
+
+
     {
      "name": "Somalia",
      "type": "L1",

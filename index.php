@@ -333,8 +333,6 @@
       <div class="row">
         <div class="col-md-12 text-center">
 
-          <h4 class="calluna">...and Burkina Faso, Cameroon, Chad, Djibouti, Gambia, Mali, Mauritania, Niger, Nigeria and Senegal. </h4>
-
         </div>
       </div>
       <div class="row"><div class="col-md-12">&nbsp;</div></div>
