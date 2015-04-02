@@ -104,6 +104,9 @@ $(function() {
                       { $this.text( Math.ceil(this.Counter) ); }
                       else if ($this.attr("data-type") == "float")
                       { $this.text( Math.ceil(this.Counter * 10) / 10 ); }
+                    },
+                    complete: function() {
+                      $this.text(parseFloat($this.attr("data-final-count")));
                     }
             });
 
