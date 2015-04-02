@@ -302,16 +302,22 @@ body {
     }
   }
 
+  .map-country-item
+  {
 
-
-
-  .map-country-item.text-right {
+    &.text-right {
       img.map-country-affected {
         left: auto;
         right: -40px;
 
       }
     }
+
+    .map-HIDE-INNEED {
+        .map-country-affected,.map-count,h5 { display: none; }
+    }
+  }
+
   #background-world
   {
     background-size: cover;

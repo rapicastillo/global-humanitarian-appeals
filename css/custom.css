@@ -271,6 +271,8 @@ body {
   #map-area .map-country-item.text-right img.map-country-affected {
     left: auto;
     right: -40px; }
+  #map-area .map-country-item .map-HIDE-INNEED .map-country-affected, #map-area .map-country-item .map-HIDE-INNEED .map-count, #map-area .map-country-item .map-HIDE-INNEED h5 {
+    display: none; }
   #map-area #background-world {
     background-size: cover;
     background-position: center center;

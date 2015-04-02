@@ -55,7 +55,7 @@
      "map": "",
      "image": "",
      "in_need": 1618000,
-     "words": "1.62 MILLION",
+     "words": "1.6 MILLION",
       "other_fig":
         [
            {
@@ -105,9 +105,9 @@
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 298000000,
+           "count": 331000000,
            "label": "Required",
-           "final": "298 MILLION"
+           "final": "331 MILLION"
           }
         ],
       "style" : {
@@ -217,8 +217,8 @@
      "type": "L1",
      "map": "",
      "image": "",
-     "in_need": 1600000,
-     "words": "1.6 MILLION",
+     "in_need": 1500000,
+     "words": "1.5   MILLION",
       "other_fig":
         [
            {
@@ -248,7 +248,7 @@
            "image": "images/maps-fund-icon.png",
            "count": 105171809,
            "label": "Required",
-           "final": "105.1 MILLION"
+           "final": "105.2 MILLION"
            }
         ],
         "style" : {
@@ -270,9 +270,9 @@
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 191700000,
+           "count": 189500000,
            "label": "Required",
-           "final": "191.7 MILLION"
+           "final": "189.5 MILLION"
           }
         ],
         "style" : {
@@ -289,7 +289,7 @@
      "map": "",
      "image": "",
      "in_need": 2518000,
-     "words": "251.8 MILLION",
+     "words": "2.5 MILLION",
       "other_fig":
         [
            {
@@ -343,9 +343,9 @@
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 735000000,
+           "count": 705300000,
            "label": "Required",
-           "final": "735 MILLION"
+           "final": "705.3 MILLION"
           }
         ],
         "style" : {
@@ -358,11 +358,11 @@
 
 {
      "name": "Sahel<br/><span class='green sub-heading'>Regional</span>",
-     "type": "L1",
+     "type": "HIDE-INNEED",
      "map": "",
      "image": "",
-     "in_need": 13916000,
-     "words": "13.9 MILLION",
+     "in_need": 0,
+     "words": "",
       "other_fig":
         [
            {
@@ -463,9 +463,9 @@
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 783900000,
+           "count": 809900000,
            "label": "Required",
-           "final": "783.9 MILLION"
+           "final": "809.9 MILLION"
           }
         ],
         "style" : {
@@ -481,8 +481,8 @@
      "type": "L1",
      "map": "",
      "image": "",
-     "in_need": 4400000,
-     "words": "4.4 MILLION",
+     "in_need": 5400000,
+     "words": "5.4 MILLION",
       "other_fig":
         [
           {
@@ -510,9 +510,9 @@
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 2800000000,
+           "count": 2900000000,
            "label": "Required",
-           "final": "2.8 BILLION"
+           "final": "2.9 BILLION"
           }
         ],
         "style" : {
@@ -527,21 +527,15 @@
      "type": "L3",
      "map": "",
      "image": "",
-     "in_need": 6000000,
-     "words": "6 MILLION",
+     "in_need": 5300000,
+     "words": "5.3 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 3200000000,
-           "label": "Required (Refugee Component)",
-           "final": "3.2 BILLION"
-          },
-          {
-           "image": "images/maps-fund-icon.png",
-           "count": 1260000000,
-           "label": "Required (Resilience Component)",
-           "final": "1.26 BILLION"
+           "count": 4500000000,
+           "label": "Required (Refugee and Resilience Component)",
+           "final": "4.5 BILLION"
           }
         ],
         "style" : {
@@ -556,15 +550,15 @@
      "type": "L1",
      "map": "",
      "image": "",
-     "in_need": 900000,
-     "words": "900 K",
+     "in_need": 3200000,
+     "words": "3.2 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 189100000,
+           "count": 316000000,
            "label": "Required",
-           "final": "189.1 MILLION"
+           "final": "316 MILLION"
           }
         ],
         "style" : {
@@ -578,15 +572,15 @@
      "type": "L1",
      "map": "",
      "image": "",
-     "in_need": 8000000,
-     "words" : "8 MILLION",
+     "in_need": 8200000,
+     "words" : "8.2 MILLION",
       "other_fig":
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 615000000,
+           "count": 747500000,
            "label": "Required",
-           "final": "615 MILLION"
+           "final": "747.5 MILLION"
           }
         ],
         "style" : {

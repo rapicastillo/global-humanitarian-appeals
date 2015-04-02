@@ -287,7 +287,7 @@
       <span class="highlight">Syria, South sudan, Iraq, and the Central African Republic,</span><br/>
       forcing millions to flee their homes.
       <br/><br/>
-      In 2015, these four crises alone account for over 70 per cent of<br/>
+      In 2015, these four crises alone account for over 60 per cent of<br/>
       overall funding requirements for the global appeal
     </h3>
   </div>

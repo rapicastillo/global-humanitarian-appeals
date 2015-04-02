@@ -364,8 +364,8 @@ $(function() {
 
             });
 
-            if (current_overall_total > 71400000) {
-              $("#map-data-score h1.number").text("71.4 MILLION").css("font-weight", "700");
+            if (current_overall_total > 74000000) {
+              $("#map-data-score h1.number").text("74.9 MILLION").css("font-weight", "700");
             } else {
               $("#map-data-score h1.number").text( comma_format( current_overall_total ) );
             }
