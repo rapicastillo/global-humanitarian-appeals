@@ -50,7 +50,7 @@
       </div>
       <div class='row'>
         <div class='col-sm-12'>
-          <img src='images/mob/title-graph.png' class='mobile-image' />
+          <img src='images/mob/new-appeals-cover.png' class='mobile-image' />
         </div>
       </div>
     </div>
