@@ -1,5 +1,5 @@
 var comma_format = d3.format(",");
-
+var overall_total;
 
 $(function() {
 
@@ -118,7 +118,7 @@ $(function() {
     // MAP AREA
 
     var map_dataset;
-    var overall_total;
+
     var gho_map_dataset_url = "https://docs.google.com/spreadsheets/d/1OL-v3ymsD6vR3FtGBzYbQqMD3ry22RrcpaI_vsJIF4o/export?gid=0&format=csv";
     // console.log(encodeURIComponent(gho_map_dataset_url));
     // d3.csv("grab.php?u=" + encodeURIComponent(gho_map_dataset_url), function(data) {
@@ -139,6 +139,7 @@ $(function() {
           map_dataset = d3.csv.parse(data);
           build_map_area(map_dataset);
           overall_total = map_dataset[0];
+          overall_total.in_need = parseInt(overall_total.in_need);
         }
       });
 
@@ -466,8 +467,8 @@ $(function() {
 
             });
 
-            if (current_overall_total > 74000000) {
-              $("#map-data-score h1.number").text("74.9 MILLION").css("font-weight", "700");
+            if ($("[data-count-complete=false]").length == 0) {
+              $("#map-data-score h1.number").text(overall_total.in_need_words).css("font-weight", "700");
             } else {
               $("#map-data-score h1.number").text( comma_format( current_overall_total ) );
             }
