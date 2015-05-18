@@ -182,7 +182,7 @@ $(function() {
       inner_row.append("h1")
           .attr("class", "map-count")
           .attr("final-value", function(d) { return d.in_need_words; })
-          .attr("count-value", function(d) { return d.in_need; })
+          .attr("count-value", function(d) { return d.id == 0 ? 0 : d.in_need; })
           .text("0")
           .style("display", show_element );
 
