@@ -218,7 +218,7 @@
      "map": "",
      "image": "",
      "in_need": 1500000,
-     "words": "1.5   MILLION",
+     "words": "1.5 MILLION",
       "other_fig":
         [
            {
@@ -556,7 +556,7 @@
         [
           {
            "image": "images/maps-fund-icon.png",
-           "count": 316000000,
+           "count":   ,
            "label": "Required",
            "final": "316 MILLION"
           }

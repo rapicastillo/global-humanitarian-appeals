@@ -116,13 +116,109 @@ $(function() {
 
 
     // MAP AREA
+
+    var map_dataset;
+    var gho_map_dataset_url = "https://docs.google.com/spreadsheets/d/1OL-v3ymsD6vR3FtGBzYbQqMD3ry22RrcpaI_vsJIF4o/export?gid=0&format=csv";
+    // console.log(encodeURIComponent(gho_map_dataset_url));
+    // d3.csv("grab.php?u=" + encodeURIComponent(gho_map_dataset_url), function(data) {
+
+    //     map_dataset = data;
+    //     build_map_area(map_dataset);
+    // });
+
+    $.ajax(
+      {
+        url: "grab.php",
+        data: {
+            u : gho_map_dataset_url
+        },
+        dataType: "text",
+        async: false,
+        success: function(data) {
+          map_dataset = d3.csv.parse(data);
+          build_map_area(map_dataset);
+        }
+      });
+
     var data;
+    function show_element(d) {
+      return parseInt(d.in_need) ? "block" : "none";
+    }
+
+    function build_map_area(dataset) {
+      var area_target = d3.select("#map-area-countries");
+
+
+      var row = area_target
+        .selectAll("div.row")
+        .data(dataset)
+        .enter()
+        .append("div").classed("row", true);
+
+
+          row.append("div").attr("class", function(d, i) {
+            if ( i % 2 == 0 ) return "col-md-3";
+            else return "col-md-4 text-right";
+          });
+
+      var inner_row = row.append("div")
+              .attr("data-count-complete", "false")
+              .classed("map-country-item col-md-5", true)
+              .classed("text-right", function (d, i) { return i%2 != 0; })
+              .append("div")
+                .attr("class", function(d) { return "country-item-info map-" + d.type; } )
+          ;
+
+      //Add image
+      inner_row.append("img")
+        .attr("src", "images/icons/green-affected.png")
+        .attr("class", "map-country-affected")
+        .style("display", show_element );
+
+      //add h1
+      inner_row.append("h1")
+          .attr("class", "map-count")
+          .attr("final-value", function(d) { return d.in_need_words; })
+          .attr("count-value", function(d) { return d.in_need; })
+          .text("0")
+          .style("display", show_element );
+
+      //add subheaders
+      inner_row.append("h5").attr("class","green").text("PEOPLE TO BE ASSISTED")
+          .style("display", show_element );
+
+      //Add country information
+      var country_name = inner_row.append("h3").text(function(d) { return d.name; });
+        country_name.append("br");
+        country_name.append("span").attr("class", "green sub-heading")
+          .text(function(d) { return d.subheader; })
+          .style("display", function(d) { return d.subheader && parseInt(d.in_need) == "" ? "none" : "block"; });
+
+      var other_facts = inner_row.append("div")
+                      .classed("other-facts", true)
+                            .append("div")
+                              .attr("class", "other-fact-item calluna")
+                              .attr("data-final", function(d) {return d.funding_words;} );
+
+      other_facts.append("img").attr("src", "images/maps-fund-icon.png");
+      other_facts.append("span")
+                      .attr("class", "of-number")
+                      .attr("count-value", function(d) { return d.funding; })
+                      .append("span")
+                        .style("font-weight", "700")
+                        .text("0");
+
+      other_facts.append("span").attr("class","of-label").text(function(d) { return d.label; });
+
+      // console.log(row, );
+    }
+
     $.ajax(
       {
         url: "d/map.json",
         async: false,
         success: function(data) {
-
+/*
       var $map_div = $("#map-area-countries");
       var current_row;
       for (var i = 0; i < data.countries.length; i++)
@@ -164,7 +260,7 @@ $(function() {
           $current_row.append($country_item);
           $current_row.append( $("<div />").addClass("col-md-1") );
           // console.log($current_row);
-      }
+      }*/
     }
   });
 
