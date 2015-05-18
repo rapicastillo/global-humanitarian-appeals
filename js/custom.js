@@ -118,6 +118,7 @@ $(function() {
     // MAP AREA
 
     var map_dataset;
+    var overall_total;
     var gho_map_dataset_url = "https://docs.google.com/spreadsheets/d/1OL-v3ymsD6vR3FtGBzYbQqMD3ry22RrcpaI_vsJIF4o/export?gid=0&format=csv";
     // console.log(encodeURIComponent(gho_map_dataset_url));
     // d3.csv("grab.php?u=" + encodeURIComponent(gho_map_dataset_url), function(data) {
@@ -137,6 +138,7 @@ $(function() {
         success: function(data) {
           map_dataset = d3.csv.parse(data);
           build_map_area(map_dataset);
+          overall_total = map_dataset[0];
         }
       });
 
@@ -153,7 +155,8 @@ $(function() {
         .selectAll("div.row")
         .data(dataset)
         .enter()
-        .append("div").classed("row", true);
+        .append("div").classed("row", true)
+          .style("display", function(d) { return d.id == 0 ? "none" : "block"; });
 
 
           row.append("div").attr("class", function(d, i) {
